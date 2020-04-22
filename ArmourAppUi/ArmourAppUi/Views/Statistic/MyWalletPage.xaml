@@ -1,0 +1,296 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             xmlns:border="clr-namespace:Syncfusion.XForms.Border;assembly=Syncfusion.Core.XForms"
+             xmlns:buttons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
+             xmlns:converter="clr-namespace:ArmourAppUi.Converters"
+             xmlns:listView="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
+             xmlns:template="clr-namespace:ArmourAppUi.Views.Templates"
+             xmlns:cards="clr-namespace:Syncfusion.XForms.Cards;assembly=Syncfusion.Cards.XForms"
+             xmlns:gradient="clr-namespace:Syncfusion.XForms.Graphics;assembly=Syncfusion.Core.XForms"
+             xmlns:viewModel="clr-namespace:ArmourAppUi.ViewModels.Statistic"
+             xmlns:svg="clr-namespace:ArmourAppUi.Controls"
+             x:Class="ArmourAppUi.Views.Statistic.MyWalletPage"
+             BackgroundColor="{DynamicResource Gray-White}"
+             NavigationPage.HasNavigationBar="False">
+
+    <ContentPage.Resources>
+        <StyleSheet Source="../../Styles/main.css" />
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Styles.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+            <converter:BooleanToColorConverter x:Key="BooleanToColorConverter" />
+            <converter:BooleanToStringConverter x:Key="BoolToStringConverter" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <!--  Binding context for my wallet page  -->
+    <ContentPage.BindingContext>
+        <viewModel:MyWalletViewModel />
+    </ContentPage.BindingContext>
+
+    <ContentPage.Content>
+        <StackLayout Spacing="0">
+
+            <StackLayout Spacing="0" Orientation="Vertical">
+                <FlexLayout StyleClass="header">
+                    <Label Text="Statistic" FontFamily="{DynamicResource Montserrat-Medium}"/>
+                    <Frame StyleClass="avatar" IsClippedToBounds="True">
+                        <ImageButton  Source="photo.jpg" StyleClass="avatar" Clicked="ProfileButton_Clicked"/>
+                    </Frame>
+                </FlexLayout>
+            </StackLayout>
+            <StackLayout Spacing="0">
+                <ScrollView >
+                    <Grid RowSpacing="0" ColumnSpacing="0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+
+
+
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+
+                            <Grid RowSpacing="0" HeightRequest="350">
+
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="*" />
+                                </Grid.RowDefinitions>
+
+                                <gradient:SfGradientView Grid.RowSpan="3">
+                                    <gradient:SfGradientView.BackgroundBrush>
+                                        <gradient:SfLinearGradientBrush>
+                                            <gradient:SfLinearGradientBrush.GradientStops>
+                                                <gradient:SfGradientStop Color="{StaticResource Dull-Red}" Offset="0.0"/>
+                                                <gradient:SfGradientStop Color="{StaticResource Deep-Purple}" Offset="1.0"/>
+                                            </gradient:SfLinearGradientBrush.GradientStops>
+                                        </gradient:SfLinearGradientBrush>
+                                    </gradient:SfGradientView.BackgroundBrush>
+                                </gradient:SfGradientView>
+
+                                <!-- Profile Image -->
+                                <border:SfBorder Margin="0,30,0,8"
+                                     HeightRequest="120"
+                                     WidthRequest="120"
+                                     CornerRadius="60"
+                                     BorderWidth="2"
+                                     HorizontalOptions="CenterAndExpand"
+                                     VerticalOptions="StartAndExpand"
+                                     BorderColor="{DynamicResource Gray-White}"
+                                     BackgroundColor="{DynamicResource Gray-White}">
+
+                                    <Image Aspect="AspectFill" Source="photo.jpg"
+                               BackgroundColor="{DynamicResource Gray-White}">
+                                        
+                                    </Image>
+
+                                </border:SfBorder>
+
+                                <!-- Profile Name -->
+                                <Label Grid.Row="1"
+                           Margin="0,0,0,2"
+                           Text="Roman Cholkan"
+                           TextColor="{DynamicResource Gray-White}"
+                           FontSize="20"
+                           FontFamily="{DynamicResource Montserrat-SemiBold}"
+                           HorizontalOptions="CenterAndExpand"
+                           VerticalOptions="StartAndExpand"
+                           LineHeight="{OnPlatform Android=1.5, Default=-1}" />
+
+                                <!-- State and Country -->
+                                <Label Grid.Row="2"
+                           TextColor="{DynamicResource Gray-White}"
+                           FontSize="12"
+                           FontFamily="{DynamicResource Montserrat-Medium}"
+                           HorizontalOptions="CenterAndExpand"
+                           VerticalOptions="StartAndExpand"
+                           LineHeight="{OnPlatform Android=1.5, Default=-1}">
+                                    <Label.FormattedText>
+                                        <FormattedString>
+                                            <Span Text="Lviv"/>
+                                            <Span Text=" | "/>
+                                            <Span Text="Ukraine"/>
+                                        </FormattedString>
+                                    </Label.FormattedText>
+                                </Label>
+                            </Grid>
+
+                            <border:SfBorder Grid.Row="1" Margin="0,-69,0,0" Padding="0,0,0,0" BackgroundColor="{DynamicResource Gray-White}" CornerRadius="14,14,0,0"
+                                 VerticalOptions="Start" BorderWidth="0">
+
+                                <Label Text="My list" Padding="20,50,0,20"/>
+                            </border:SfBorder>
+
+                            <cards:SfCardView Grid.Row="0" CornerRadius="4" VerticalOptions="End" Margin="16,0,16,24"  BorderWidth="0" HasShadow="True"  
+                                 BackgroundColor="{DynamicResource Gray-White}" HorizontalOptions="CenterAndExpand" WidthRequest="{OnIdiom Phone=343, Default=736}" >
+
+                                <Grid RowSpacing="0" ColumnSpacing="0" WidthRequest="{OnIdiom Phone=343, Default=480}" 
+                          HeightRequest="90">
+
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition />
+                                        <RowDefinition />
+                                    </Grid.RowDefinitions>
+
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition />
+                                        <ColumnDefinition Width="Auto" />
+                                        <ColumnDefinition />
+                                        <ColumnDefinition Width="Auto" />
+                                        <ColumnDefinition />
+                                    </Grid.ColumnDefinitions>
+
+                                    <!-- Age -->
+                                    <Label Text="19" Style="{StaticResource LabelStyle}" HorizontalOptions="Center"
+                               VerticalOptions="End" />
+
+                                    <Label Grid.Row="1" FontSize="12" Text="Age" Style="{StaticResource LabelStyle}" 
+                               HorizontalOptions="Center" VerticalOptions="Start"
+                               FontFamily="{DynamicResource Montserrat-Medium}" TextColor="{DynamicResource Gray-700}" />
+
+                                    <!-- Seperator -->
+                                    <BoxView Grid.Column="1" Style="{StaticResource BoxViewStyle}" Grid.RowSpan="2" />
+
+                                    <!-- Weight -->
+                                    <Label Grid.Row="0" Grid.Column="2" Text="60" Style="{StaticResource LabelStyle}"
+                                HorizontalOptions="Center" VerticalOptions="End" />
+
+                                    <Label Grid.Row="1" Grid.Column="2" Text="Weight" FontSize="12" Style="{StaticResource LabelStyle}" 
+                               FontFamily="{DynamicResource Montserrat-Medium}" TextColor="{DynamicResource Gray-700}" 
+                               HorizontalOptions="Center" VerticalOptions="Start" />
+
+                                    <!-- Seperator -->
+                                    <BoxView Grid.Column="3" Style="{StaticResource BoxViewStyle}" Grid.RowSpan="2" />
+
+                                    <!-- Height -->
+                                    <Label Grid.Row="0" Grid.Column="4" Text="175" HorizontalOptions="Center" 
+                               VerticalOptions="End" Style="{StaticResource LabelStyle}" />
+
+                                    <Label Grid.Row="1" Grid.Column="4" Text="Height" FontSize="12" HorizontalOptions="Center"
+                               VerticalOptions="Start" Style="{StaticResource LabelStyle}" FontFamily="{DynamicResource Montserrat-Medium}" 
+                               TextColor="{DynamicResource Gray-700}" />
+
+                                </Grid>
+                            </cards:SfCardView>
+                        </Grid>
+
+                        
+
+                        <listView:SfListView Grid.Row="2" 
+                                        IsScrollBarVisible="False"
+                                        ItemSpacing="0"
+                                        ItemsSource="{Binding ListItems}"
+                                        SelectionBackgroundColor="{DynamicResource TappedBackgroundColor}"
+                                        TapCommand="{Binding ItemTappedCommand}"
+                                        AutoFitMode="Height">
+                            <listView:SfListView.ItemTemplate>
+                                <DataTemplate>
+                                    <Grid RowSpacing="0" ColumnSpacing="0">
+
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="Auto" />
+                                            <RowDefinition Height="Auto" />
+                                            <RowDefinition Height="Auto" />
+                                        </Grid.RowDefinitions>
+
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="Auto" />
+                                            <ColumnDefinition Width="*" />
+                                        </Grid.ColumnDefinitions>
+
+                                        <!-- Profile Image -->
+                                        <border:SfBorder Grid.RowSpan="3"
+                                                    Margin="16"
+                                                    WidthRequest="40"
+                                                    HeightRequest="40"
+                                                    CornerRadius="20"
+                                                    BorderWidth="0"
+                                                    VerticalOptions="Center">
+                                            <Image Aspect="Fill">
+                                                <Image.Source>
+                                                    <UriImageSource Uri="{Binding ProfileImage}" 
+			                                                CacheValidity="14" 
+			                                                CachingEnabled="True" />
+                                                </Image.Source>
+                                            </Image>
+                                        </border:SfBorder>
+
+                                        <!-- Name -->
+                                        <Label Grid.Column="1"
+                                        Margin="0,15,0,4"
+                                        HorizontalOptions="Start"
+                                        Text="{Binding Name}"
+                                        Style="{StaticResource LabelStyle}"
+                                        LineHeight="{OnPlatform Android=1.5, Default=-1}" />
+
+                                        <!-- Transaction Title -->
+                                        <Label Grid.Row="1"
+                                        Grid.Column="1"
+                                        Margin="0,0,0,16"
+                                        HorizontalOptions="Start"
+                                        Text="{Binding Title}"
+                                        TextColor="{DynamicResource Gray-700}"
+                                        FontSize="12"
+                                        FontFamily="{DynamicResource Montserrat-Medium}"
+                                        LineHeight="{OnPlatform Android=1.5, Default=-1}" />
+
+                                        <!-- Amount -->
+                                        <Label Grid.Column="1"
+                                        Margin="0,16,16,4"
+                                        HorizontalOptions="End"
+                                        TextColor="{Binding IsCredited, Converter={x:StaticResource BooleanToColorConverter}, ConverterParameter=5}"
+                                        Style="{StaticResource LabelStyle}"
+                                        LineHeight="{OnPlatform Android=1.5, Default=-1}">
+                                            <Label.FormattedText>
+                                                <FormattedString>
+                                                    <Span Text="{Binding IsCredited, Converter={StaticResource BoolToStringConverter}, ConverterParameter=2}" />
+                                                    <Span Text=" $" />
+                                                    <Span Text="{Binding Amount}" />
+                                                </FormattedString>
+                                            </Label.FormattedText>
+                                        </Label>
+
+                                        <!-- Date -->
+                                        <Label Grid.Row="1"
+                                        Grid.Column="1"
+                                        Margin="0,0,16,16"
+                                        HorizontalOptions="End"
+                                        Text="{Binding Date, StringFormat='{}{0:dd MMM yyyy}'}"
+                                        TextColor="{DynamicResource Gray-700}"
+                                        FontSize="12"
+                                        FontFamily="{DynamicResource Montserrat-Medium}"
+                                        LineHeight="{OnPlatform Android=1.5, Default=-1}" />
+
+                                        <!-- Seperator -->
+                                        <BoxView Grid.Row="2" Grid.ColumnSpan="2" Style="{StaticResource SeparatorStyle}" />
+
+                                    </Grid>
+                                </DataTemplate>
+                            </listView:SfListView.ItemTemplate>
+                        </listView:SfListView>
+
+                    </Grid>
+                </ScrollView>
+            </StackLayout>
+            <StackLayout Orientation="Vertical" VerticalOptions="End" HorizontalOptions="FillAndExpand" StyleClass="footer">
+                <FlexLayout StyleClass="nav">
+                    <ImageButton Source="baseline_bar_chart_black_36dp.png" StyleClass="unactive"/>
+                    <ImageButton Source="baseline_home_black_36dp.png" Clicked="HomeButton_Clicked"/>
+                    <ImageButton Source="baseline_playlist_add_black_36dp.png" StyleClass="unactive" Clicked="NewExercisePage_Clicked"/>
+                </FlexLayout>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

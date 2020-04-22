@@ -1,0 +1,92 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>portable</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Data\navigation.json" />
+    <None Remove="Images\CaloriesEaten.svg" />
+    <None Remove="Images\HeartRate.svg" />
+    <None Remove="Images\SleepDuration.svg" />
+    <None Remove="Images\WaterConsumed.svg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Data\navigation.json" />
+    <EmbeddedResource Include="Images\CaloriesEaten.svg" />
+    <EmbeddedResource Include="Images\HeartRate.svg" />
+    <EmbeddedResource Include="Images\SleepDuration.svg" />
+    <EmbeddedResource Include="Images\WaterConsumed.svg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="SkiaSharp.Svg" Version="1.60.0" />
+    <PackageReference Include="SkiaSharp.Views.Forms" Version="1.68.1.1" />
+    <PackageReference Include="Syncfusion.Xamarin.Buttons" Version="18.1.0.44" />
+    <PackageReference Include="Syncfusion.Xamarin.Cards" Version="18.1.0.44" />
+    <PackageReference Include="Syncfusion.Xamarin.Core" Version="18.1.0.44" />
+    <PackageReference Include="Syncfusion.Xamarin.SfCalendar" Version="18.1.0.44" />
+    <PackageReference Include="Syncfusion.Xamarin.SfChart" Version="18.1.0.44" />
+    <PackageReference Include="Syncfusion.Xamarin.SfComboBox" Version="18.1.0.44" />
+    <PackageReference Include="Syncfusion.Xamarin.SfListView" Version="18.1.0.44" />
+    <PackageReference Include="Syncfusion.Xamarin.SfProgressBar" Version="18.1.0.44" />
+    <PackageReference Include="Syncfusion.Xamarin.SfRating" Version="18.1.0.44" />
+    <PackageReference Include="Xamarin.Forms" Version="4.5.0.617" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.5.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Themes\LightTheme.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Forms\AddContactPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Forms\ContactEmailEntry.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Forms\Styles.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Navigation\AppUsagePage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Navigation\NavigationListCardPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Navigation\Styles.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Settings\SettingPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Settings\Styles.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Statistic\HealthProfilePage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Statistic\MyWalletPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Statistic\Styles.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Templates\ExpenseChartTemplate.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Templates\NavigationListTemplate.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Templates\Styles.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>

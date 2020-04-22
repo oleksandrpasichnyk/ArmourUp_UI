@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    x:Class="ArmourAppUi.Views.Navigation.NavigationListCardPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:controls="clr-namespace:ArmourAppUi.Controls"
+    xmlns:listView="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
+    xmlns:template="clr-namespace:ArmourAppUi.Views.Templates"
+    xmlns:svg="clr-namespace:ArmourAppUi.Controls"
+    xmlns:viewModel="clr-namespace:ArmourAppUi.ViewModels.Navigation"
+    BackgroundColor="{DynamicResource Gray-White}"
+    NavigationPage.HasNavigationBar="False">
+
+    <ContentPage.Resources>
+        <StyleSheet Source="../../Styles/main.css" />
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Styles.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ContentPage.Content>
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <StackLayout Spacing="0">
+
+                <!--  Title View  -->
+                <StackLayout Spacing="0" Orientation="Vertical">
+                    <FlexLayout StyleClass="header">
+                        <Label Text="My workouts" FontFamily="{DynamicResource Montserrat-Medium}"/>
+                        <Frame StyleClass="avatar" IsClippedToBounds="True">
+                            <ImageButton  Source="photo.jpg" StyleClass="avatar" Clicked="ProfileButton_Clicked"/>
+                        </Frame>
+                    </FlexLayout>
+                </StackLayout>
+
+                <StackLayout Orientation="Vertical">
+                    <Image Source="bg_home.png" Aspect="AspectFill" HeightRequest="200"/>
+                    <Label Text="My list" Padding="20,20,0,20"/>
+                </StackLayout>
+                <StackLayout Grid.Row="1" Spacing="0" Orientation="Vertical">
+                    
+                    <listView:SfListView
+                        Padding="5,0,5,0"
+                        AutoFitMode="Height"
+                        IsScrollBarVisible="false"
+                        ItemSpacing="0,0,0,0"
+                        ItemsSource="{Binding NavigationList}"
+                        SelectionBackgroundColor="Transparent"
+                        TapCommand="{Binding ItemTappedCommand}"
+                        VerticalOptions="FillAndExpand">
+                        <listView:SfListView.ItemTemplate>
+                            
+                            <DataTemplate>
+                                <ViewCell>
+                                    <!--  View of each card item  -->
+                                    <controls:CustomShadowFrame
+                                        Margin="0,2,5,5"
+                                        Padding="0"
+                                        BackgroundColor="{DynamicResource Gray-White}"
+                                        BorderColor="{DynamicResource Gray-White}"
+                                        BorderWidth="1"
+                                        CornerRadius="4"
+                                        HasShadow="True"
+                                        HorizontalOptions="FillAndExpand"
+                                        VerticalOptions="FillAndExpand">
+                                        <template:NavigationListTemplate />
+                                    </controls:CustomShadowFrame>
+                                </ViewCell>
+                            </DataTemplate>
+                        </listView:SfListView.ItemTemplate>
+                    </listView:SfListView>
+                </StackLayout>
+                <StackLayout Orientation="Vertical" VerticalOptions="End" HorizontalOptions="FillAndExpand" StyleClass="footer">
+                    <FlexLayout StyleClass="nav">
+                        <ImageButton Source="baseline_bar_chart_black_36dp.png" StyleClass="unactive" Clicked="StatisticsButton_Clicked"/>
+                        <ImageButton Source="baseline_home_black_36dp.png"/>
+                        <ImageButton Source="baseline_playlist_add_black_36dp.png" StyleClass="unactive" Clicked="NewExercisePage_Clicked"/>
+                    </FlexLayout>
+                </StackLayout>
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
