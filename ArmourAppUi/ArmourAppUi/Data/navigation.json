@@ -51,7 +51,7 @@
   ],
   "navigationList": [
     {
-      "itemName": "Hamburger 1",
+      "itemName": "Running",
       "name": "Burger King",
       "description": "Burger, Pizza",
       "itemDescription": "Classic hamburger with Angus beef grilled to perfection",
@@ -60,7 +60,7 @@
       "itemRating": 4.5
     },
     {
-      "itemName": "Black Bean Burger",
+      "itemName": "Arms and legs",
       "itemDescription": "Our signature black bean burger on a whole-grain bun",
       "itemImage": "Recipe8.png",
       "name": "McDonalds",
@@ -69,7 +69,7 @@
       "itemRating": 4.4
     },
     {
-      "itemName": "Macarons",
+      "itemName": "Chest and abs",
       "itemDescription": "Eight colorful flavors of macarons, fresh daily",
       "itemImage": "Recipe3.png",
       "name": "Macrons",

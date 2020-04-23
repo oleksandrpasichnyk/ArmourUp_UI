@@ -38,10 +38,9 @@
 
             <StackLayout Spacing="0" Orientation="Vertical">
                 <FlexLayout StyleClass="header">
-                    <Label Text="Statistic" FontFamily="{DynamicResource Montserrat-Medium}"/>
-                    <Frame StyleClass="avatar" IsClippedToBounds="True">
-                        <ImageButton  Source="photo.jpg" StyleClass="avatar" Clicked="ProfileButton_Clicked"/>
-                    </Frame>
+                    <Label Text="My workouts" FontFamily="{DynamicResource Montserrat-Medium}"/>
+                    <buttons:SfButton x:Name="SfButton" Clicked="ProfileButton_Clicked" BackgroundImage="photo.jpg" CornerRadius="15" WidthRequest="30" HeightRequest="30"/>
+
                 </FlexLayout>
             </StackLayout>
             <StackLayout Spacing="0">

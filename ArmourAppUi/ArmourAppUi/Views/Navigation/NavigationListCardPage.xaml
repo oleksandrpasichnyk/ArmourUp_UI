@@ -7,6 +7,8 @@
     xmlns:listView="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
     xmlns:template="clr-namespace:ArmourAppUi.Views.Templates"
     xmlns:svg="clr-namespace:ArmourAppUi.Controls"
+    xmlns:buttons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
+    xmlns:button="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
     xmlns:viewModel="clr-namespace:ArmourAppUi.ViewModels.Navigation"
     BackgroundColor="{DynamicResource Gray-White}"
     NavigationPage.HasNavigationBar="False">
@@ -20,69 +22,115 @@
         </ResourceDictionary>
     </ContentPage.Resources>
 
-    <ContentPage.Content>
+    <ContentPage.Content Spacing="0">
 
         <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto" />
                 <RowDefinition Height="*" />
             </Grid.RowDefinitions>
+            
+            
             <StackLayout Spacing="0">
 
                 <!--  Title View  -->
-                <StackLayout Spacing="0" Orientation="Vertical">
-                    <FlexLayout StyleClass="header">
-                        <Label Text="My workouts" FontFamily="{DynamicResource Montserrat-Medium}"/>
-                        <Frame StyleClass="avatar" IsClippedToBounds="True">
-                            <ImageButton  Source="photo.jpg" StyleClass="avatar" Clicked="ProfileButton_Clicked"/>
-                        </Frame>
-                    </FlexLayout>
-                </StackLayout>
+                
+                <FlexLayout StyleClass="header">
+                    <Label Text="My workouts" FontFamily="{DynamicResource Montserrat-Medium}"/>
+                    <buttons:SfButton x:Name="SfButton" Clicked="ProfileButton_Clicked" BackgroundImage="photo.jpg" CornerRadius="15" WidthRequest="30" HeightRequest="30"/>
+                        
+                </FlexLayout>
+                
+                
+                <ScrollView>
+                    <StackLayout>
+                        <RelativeLayout>
+                            <Image Source="bg_home.png" Aspect="AspectFill" HeightRequest="200"/>
+                            <FlexLayout StyleClass="quote_space">
+                                <StackLayout>
+                                    <Label StyleClass="quote" FontFamily="{DynamicResource Montserrat-SemiBold}" Text="Моя тренировка начинаеться когда я открываю пивко. "/>
+                                    <Label StyleClass="author" FontFamily="{DynamicResource Montserrat-Medium}" Text="Джон Стетхем"/>
+                                </StackLayout>
 
-                <StackLayout Orientation="Vertical">
-                    <Image Source="bg_home.png" Aspect="AspectFill" HeightRequest="200"/>
-                    <Label Text="My list" Padding="20,20,0,20"/>
-                </StackLayout>
-                <StackLayout Grid.Row="1" Spacing="0" Orientation="Vertical">
+                            </FlexLayout>
+                        </RelativeLayout>
+
+
+
+
+                        <StackLayout Grid.Row="1" Spacing="0" Orientation="Vertical">
                     
-                    <listView:SfListView
-                        Padding="5,0,5,0"
-                        AutoFitMode="Height"
-                        IsScrollBarVisible="false"
-                        ItemSpacing="0,0,0,0"
-                        ItemsSource="{Binding NavigationList}"
-                        SelectionBackgroundColor="Transparent"
-                        TapCommand="{Binding ItemTappedCommand}"
-                        VerticalOptions="FillAndExpand">
-                        <listView:SfListView.ItemTemplate>
+                        <listView:SfListView
+                            Padding="5,0,5,0"
+                            AutoFitMode="Height"
+                            IsScrollBarVisible="false"
+                            ItemSpacing="0,0,0,0"
+                            ItemsSource="{Binding NavigationList}"
+                            SelectionBackgroundColor="Transparent"
+                            TapCommand="{Binding ItemTappedCommand}"
+                            VerticalOptions="FillAndExpand">
+                            <listView:SfListView.ItemTemplate>
                             
-                            <DataTemplate>
-                                <ViewCell>
-                                    <!--  View of each card item  -->
-                                    <controls:CustomShadowFrame
-                                        Margin="0,2,5,5"
-                                        Padding="0"
-                                        BackgroundColor="{DynamicResource Gray-White}"
-                                        BorderColor="{DynamicResource Gray-White}"
-                                        BorderWidth="1"
-                                        CornerRadius="4"
-                                        HasShadow="True"
-                                        HorizontalOptions="FillAndExpand"
-                                        VerticalOptions="FillAndExpand">
-                                        <template:NavigationListTemplate />
-                                    </controls:CustomShadowFrame>
-                                </ViewCell>
-                            </DataTemplate>
-                        </listView:SfListView.ItemTemplate>
-                    </listView:SfListView>
-                </StackLayout>
-                <StackLayout Orientation="Vertical" VerticalOptions="End" HorizontalOptions="FillAndExpand" StyleClass="footer">
+                                <DataTemplate>
+                                    <ViewCell>
+                                        <!--  View of each card item  -->
+                                        <controls:CustomShadowFrame
+                                            Margin="0,2,5,5"
+                                            Padding="0"
+                                            BackgroundColor="{DynamicResource Gray-White}"
+                                            BorderColor="{DynamicResource Gray-White}"
+                                            BorderWidth="1"
+                                            CornerRadius="4"
+                                            HasShadow="True"
+                                            HorizontalOptions="FillAndExpand"
+                                            VerticalOptions="FillAndExpand">
+                                            <template:NavigationListTemplate />
+                                        </controls:CustomShadowFrame>
+                                    </ViewCell>
+                                </DataTemplate>
+                            </listView:SfListView.ItemTemplate>
+                        </listView:SfListView>
+                        </StackLayout>
+                    </StackLayout>
+                </ScrollView>
+
+                <StackLayout Orientation="Vertical" VerticalOptions="End" HorizontalOptions="FillAndExpand" StyleClass="nav1">
                     <FlexLayout StyleClass="nav">
-                        <ImageButton Source="baseline_bar_chart_black_36dp.png" StyleClass="unactive" Clicked="StatisticsButton_Clicked"/>
-                        <ImageButton Source="baseline_home_black_36dp.png"/>
-                        <ImageButton Source="baseline_playlist_add_black_36dp.png" StyleClass="unactive" Clicked="NewExercisePage_Clicked"/>
+
+                        <button:SfButton Clicked="StatisticsButton_Clicked"
+                                         ImageSource="baseline_bar_chart_black_36dp.png" 
+                                         ShowIcon="True" 
+                                         ImageAlignment="Top" 
+                                         CornerRadius="20" 
+                                         BackgroundColor = "#fff" 
+                                         WidthRequest="100" 
+                                         HeightRequest="40" 
+                                         ImageWidth="40">
+                        </button:SfButton>
+                        
+                        <button:SfButton ImageSource="baseline_home_black_36dp.png" 
+                                         ShowIcon="True" 
+                                         ImageAlignment="Top" 
+                                         CornerRadius="20" 
+                                         BackgroundColor = "#fff" 
+                                         WidthRequest="100" 
+                                         HeightRequest="40" 
+                                         ImageWidth="40">
+                        </button:SfButton>
+
+                        <button:SfButton Clicked="NewExercisePage_Clicked"
+                                         ImageSource="baseline_playlist_add_black_36dp.png"
+                                         ShowIcon="True" 
+                                         ImageAlignment="Top" 
+                                         CornerRadius="20" 
+                                         BackgroundColor = "#fff" 
+                                         WidthRequest="100" 
+                                         HeightRequest="40" 
+                                         ImageWidth="40">
+                        </button:SfButton>
                     </FlexLayout>
                 </StackLayout>
+                    
             </StackLayout>
         </Grid>
     </ContentPage.Content>
