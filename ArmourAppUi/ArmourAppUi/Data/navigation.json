@@ -531,52 +531,60 @@
   ],
   "appUsagePageList": [
     {
-      "appName": "Music",
-      "progressBarValue": "40",
-      "progressValue": "40%",
-      "backgroundColor": "#837bff"
+      "appName": "Running",
+      "progressBarValue": "45",
+      "progressValue": "45%",
+      "backgroundColor": "#2f80ed",
+      "iconSource": "goal_icon.png"
     },
     {
-      "appName": "WhatsApp",
+      "appName": "Shoulders and arms",
       "progressBarValue": "60",
       "progressValue": "60%",
-      "backgroundColor": "#25d366"
+      "backgroundColor": "#eb5757",
+      "iconSource": "time_icon.png"
     },
     {
-      "appName": "Photos",
-      "progressBarValue": "30",
-      "progressValue": "30%",
-      "backgroundColor": "#db7faa"
+      "appName": "Legs",
+      "progressBarValue": "31",
+      "progressValue": "31%",
+      "backgroundColor": "#f2c94c",
+      "iconSource": "repeat_icon.png"
     },
     {
-      "appName": "FaceBook",
-      "progressBarValue": "50",
-      "progressValue": "50%",
-      "backgroundColor": "#3b5998"
+      "appName": "Chest and abs",
+      "progressBarValue": "96",
+      "progressValue": "95%",
+      "backgroundColor": "#27ae60",
+      "iconSource": "repeat_icon.png"
     },
     {
       "appName": "Settings",
       "progressBarValue": "70",
       "progressValue": "70%",
-      "backgroundColor": "#a8d35f"
+      "backgroundColor": "#a8d35f",
+      "iconSource": "goal_icon.png"
     },
     {
       "appName": "Messages",
       "progressBarValue": "20",
       "progressValue": "20%",
-      "backgroundColor": "#6c88ff"
+      "backgroundColor": "#6c88ff",
+      "iconSource": "goal_icon.png"
     },
     {
       "appName": "Phone",
       "progressBarValue": "25",
       "progressValue": "25%",
-      "backgroundColor": "#cf62e2"
+      "backgroundColor": "#cf62e2",
+      "iconSource": "goal_icon.png"
     },
     {
       "appName": "Calendar",
       "progressBarValue": "10",
       "progressValue": "10%",
-      "backgroundColor": "#ec5b76"
+      "backgroundColor": "#ec5b76",
+      "iconSource": "goal_icon.png"
     }
   ],
   "documentsPageList": [

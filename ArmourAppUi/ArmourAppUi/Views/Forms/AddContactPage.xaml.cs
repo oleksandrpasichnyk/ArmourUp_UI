@@ -31,7 +31,7 @@ namespace ArmourAppUi.Views.Forms
         }
         private void HomeButton_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new ArmourAppUi.Views.Navigation.NavigationListCardPage());
+            Navigation.PushAsync(new ArmourAppUi.Views.Navigation.AppUsagePage());
         }
         private void ProfileButton_Clicked(object sender, EventArgs e)
         {

@@ -5,7 +5,8 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              xmlns:border="clr-namespace:Syncfusion.XForms.Border;assembly=Syncfusion.Core.XForms"
-             xmlns:buttons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
+             xmlns:buttons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"    
+             xmlns:button="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
              xmlns:converter="clr-namespace:ArmourAppUi.Converters"
              xmlns:listView="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
              xmlns:template="clr-namespace:ArmourAppUi.Views.Templates"
@@ -283,11 +284,41 @@
                     </Grid>
                 </ScrollView>
             </StackLayout>
-            <StackLayout Orientation="Vertical" VerticalOptions="End" HorizontalOptions="FillAndExpand" StyleClass="footer">
+            <StackLayout Orientation="Vertical" VerticalOptions="End" HorizontalOptions="FillAndExpand" StyleClass="nav1">
                 <FlexLayout StyleClass="nav">
-                    <ImageButton Source="baseline_bar_chart_black_36dp.png" StyleClass="unactive"/>
-                    <ImageButton Source="baseline_home_black_36dp.png" Clicked="HomeButton_Clicked"/>
-                    <ImageButton Source="baseline_playlist_add_black_36dp.png" StyleClass="unactive" Clicked="NewExercisePage_Clicked"/>
+
+                    <button:SfButton 
+                                         ImageSource="baseline_bar_chart_black_36dp.png" 
+                                         ShowIcon="True" 
+                                         ImageAlignment="Top" 
+                                         CornerRadius="20" 
+                                         BackgroundColor = "#fff" 
+                                         WidthRequest="100" 
+                                         HeightRequest="40" 
+                                         ImageWidth="40">
+                    </button:SfButton>
+
+                    <button:SfButton Clicked="HomeButton_Clicked"
+                                     ImageSource="baseline_home_black_36dp.png" 
+                                         ShowIcon="True" 
+                                         ImageAlignment="Top" 
+                                         CornerRadius="20" 
+                                         BackgroundColor = "#fff" 
+                                         WidthRequest="100" 
+                                         HeightRequest="40" 
+                                         ImageWidth="40">
+                    </button:SfButton>
+
+                    <button:SfButton Clicked="NewExercisePage_Clicked"
+                                         ImageSource="baseline_playlist_add_black_36dp.png"
+                                         ShowIcon="True" 
+                                         ImageAlignment="Top" 
+                                         CornerRadius="20" 
+                                         BackgroundColor = "#fff" 
+                                         WidthRequest="100" 
+                                         HeightRequest="40" 
+                                         ImageWidth="40">
+                    </button:SfButton>
                 </FlexLayout>
             </StackLayout>
         </StackLayout>

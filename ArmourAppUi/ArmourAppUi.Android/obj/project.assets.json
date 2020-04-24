@@ -170,6 +170,21 @@
           "lib/MonoAndroid10/Syncfusion.GridCommon.Portable.dll": {}
         }
       },
+      "Syncfusion.Xamarin.SfBadgeView/18.1.0.44": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Xamarin.Core": "18.1.0.44",
+          "Xamarin.Forms": "3.6.0.344457"
+        },
+        "compile": {
+          "lib/MonoAndroid10/Syncfusion.SfBadgeView.XForms.Android.dll": {},
+          "lib/MonoAndroid10/Syncfusion.SfBadgeView.XForms.dll": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid10/Syncfusion.SfBadgeView.XForms.Android.dll": {},
+          "lib/MonoAndroid10/Syncfusion.SfBadgeView.XForms.dll": {}
+        }
+      },
       "Syncfusion.Xamarin.SfCalendar/18.1.0.44": {
         "type": "package",
         "dependencies": {
@@ -1086,6 +1101,7 @@
           "Syncfusion.Xamarin.Buttons": "18.1.0.44",
           "Syncfusion.Xamarin.Cards": "18.1.0.44",
           "Syncfusion.Xamarin.Core": "18.1.0.44",
+          "Syncfusion.Xamarin.SfBadgeView": "18.1.0.44",
           "Syncfusion.Xamarin.SfCalendar": "18.1.0.44",
           "Syncfusion.Xamarin.SfChart": "18.1.0.44",
           "Syncfusion.Xamarin.SfComboBox": "18.1.0.44",
@@ -1529,6 +1545,34 @@
         "lib/uap10.0/Syncfusion.GridCommon.Portable.dll",
         "syncfusion.xamarin.gridcommon.18.1.0.44.nupkg.sha512",
         "syncfusion.xamarin.gridcommon.nuspec"
+      ]
+    },
+    "Syncfusion.Xamarin.SfBadgeView/18.1.0.44": {
+      "sha512": "XsTX49v3W/CJ8hAA+9BR2fMXIc2UTHNlYMaRRH1oaGtnafiZJtolM7bm7kiBw+NvP/y2rNODoQSLw6MDkgttzA==",
+      "type": "package",
+      "path": "syncfusion.xamarin.sfbadgeview/18.1.0.44",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/MonoAndroid10/Syncfusion.SfBadgeView.XForms.Android.dll",
+        "lib/MonoAndroid10/Syncfusion.SfBadgeView.XForms.dll",
+        "lib/MonoAndroid10/Syncfusion.SfBadgeView.XForms.xml",
+        "lib/Xamarin.iOS10/Syncfusion.SfBadgeView.XForms.dll",
+        "lib/Xamarin.iOS10/Syncfusion.SfBadgeView.XForms.iOS.dll",
+        "lib/Xamarin.iOS10/Syncfusion.SfBadgeView.XForms.xml",
+        "lib/netstandard2.0/Syncfusion.SfBadgeView.XForms.dll",
+        "lib/netstandard2.0/Syncfusion.SfBadgeView.XForms.xml",
+        "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.SfBadgeView.XForms.dll",
+        "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.SfBadgeView.XForms.xml",
+        "lib/uap10.0/Syncfusion.SfBadgeView.XForms.UWP.XML",
+        "lib/uap10.0/Syncfusion.SfBadgeView.XForms.UWP.dll",
+        "lib/uap10.0/Syncfusion.SfBadgeView.XForms.UWP.pri",
+        "lib/uap10.0/Syncfusion.SfBadgeView.XForms.UWP/Assets/Fonts/BadgeIcons.ttf",
+        "lib/uap10.0/Syncfusion.SfBadgeView.XForms.UWP/Properties/Syncfusion.SfBadgeView.XForms.UWP.rd.xml",
+        "lib/uap10.0/Syncfusion.SfBadgeView.XForms.dll",
+        "lib/uap10.0/Syncfusion.SfBadgeView.XForms.xml",
+        "syncfusion.xamarin.sfbadgeview.18.1.0.44.nupkg.sha512",
+        "syncfusion.xamarin.sfbadgeview.nuspec"
       ]
     },
     "Syncfusion.Xamarin.SfCalendar/18.1.0.44": {
@@ -2900,6 +2944,7 @@
       "Syncfusion.Xamarin.Buttons >= 18.1.0.44",
       "Syncfusion.Xamarin.Cards >= 18.1.0.44",
       "Syncfusion.Xamarin.Core >= 18.1.0.44",
+      "Syncfusion.Xamarin.SfBadgeView >= 18.1.0.44",
       "Syncfusion.Xamarin.SfCalendar >= 18.1.0.44",
       "Syncfusion.Xamarin.SfChart >= 18.1.0.44",
       "Syncfusion.Xamarin.SfComboBox >= 18.1.0.44",
@@ -2973,6 +3018,10 @@
             "version": "[18.1.0.44, )"
           },
           "Syncfusion.Xamarin.Core": {
+            "target": "Package",
+            "version": "[18.1.0.44, )"
+          },
+          "Syncfusion.Xamarin.SfBadgeView": {
             "target": "Package",
             "version": "[18.1.0.44, )"
           },

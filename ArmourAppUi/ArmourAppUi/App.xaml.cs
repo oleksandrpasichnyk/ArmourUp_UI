@@ -12,7 +12,7 @@ namespace ArmourAppUi
             Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("MjQzMzg4QDMxMzgyZTMxMmUzME04UFpEaGZSZlBPcXpBaVBFS0ZBbFFPNVJXbkFVcEtvNnNBWlBlOXhNaEE9");
             InitializeComponent();
 
-            MainPage = new NavigationPage(new ArmourAppUi.Views.Navigation.NavigationListCardPage());
+            MainPage = new NavigationPage(new ArmourAppUi.Views.Navigation.AppUsagePage());
             
         }
 

@@ -25,6 +25,7 @@ D:\My docs\Web-developing\Projects\Armour App Design\ArmourAppUi\ArmourAppUi\obj
 D:\My docs\Web-developing\Projects\Armour App Design\ArmourAppUi\ArmourAppUi\obj\Debug\netstandard2.0\Views\Forms\AddContactPage.xaml.g.cs
 D:\My docs\Web-developing\Projects\Armour App Design\ArmourAppUi\ArmourAppUi\obj\Debug\netstandard2.0\Views\Forms\ContactEmailEntry.xaml.g.cs
 D:\My docs\Web-developing\Projects\Armour App Design\ArmourAppUi\ArmourAppUi\obj\Debug\netstandard2.0\Views\Forms\Styles.xaml.g.cs
+D:\My docs\Web-developing\Projects\Armour App Design\ArmourAppUi\ArmourAppUi\obj\Debug\netstandard2.0\Styles\main.css.g.cs
+D:\My docs\Web-developing\Projects\Armour App Design\ArmourAppUi\ArmourAppUi\obj\Debug\netstandard2.0\Views\Forms\AddProfilePage.xaml.g.cs
 D:\My docs\Web-developing\Projects\Armour App Design\ArmourAppUi\ArmourAppUi\obj\Debug\netstandard2.0\ArmourAppUi.csproj.CoreCompileInputs.cache
 D:\My docs\Web-developing\Projects\Armour App Design\ArmourAppUi\ArmourAppUi\obj\Debug\netstandard2.0\XamlC.stamp
-D:\My docs\Web-developing\Projects\Armour App Design\ArmourAppUi\ArmourAppUi\obj\Debug\netstandard2.0\Styles\main.css.g.cs

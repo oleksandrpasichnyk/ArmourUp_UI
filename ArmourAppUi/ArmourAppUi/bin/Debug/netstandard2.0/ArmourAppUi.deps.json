@@ -15,6 +15,7 @@
           "Syncfusion.Xamarin.Buttons": "18.1.0.44",
           "Syncfusion.Xamarin.Cards": "18.1.0.44",
           "Syncfusion.Xamarin.Core": "18.1.0.44",
+          "Syncfusion.Xamarin.SfBadgeView": "18.1.0.44",
           "Syncfusion.Xamarin.SfCalendar": "18.1.0.44",
           "Syncfusion.Xamarin.SfChart": "18.1.0.44",
           "Syncfusion.Xamarin.SfComboBox": "18.1.0.44",
@@ -119,6 +120,18 @@
       "Syncfusion.Xamarin.GridCommon/18.1.0.44": {
         "runtime": {
           "lib/netstandard2.0/Syncfusion.GridCommon.Portable.dll": {
+            "assemblyVersion": "18.1451.0.44",
+            "fileVersion": "18.1451.0.44"
+          }
+        }
+      },
+      "Syncfusion.Xamarin.SfBadgeView/18.1.0.44": {
+        "dependencies": {
+          "Syncfusion.Xamarin.Core": "18.1.0.44",
+          "Xamarin.Forms": "4.5.0.617"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Syncfusion.SfBadgeView.XForms.dll": {
             "assemblyVersion": "18.1451.0.44",
             "fileVersion": "18.1451.0.44"
           }
@@ -480,6 +493,13 @@
       "sha512": "sha512-ptg+LAmtAdaHcOF0EZ5gXJaoK7hNr+LZRWPfB64osk1ZfD4rFo5C/0u1ZnAciwE8bNTrii8gZtam35vlWqT/hA==",
       "path": "syncfusion.xamarin.gridcommon/18.1.0.44",
       "hashPath": "syncfusion.xamarin.gridcommon.18.1.0.44.nupkg.sha512"
+    },
+    "Syncfusion.Xamarin.SfBadgeView/18.1.0.44": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-XsTX49v3W/CJ8hAA+9BR2fMXIc2UTHNlYMaRRH1oaGtnafiZJtolM7bm7kiBw+NvP/y2rNODoQSLw6MDkgttzA==",
+      "path": "syncfusion.xamarin.sfbadgeview/18.1.0.44",
+      "hashPath": "syncfusion.xamarin.sfbadgeview.18.1.0.44.nupkg.sha512"
     },
     "Syncfusion.Xamarin.SfCalendar/18.1.0.44": {
       "type": "package",
