@@ -171,6 +171,10 @@
               "target": "Package",
               "version": "[18.1.0.48, )"
             },
+            "Syncfusion.Xamarin.Expander": {
+              "target": "Package",
+              "version": "[18.1.0.48, )"
+            },
             "Syncfusion.Xamarin.SfBadgeView": {
               "target": "Package",
               "version": "[18.1.0.48, )"
@@ -187,7 +191,15 @@
               "target": "Package",
               "version": "[18.1.0.48, )"
             },
+            "Syncfusion.Xamarin.SfDataForm": {
+              "target": "Package",
+              "version": "[18.1.0.48, )"
+            },
             "Syncfusion.Xamarin.SfListView": {
+              "target": "Package",
+              "version": "[18.1.0.48, )"
+            },
+            "Syncfusion.Xamarin.SfPicker": {
               "target": "Package",
               "version": "[18.1.0.48, )"
             },

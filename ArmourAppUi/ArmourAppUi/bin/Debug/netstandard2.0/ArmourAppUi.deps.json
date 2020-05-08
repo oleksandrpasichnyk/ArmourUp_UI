@@ -15,11 +15,14 @@
           "Syncfusion.Xamarin.Buttons": "18.1.0.48",
           "Syncfusion.Xamarin.Cards": "18.1.0.48",
           "Syncfusion.Xamarin.Core": "18.1.0.48",
+          "Syncfusion.Xamarin.Expander": "18.1.0.48",
           "Syncfusion.Xamarin.SfBadgeView": "18.1.0.48",
           "Syncfusion.Xamarin.SfCalendar": "18.1.0.48",
           "Syncfusion.Xamarin.SfChart": "18.1.0.48",
           "Syncfusion.Xamarin.SfComboBox": "18.1.0.48",
+          "Syncfusion.Xamarin.SfDataForm": "18.1.0.48",
           "Syncfusion.Xamarin.SfListView": "18.1.0.48",
+          "Syncfusion.Xamarin.SfPicker": "18.1.0.48",
           "Syncfusion.Xamarin.SfProgressBar": "18.1.0.48",
           "Syncfusion.Xamarin.SfRating": "18.1.0.48",
           "Xamarin.Essentials": "1.5.3.1",
@@ -115,9 +118,33 @@
           }
         }
       },
+      "Syncfusion.Xamarin.Expander/18.1.0.48": {
+        "dependencies": {
+          "Syncfusion.Xamarin.Core": "18.1.0.48",
+          "Xamarin.Forms": "4.6.0.726"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Syncfusion.Expander.XForms.dll": {
+            "assemblyVersion": "18.1451.0.48",
+            "fileVersion": "18.1451.0.48"
+          }
+        }
+      },
       "Syncfusion.Xamarin.GridCommon/18.1.0.48": {
         "runtime": {
           "lib/netstandard2.0/Syncfusion.GridCommon.Portable.dll": {
+            "assemblyVersion": "18.1451.0.48",
+            "fileVersion": "18.1451.0.48"
+          }
+        }
+      },
+      "Syncfusion.Xamarin.SfAutoComplete/18.1.0.48": {
+        "dependencies": {
+          "Syncfusion.Xamarin.Core": "18.1.0.48",
+          "Xamarin.Forms": "4.6.0.726"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Syncfusion.SfAutoComplete.XForms.dll": {
             "assemblyVersion": "18.1451.0.48",
             "fileVersion": "18.1451.0.48"
           }
@@ -171,6 +198,25 @@
           }
         }
       },
+      "Syncfusion.Xamarin.SfDataForm/18.1.0.48": {
+        "dependencies": {
+          "Syncfusion.Xamarin.Buttons": "18.1.0.48",
+          "Syncfusion.Xamarin.Core": "18.1.0.48",
+          "Syncfusion.Xamarin.SfAutoComplete": "18.1.0.48",
+          "Syncfusion.Xamarin.SfComboBox": "18.1.0.48",
+          "Syncfusion.Xamarin.SfMaskedEdit": "18.1.0.48",
+          "Syncfusion.Xamarin.SfNumericTextBox": "18.1.0.48",
+          "Syncfusion.Xamarin.SfNumericUpDown": "18.1.0.48",
+          "System.ComponentModel.Annotations": "4.5.0",
+          "Xamarin.Forms": "4.6.0.726"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Syncfusion.SfDataForm.XForms.dll": {
+            "assemblyVersion": "18.1451.0.48",
+            "fileVersion": "18.1451.0.48"
+          }
+        }
+      },
       "Syncfusion.Xamarin.SfListView/18.1.0.48": {
         "dependencies": {
           "Syncfusion.Xamarin.Core": "18.1.0.48",
@@ -180,6 +226,54 @@
         },
         "runtime": {
           "lib/netstandard2.0/Syncfusion.SfListView.XForms.dll": {
+            "assemblyVersion": "18.1451.0.48",
+            "fileVersion": "18.1451.0.48"
+          }
+        }
+      },
+      "Syncfusion.Xamarin.SfMaskedEdit/18.1.0.48": {
+        "dependencies": {
+          "Syncfusion.Xamarin.Core": "18.1.0.48",
+          "Xamarin.Forms": "4.6.0.726"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Syncfusion.SfMaskedEdit.XForms.dll": {
+            "assemblyVersion": "18.1451.0.48",
+            "fileVersion": "18.1451.0.48"
+          }
+        }
+      },
+      "Syncfusion.Xamarin.SfNumericTextBox/18.1.0.48": {
+        "dependencies": {
+          "Syncfusion.Xamarin.Core": "18.1.0.48",
+          "Xamarin.Forms": "4.6.0.726"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Syncfusion.SfNumericTextBox.XForms.dll": {
+            "assemblyVersion": "18.1451.0.48",
+            "fileVersion": "18.1451.0.48"
+          }
+        }
+      },
+      "Syncfusion.Xamarin.SfNumericUpDown/18.1.0.48": {
+        "dependencies": {
+          "Syncfusion.Xamarin.Core": "18.1.0.48",
+          "Xamarin.Forms": "4.6.0.726"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Syncfusion.SfNumericUpDown.XForms.dll": {
+            "assemblyVersion": "18.1451.0.48",
+            "fileVersion": "18.1451.0.48"
+          }
+        }
+      },
+      "Syncfusion.Xamarin.SfPicker/18.1.0.48": {
+        "dependencies": {
+          "Syncfusion.Xamarin.Core": "18.1.0.48",
+          "Xamarin.Forms": "4.6.0.726"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Syncfusion.SfPicker.XForms.dll": {
             "assemblyVersion": "18.1451.0.48",
             "fileVersion": "18.1451.0.48"
           }
@@ -214,6 +308,14 @@
           "lib/netstandard2.0/System.Buffers.dll": {
             "assemblyVersion": "4.0.2.0",
             "fileVersion": "4.6.25519.3"
+          }
+        }
+      },
+      "System.ComponentModel.Annotations/4.5.0": {
+        "runtime": {
+          "lib/netstandard2.0/System.ComponentModel.Annotations.dll": {
+            "assemblyVersion": "4.2.1.0",
+            "fileVersion": "4.6.26515.6"
           }
         }
       },
@@ -351,12 +453,26 @@
       "path": "syncfusion.xamarin.datasource/18.1.0.48",
       "hashPath": "syncfusion.xamarin.datasource.18.1.0.48.nupkg.sha512"
     },
+    "Syncfusion.Xamarin.Expander/18.1.0.48": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-xeoIGPqse+HdxAlrQc2GBfGOAc8mo4sflfZsYIGzqOriMCRGYyCSHVvlsutDt2JWlVhxCf5ran8QyQIC9h6uIw==",
+      "path": "syncfusion.xamarin.expander/18.1.0.48",
+      "hashPath": "syncfusion.xamarin.expander.18.1.0.48.nupkg.sha512"
+    },
     "Syncfusion.Xamarin.GridCommon/18.1.0.48": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-G+nnN82beYQOvSCbT1gHLKjKpve6elEjL9PuPmPhpYhgLtzWUFR7hetNzNu7UDzblb/t1YCmRE6ziwvHcgUFwA==",
       "path": "syncfusion.xamarin.gridcommon/18.1.0.48",
       "hashPath": "syncfusion.xamarin.gridcommon.18.1.0.48.nupkg.sha512"
+    },
+    "Syncfusion.Xamarin.SfAutoComplete/18.1.0.48": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ZIeOVZ09/A5eVlXtaHlZ0fPEYkKeMwKsVe8txnPigzUThDL5IxZtcjSkYyxK9GILNSalAp90hfb+Ey1EQgUaNA==",
+      "path": "syncfusion.xamarin.sfautocomplete/18.1.0.48",
+      "hashPath": "syncfusion.xamarin.sfautocomplete.18.1.0.48.nupkg.sha512"
     },
     "Syncfusion.Xamarin.SfBadgeView/18.1.0.48": {
       "type": "package",
@@ -386,12 +502,47 @@
       "path": "syncfusion.xamarin.sfcombobox/18.1.0.48",
       "hashPath": "syncfusion.xamarin.sfcombobox.18.1.0.48.nupkg.sha512"
     },
+    "Syncfusion.Xamarin.SfDataForm/18.1.0.48": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-QlQlwI0pe8ESLUbLbcEmssGAhUVICDUUrYCETlhlpEq78JDvLw5+t2N1f/ATxwNPkD/4cinFlDjHwGHsaCBK+g==",
+      "path": "syncfusion.xamarin.sfdataform/18.1.0.48",
+      "hashPath": "syncfusion.xamarin.sfdataform.18.1.0.48.nupkg.sha512"
+    },
     "Syncfusion.Xamarin.SfListView/18.1.0.48": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-bKTRgsSnL0TBVnYyYPN+2V74PbWdypgTjakzh+hTcf4OHknbB8sbSJA1cfi0AthdXsWQdwtrU2wZ2J5PzcV36g==",
       "path": "syncfusion.xamarin.sflistview/18.1.0.48",
       "hashPath": "syncfusion.xamarin.sflistview.18.1.0.48.nupkg.sha512"
+    },
+    "Syncfusion.Xamarin.SfMaskedEdit/18.1.0.48": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-rd0aGCINPWDsxFD76Nu4178Kb7YuGfGwjYjzwEdKGoPBgs46SUd9uBP4vMdGliNjgoWKP5wHqa4Rgl21AAJNxQ==",
+      "path": "syncfusion.xamarin.sfmaskededit/18.1.0.48",
+      "hashPath": "syncfusion.xamarin.sfmaskededit.18.1.0.48.nupkg.sha512"
+    },
+    "Syncfusion.Xamarin.SfNumericTextBox/18.1.0.48": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-XTYmq8dkGkz/TriW2nvL6uC8EPh9visfnGU0k0R+yuJCwPuTJRdOqvraf4oRAZ8uEW+OscTh3SdqdQrzA01IkA==",
+      "path": "syncfusion.xamarin.sfnumerictextbox/18.1.0.48",
+      "hashPath": "syncfusion.xamarin.sfnumerictextbox.18.1.0.48.nupkg.sha512"
+    },
+    "Syncfusion.Xamarin.SfNumericUpDown/18.1.0.48": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-YOlRTFsBAhaPnc8Ko9jBe5ZpDVOXI3dh3tkSt9Tv4b3YCKZxK6+P3o7gnrSwwnO6uCJblo1xx8XBEljGoOG/ww==",
+      "path": "syncfusion.xamarin.sfnumericupdown/18.1.0.48",
+      "hashPath": "syncfusion.xamarin.sfnumericupdown.18.1.0.48.nupkg.sha512"
+    },
+    "Syncfusion.Xamarin.SfPicker/18.1.0.48": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-G6T/mbi45TWxO8/qrO7X7j5vTGhgfFNi6n/Jv8uk7IXmYLcqavFIvOTWTb+GYagLY8i5n3OjJHRgOMqpodEjpg==",
+      "path": "syncfusion.xamarin.sfpicker/18.1.0.48",
+      "hashPath": "syncfusion.xamarin.sfpicker.18.1.0.48.nupkg.sha512"
     },
     "Syncfusion.Xamarin.SfProgressBar/18.1.0.48": {
       "type": "package",
@@ -413,6 +564,13 @@
       "sha512": "sha512-AwarXzzoDwX6BgrhjoJsk6tUezZEozOT5Y9QKF94Gl4JK91I4PIIBkBco9068Y9/Dra8Dkbie99kXB8+1BaYKw==",
       "path": "system.buffers/4.4.0",
       "hashPath": "system.buffers.4.4.0.nupkg.sha512"
+    },
+    "System.ComponentModel.Annotations/4.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-UxYQ3FGUOtzJ7LfSdnYSFd7+oEv6M8NgUatatIN2HxNtDdlcvFAf+VIq4Of9cDMJEJC0aSRv/x898RYhB4Yppg==",
+      "path": "system.componentmodel.annotations/4.5.0",
+      "hashPath": "system.componentmodel.annotations.4.5.0.nupkg.sha512"
     },
     "System.Memory/4.5.3": {
       "type": "package",

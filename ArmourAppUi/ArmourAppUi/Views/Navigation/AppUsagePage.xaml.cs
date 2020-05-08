@@ -48,5 +48,17 @@ namespace ArmourAppUi.Views.Navigation
         {
             Navigation.PopAsync();
         }
+
+        private void SegmentedControl_SelectionChanged(object sender, Syncfusion.XForms.Buttons.SelectionChangedEventArgs e)
+        {
+            /*var currentValue = e.Index;
+
+            switch (currentValue)
+            {
+                case 0: ShowTimeExercise(); break;
+                case 1: ShowGoalExercise(); break;
+                case 2: ShowRepeatExercise(); break;
+            }*/
+        }
     }
 }

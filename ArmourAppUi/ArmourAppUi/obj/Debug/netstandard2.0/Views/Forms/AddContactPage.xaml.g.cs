@@ -17,44 +17,12 @@ namespace ArmourAppUi.Views.Forms {
     public partial class AddContactPage : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
-        private global::ArmourAppUi.Controls.BorderlessEntry FirstNameEntry;
-        
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
-        private global::ArmourAppUi.Controls.BorderlessEntry LastNameEntry;
-        
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
-        private global::ArmourAppUi.Controls.CalenderDatePicker CustomDatePicker;
-        
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
-        private global::Syncfusion.XForms.ComboBox.SfComboBox GenderPicker;
-        
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
-        private global::ArmourAppUi.Controls.BorderlessEntry AddressEntry;
-        
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
-        private global::ArmourAppUi.Controls.CountryComboBox CountryPicker;
-        
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
-        private global::ArmourAppUi.Controls.BorderlessEntry CityEntry;
-        
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
-        private global::Syncfusion.XForms.ComboBox.SfComboBox StatePicker;
-        
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
-        private global::ArmourAppUi.Controls.BorderlessEntry PhoneNoEntry;
+        private global::Xamarin.Forms.StackLayout exerciseGoal;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
             global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(AddContactPage));
-            FirstNameEntry = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::ArmourAppUi.Controls.BorderlessEntry>(this, "FirstNameEntry");
-            LastNameEntry = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::ArmourAppUi.Controls.BorderlessEntry>(this, "LastNameEntry");
-            CustomDatePicker = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::ArmourAppUi.Controls.CalenderDatePicker>(this, "CustomDatePicker");
-            GenderPicker = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Syncfusion.XForms.ComboBox.SfComboBox>(this, "GenderPicker");
-            AddressEntry = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::ArmourAppUi.Controls.BorderlessEntry>(this, "AddressEntry");
-            CountryPicker = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::ArmourAppUi.Controls.CountryComboBox>(this, "CountryPicker");
-            CityEntry = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::ArmourAppUi.Controls.BorderlessEntry>(this, "CityEntry");
-            StatePicker = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Syncfusion.XForms.ComboBox.SfComboBox>(this, "StatePicker");
-            PhoneNoEntry = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::ArmourAppUi.Controls.BorderlessEntry>(this, "PhoneNoEntry");
+            exerciseGoal = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.StackLayout>(this, "exerciseGoal");
         }
     }
 }
