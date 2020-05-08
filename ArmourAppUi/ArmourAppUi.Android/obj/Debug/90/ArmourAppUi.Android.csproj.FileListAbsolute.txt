@@ -568,9 +568,6 @@ D:\My docs\Web-developing\Projects\Armour App Design\ArmourAppUi\ArmourAppUi.And
 D:\My docs\Web-developing\Projects\Armour App Design\ArmourAppUi\ArmourAppUi.Android\obj\Debug\90\android\assets\Syncfusion.SfChart.XForms.dll
 D:\My docs\Web-developing\Projects\Armour App Design\ArmourAppUi\ArmourAppUi.Android\obj\Debug\90\android\assets\Syncfusion.SfProgressBar.XForms.Android.dll
 D:\My docs\Web-developing\Projects\Armour App Design\ArmourAppUi\ArmourAppUi.Android\obj\Debug\90\android\assets\Syncfusion.SfProgressBar.XForms.dll
-D:\My docs\Web-developing\Projects\Armour App Design\ArmourAppUi\ArmourAppUi.Android\obj\Debug\90\android\assets\System.Buffers.dll
-D:\My docs\Web-developing\Projects\Armour App Design\ArmourAppUi\ArmourAppUi.Android\obj\Debug\90\android\assets\System.Memory.dll
-D:\My docs\Web-developing\Projects\Armour App Design\ArmourAppUi\ArmourAppUi.Android\obj\Debug\90\android\assets\System.Runtime.CompilerServices.Unsafe.dll
 D:\My docs\Web-developing\Projects\Armour App Design\ArmourAppUi\ArmourAppUi.Android\obj\Debug\90\android\src\crc641a095037430ad92a\SfChartExt.java
 D:\My docs\Web-developing\Projects\Armour App Design\ArmourAppUi\ArmourAppUi.Android\obj\Debug\90\android\src\crc641a095037430ad92a\SfChartRenderer.java
 D:\My docs\Web-developing\Projects\Armour App Design\ArmourAppUi\ArmourAppUi.Android\obj\Debug\90\android\src\crc64204ae6d284429e79\ChartAnimator.java
@@ -681,3 +678,5 @@ D:\My docs\Web-developing\Projects\Armour App Design\ArmourAppUi\ArmourAppUi.And
 D:\My docs\Web-developing\Projects\Armour App Design\ArmourAppUi\ArmourAppUi.Android\obj\Debug\90\res\drawable\time_icon.png
 D:\My docs\Web-developing\Projects\Armour App Design\ArmourAppUi\ArmourAppUi.Android\obj\Debug\90\res\drawable\repeat_icon.png
 D:\My docs\Web-developing\Projects\Armour App Design\ArmourAppUi\ArmourAppUi.Android\obj\Debug\90\res\drawable\goal_icon.png
+D:\My docs\Web-developing\Projects\Armour App Design\ArmourAppUi\ArmourAppUi.Android\obj\Debug\90\android\src\crc643f46942d9dd1fff9\RadioButtonRenderer.java
+D:\My docs\Web-developing\Projects\Armour App Design\ArmourAppUi\ArmourAppUi.Android\obj\Debug\90\android\src\crc643f46942d9dd1fff9\ViewCellRenderer_ViewCellContainer_TapGestureListener.java

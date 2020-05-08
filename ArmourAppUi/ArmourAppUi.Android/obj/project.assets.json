@@ -26,16 +26,13 @@
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
       },
-      "SkiaSharp/1.68.1.1": {
+      "SkiaSharp/1.68.2.1": {
         "type": "package",
-        "dependencies": {
-          "System.Memory": "4.5.3"
-        },
         "compile": {
-          "lib/MonoAndroid/SkiaSharp.dll": {}
+          "lib/monoandroid1.0/SkiaSharp.dll": {}
         },
         "runtime": {
-          "lib/MonoAndroid/SkiaSharp.dll": {}
+          "lib/monoandroid1.0/SkiaSharp.dll": {}
         },
         "runtimeTargets": {
           "runtimes/osx/native/libSkiaSharp.dylib": {
@@ -72,33 +69,33 @@
           "lib/netstandard2.0/SkiaSharp.Extended.Svg.dll": {}
         }
       },
-      "SkiaSharp.Views/1.68.1.1": {
+      "SkiaSharp.Views/1.68.2.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp": "1.68.1.1"
+          "SkiaSharp": "1.68.2.1"
         },
         "compile": {
-          "lib/MonoAndroid/SkiaSharp.Views.Android.dll": {}
+          "lib/monoandroid1.0/SkiaSharp.Views.Android.dll": {}
         },
         "runtime": {
-          "lib/MonoAndroid/SkiaSharp.Views.Android.dll": {}
+          "lib/monoandroid1.0/SkiaSharp.Views.Android.dll": {}
         }
       },
-      "SkiaSharp.Views.Forms/1.68.1.1": {
+      "SkiaSharp.Views.Forms/1.68.2.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp": "1.68.1.1",
-          "SkiaSharp.Views": "1.68.1.1",
-          "Xamarin.Forms": "4.0.0.540366"
+          "SkiaSharp": "1.68.2.1",
+          "SkiaSharp.Views": "1.68.2.1",
+          "Xamarin.Forms": "4.4.0.991757"
         },
         "compile": {
-          "ref/MonoAndroid/SkiaSharp.Views.Forms.dll": {}
+          "ref/monoandroid1.0/SkiaSharp.Views.Forms.dll": {}
         },
         "runtime": {
-          "lib/MonoAndroid/SkiaSharp.Views.Forms.dll": {}
+          "lib/monoandroid1.0/SkiaSharp.Views.Forms.dll": {}
         }
       },
-      "Syncfusion.Licensing/18.1.0.44": {
+      "Syncfusion.Licensing/18.1.0.48": {
         "type": "package",
         "compile": {
           "lib/MonoAndroid10/Syncfusion.Licensing.dll": {}
@@ -107,10 +104,10 @@
           "lib/MonoAndroid10/Syncfusion.Licensing.dll": {}
         }
       },
-      "Syncfusion.Xamarin.Buttons/18.1.0.44": {
+      "Syncfusion.Xamarin.Buttons/18.1.0.48": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Xamarin.Core": "18.1.0.44",
+          "Syncfusion.Xamarin.Core": "18.1.0.48",
           "Xamarin.Forms": "3.6.0.344457"
         },
         "compile": {
@@ -122,10 +119,10 @@
           "lib/MonoAndroid10/Syncfusion.Buttons.XForms.dll": {}
         }
       },
-      "Syncfusion.Xamarin.Cards/18.1.0.44": {
+      "Syncfusion.Xamarin.Cards/18.1.0.48": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Xamarin.Core": "18.1.0.44",
+          "Syncfusion.Xamarin.Core": "18.1.0.48",
           "Xamarin.Forms": "3.6.0.344457"
         },
         "compile": {
@@ -137,10 +134,10 @@
           "lib/MonoAndroid10/Syncfusion.Cards.XForms.dll": {}
         }
       },
-      "Syncfusion.Xamarin.Core/18.1.0.44": {
+      "Syncfusion.Xamarin.Core/18.1.0.48": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Licensing": "18.1.0.44",
+          "Syncfusion.Licensing": "18.1.0.48",
           "Xamarin.Forms": "3.6.0.344457"
         },
         "compile": {
@@ -152,7 +149,7 @@
           "lib/MonoAndroid10/Syncfusion.Core.XForms.dll": {}
         }
       },
-      "Syncfusion.Xamarin.DataSource/18.1.0.44": {
+      "Syncfusion.Xamarin.DataSource/18.1.0.48": {
         "type": "package",
         "compile": {
           "lib/MonoAndroid10/Syncfusion.DataSource.Portable.dll": {}
@@ -161,7 +158,7 @@
           "lib/MonoAndroid10/Syncfusion.DataSource.Portable.dll": {}
         }
       },
-      "Syncfusion.Xamarin.GridCommon/18.1.0.44": {
+      "Syncfusion.Xamarin.GridCommon/18.1.0.48": {
         "type": "package",
         "compile": {
           "lib/MonoAndroid10/Syncfusion.GridCommon.Portable.dll": {}
@@ -170,10 +167,10 @@
           "lib/MonoAndroid10/Syncfusion.GridCommon.Portable.dll": {}
         }
       },
-      "Syncfusion.Xamarin.SfBadgeView/18.1.0.44": {
+      "Syncfusion.Xamarin.SfBadgeView/18.1.0.48": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Xamarin.Core": "18.1.0.44",
+          "Syncfusion.Xamarin.Core": "18.1.0.48",
           "Xamarin.Forms": "3.6.0.344457"
         },
         "compile": {
@@ -185,10 +182,10 @@
           "lib/MonoAndroid10/Syncfusion.SfBadgeView.XForms.dll": {}
         }
       },
-      "Syncfusion.Xamarin.SfCalendar/18.1.0.44": {
+      "Syncfusion.Xamarin.SfCalendar/18.1.0.48": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Xamarin.Core": "18.1.0.44",
+          "Syncfusion.Xamarin.Core": "18.1.0.48",
           "Xamarin.Forms": "3.6.0.344457"
         },
         "compile": {
@@ -200,10 +197,10 @@
           "lib/MonoAndroid10/Syncfusion.SfCalendar.XForms.dll": {}
         }
       },
-      "Syncfusion.Xamarin.SfChart/18.1.0.44": {
+      "Syncfusion.Xamarin.SfChart/18.1.0.48": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Xamarin.Core": "18.1.0.44",
+          "Syncfusion.Xamarin.Core": "18.1.0.48",
           "Xamarin.Forms": "3.6.0.344457"
         },
         "compile": {
@@ -215,10 +212,10 @@
           "lib/MonoAndroid10/Syncfusion.SfChart.XForms.dll": {}
         }
       },
-      "Syncfusion.Xamarin.SfComboBox/18.1.0.44": {
+      "Syncfusion.Xamarin.SfComboBox/18.1.0.48": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Xamarin.Core": "18.1.0.44",
+          "Syncfusion.Xamarin.Core": "18.1.0.48",
           "Xamarin.Forms": "3.6.0.344457"
         },
         "compile": {
@@ -230,12 +227,12 @@
           "lib/MonoAndroid10/Syncfusion.SfComboBox.XForms.dll": {}
         }
       },
-      "Syncfusion.Xamarin.SfListView/18.1.0.44": {
+      "Syncfusion.Xamarin.SfListView/18.1.0.48": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Xamarin.Core": "18.1.0.44",
-          "Syncfusion.Xamarin.DataSource": "18.1.0.44",
-          "Syncfusion.Xamarin.GridCommon": "18.1.0.44",
+          "Syncfusion.Xamarin.Core": "18.1.0.48",
+          "Syncfusion.Xamarin.DataSource": "18.1.0.48",
+          "Syncfusion.Xamarin.GridCommon": "18.1.0.48",
           "Xamarin.Forms": "3.6.0.344457"
         },
         "compile": {
@@ -247,10 +244,10 @@
           "lib/MonoAndroid10/Syncfusion.SfListView.XForms.dll": {}
         }
       },
-      "Syncfusion.Xamarin.SfProgressBar/18.1.0.44": {
+      "Syncfusion.Xamarin.SfProgressBar/18.1.0.48": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Xamarin.Core": "18.1.0.44",
+          "Syncfusion.Xamarin.Core": "18.1.0.48",
           "Xamarin.Forms": "3.6.0.344457"
         },
         "compile": {
@@ -262,10 +259,10 @@
           "lib/MonoAndroid10/Syncfusion.SfProgressBar.XForms.dll": {}
         }
       },
-      "Syncfusion.Xamarin.SfRating/18.1.0.44": {
+      "Syncfusion.Xamarin.SfRating/18.1.0.48": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Xamarin.Core": "18.1.0.44",
+          "Syncfusion.Xamarin.Core": "18.1.0.48",
           "Xamarin.Forms": "3.6.0.344457"
         },
         "compile": {
@@ -277,37 +274,6 @@
           "lib/MonoAndroid10/Syncfusion.SfRating.Android.dll": {},
           "lib/MonoAndroid10/Syncfusion.SfRating.XForms.Android.dll": {},
           "lib/MonoAndroid10/Syncfusion.SfRating.XForms.dll": {}
-        }
-      },
-      "System.Buffers/4.4.0": {
-        "type": "package",
-        "compile": {
-          "ref/netstandard2.0/System.Buffers.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/System.Buffers.dll": {}
-        }
-      },
-      "System.Memory/4.5.3": {
-        "type": "package",
-        "dependencies": {
-          "System.Buffers": "4.4.0",
-          "System.Runtime.CompilerServices.Unsafe": "4.5.2"
-        },
-        "compile": {
-          "lib/netstandard2.0/System.Memory.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/System.Memory.dll": {}
-        }
-      },
-      "System.Runtime.CompilerServices.Unsafe/4.5.2": {
-        "type": "package",
-        "compile": {
-          "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
         }
       },
       "Xamarin.Android.Arch.Core.Common/1.1.1.3": {
@@ -1051,7 +1017,7 @@
           "build/monoandroid90/Xamarin.Android.Support.ViewPager.targets": {}
         }
       },
-      "Xamarin.Essentials/1.5.2": {
+      "Xamarin.Essentials/1.5.3.1": {
         "type": "package",
         "dependencies": {
           "Xamarin.Android.Support.Compat": "28.0.0.3",
@@ -1064,7 +1030,7 @@
           "lib/monoandroid90/Xamarin.Essentials.dll": {}
         }
       },
-      "Xamarin.Forms/4.5.0.617": {
+      "Xamarin.Forms/4.6.0.726": {
         "type": "package",
         "dependencies": {
           "Xamarin.Android.Support.CustomTabs": "28.0.0.3",
@@ -1097,19 +1063,19 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "SkiaSharp.Svg": "1.60.0",
-          "SkiaSharp.Views.Forms": "1.68.1.1",
-          "Syncfusion.Xamarin.Buttons": "18.1.0.44",
-          "Syncfusion.Xamarin.Cards": "18.1.0.44",
-          "Syncfusion.Xamarin.Core": "18.1.0.44",
-          "Syncfusion.Xamarin.SfBadgeView": "18.1.0.44",
-          "Syncfusion.Xamarin.SfCalendar": "18.1.0.44",
-          "Syncfusion.Xamarin.SfChart": "18.1.0.44",
-          "Syncfusion.Xamarin.SfComboBox": "18.1.0.44",
-          "Syncfusion.Xamarin.SfListView": "18.1.0.44",
-          "Syncfusion.Xamarin.SfProgressBar": "18.1.0.44",
-          "Syncfusion.Xamarin.SfRating": "18.1.0.44",
-          "Xamarin.Essentials": "1.5.2",
-          "Xamarin.Forms": "4.5.0.617"
+          "SkiaSharp.Views.Forms": "1.68.2.1",
+          "Syncfusion.Xamarin.Buttons": "18.1.0.48",
+          "Syncfusion.Xamarin.Cards": "18.1.0.48",
+          "Syncfusion.Xamarin.Core": "18.1.0.48",
+          "Syncfusion.Xamarin.SfBadgeView": "18.1.0.48",
+          "Syncfusion.Xamarin.SfCalendar": "18.1.0.48",
+          "Syncfusion.Xamarin.SfChart": "18.1.0.48",
+          "Syncfusion.Xamarin.SfComboBox": "18.1.0.48",
+          "Syncfusion.Xamarin.SfListView": "18.1.0.48",
+          "Syncfusion.Xamarin.SfProgressBar": "18.1.0.48",
+          "Syncfusion.Xamarin.SfRating": "18.1.0.48",
+          "Xamarin.Essentials": "1.5.3.1",
+          "Xamarin.Forms": "4.6.0.726"
         },
         "compile": {
           "bin/placeholder/ArmourAppUi.dll": {}
@@ -1265,36 +1231,44 @@
         "netstandard.library.nuspec"
       ]
     },
-    "SkiaSharp/1.68.1.1": {
-      "sha512": "fJteGIKAMmLD9tSQgdvZqLqECub6B55pK1MH5QyanLOr8JQ8uUMKKcrAcpocNnmIS/YsUJOL4AD7dO6mAwP7mQ==",
+    "SkiaSharp/1.68.2.1": {
+      "sha512": "ecEdDOeukBHW4bjvk6MZrGIAh3TyPyY1ImBKobuPs7PukKKkkZtiPxe35u2UXO9E68ulX4iMTNj/PmEaawPsRQ==",
       "type": "package",
-      "path": "skiasharp/1.68.1.1",
+      "path": "skiasharp/1.68.2.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.txt",
         "THIRD-PARTY-NOTICES.txt",
         "build/net45/SkiaSharp.targets",
+        "build/net462/SkiaSharp.targets",
         "build/tizen40/SkiaSharp.targets",
         "buildTransitive/net45/SkiaSharp.targets",
-        "lib/MonoAndroid/SkiaSharp.dll",
-        "lib/MonoAndroid/SkiaSharp.xml",
-        "lib/Xamarin.Mac20/SkiaSharp.dll",
-        "lib/Xamarin.Mac20/SkiaSharp.xml",
-        "lib/Xamarin.TVOS/SkiaSharp.dll",
-        "lib/Xamarin.TVOS/SkiaSharp.xml",
-        "lib/Xamarin.WatchOS/SkiaSharp.dll",
-        "lib/Xamarin.WatchOS/SkiaSharp.xml",
-        "lib/Xamarin.iOS/SkiaSharp.dll",
-        "lib/Xamarin.iOS/SkiaSharp.xml",
+        "buildTransitive/net462/SkiaSharp.targets",
+        "lib/monoandroid1.0/SkiaSharp.dll",
+        "lib/monoandroid1.0/SkiaSharp.xml",
         "lib/net45/SkiaSharp.dll",
         "lib/net45/SkiaSharp.xml",
+        "lib/net462/SkiaSharp.dll",
+        "lib/net462/SkiaSharp.xml",
         "lib/netstandard1.3/SkiaSharp.dll",
         "lib/netstandard1.3/SkiaSharp.xml",
+        "lib/netstandard2.0/SkiaSharp.dll",
+        "lib/netstandard2.0/SkiaSharp.xml",
         "lib/tizen40/SkiaSharp.dll",
         "lib/tizen40/SkiaSharp.xml",
-        "lib/uap10.0/SkiaSharp.dll",
-        "lib/uap10.0/SkiaSharp.xml",
+        "lib/uap10.0.10240/SkiaSharp.dll",
+        "lib/uap10.0.10240/SkiaSharp.xml",
+        "lib/uap10.0.16299/SkiaSharp.dll",
+        "lib/uap10.0.16299/SkiaSharp.xml",
+        "lib/xamarinios1.0/SkiaSharp.dll",
+        "lib/xamarinios1.0/SkiaSharp.xml",
+        "lib/xamarinmac2.0/SkiaSharp.dll",
+        "lib/xamarinmac2.0/SkiaSharp.xml",
+        "lib/xamarintvos1.0/SkiaSharp.dll",
+        "lib/xamarintvos1.0/SkiaSharp.xml",
+        "lib/xamarinwatchos1.0/SkiaSharp.dll",
+        "lib/xamarinwatchos1.0/SkiaSharp.xml",
         "runtimes/osx/native/libSkiaSharp.dylib",
         "runtimes/tizen-armel/native/libSkiaSharp.so",
         "runtimes/tizen-x86/native/libSkiaSharp.so",
@@ -1309,7 +1283,7 @@
         "runtimes/win10-x86/nativeassets/uap10.0/libEGL.dll",
         "runtimes/win10-x86/nativeassets/uap10.0/libGLESv2.dll",
         "runtimes/win10-x86/nativeassets/uap10.0/libSkiaSharp.dll",
-        "skiasharp.1.68.1.1.nupkg.sha512",
+        "skiasharp.1.68.2.1.nupkg.sha512",
         "skiasharp.nuspec",
         "xamarin.interactive/SkiaSharp.Workbooks.dll"
       ]
@@ -1328,71 +1302,73 @@
         "skiasharp.svg.nuspec"
       ]
     },
-    "SkiaSharp.Views/1.68.1.1": {
-      "sha512": "qpRPbhLFwR6DjxUwzdqWw8BMgKFQ7MMdQdxUt2K0DvsFBiklK6vBBjIkOh58yPLYix1LPXgfD7M6KFO/G4T7OA==",
+    "SkiaSharp.Views/1.68.2.1": {
+      "sha512": "jdiW8bysLbe9icIrRkSu0nr4y6x/N3SZA9nAZWqvbr3dY5uGFTOZVortcX6FvwS8AQGjWEWQB81b4DfWq6ijxg==",
       "type": "package",
-      "path": "skiasharp.views/1.68.1.1",
+      "path": "skiasharp.views/1.68.2.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.txt",
-        "lib/MonoAndroid/SkiaSharp.Views.Android.dll",
-        "lib/MonoAndroid/SkiaSharp.Views.Android.xml",
-        "lib/Xamarin.Mac20/SkiaSharp.Views.Mac.dll",
-        "lib/Xamarin.Mac20/SkiaSharp.Views.Mac.xml",
-        "lib/Xamarin.TVOS/SkiaSharp.Views.tvOS.dll",
-        "lib/Xamarin.TVOS/SkiaSharp.Views.tvOS.xml",
-        "lib/Xamarin.WatchOS/SkiaSharp.Views.watchOS.dll",
-        "lib/Xamarin.WatchOS/SkiaSharp.Views.watchOS.xml",
-        "lib/Xamarin.iOS/SkiaSharp.Views.iOS.dll",
-        "lib/Xamarin.iOS/SkiaSharp.Views.iOS.xml",
+        "lib/monoandroid1.0/SkiaSharp.Views.Android.dll",
+        "lib/monoandroid1.0/SkiaSharp.Views.Android.xml",
         "lib/net45/SkiaSharp.Views.Desktop.dll",
         "lib/net45/SkiaSharp.Views.Desktop.xml",
         "lib/tizen40/SkiaSharp.Views.Tizen.dll",
         "lib/tizen40/SkiaSharp.Views.Tizen.xml",
         "lib/uap10.0/SkiaSharp.Views.UWP.dll",
         "lib/uap10.0/SkiaSharp.Views.UWP.xml",
+        "lib/xamarinios1.0/SkiaSharp.Views.iOS.dll",
+        "lib/xamarinios1.0/SkiaSharp.Views.iOS.xml",
+        "lib/xamarinmac2.0/SkiaSharp.Views.Mac.dll",
+        "lib/xamarinmac2.0/SkiaSharp.Views.Mac.xml",
+        "lib/xamarintvos1.0/SkiaSharp.Views.tvOS.dll",
+        "lib/xamarintvos1.0/SkiaSharp.Views.tvOS.xml",
+        "lib/xamarinwatchos1.0/SkiaSharp.Views.watchOS.dll",
+        "lib/xamarinwatchos1.0/SkiaSharp.Views.watchOS.xml",
         "runtimes/win10-arm/nativeassets/uap10.0/SkiaSharp.Views.Interop.UWP.dll",
         "runtimes/win10-x64/nativeassets/uap10.0/SkiaSharp.Views.Interop.UWP.dll",
         "runtimes/win10-x86/nativeassets/uap10.0/SkiaSharp.Views.Interop.UWP.dll",
-        "skiasharp.views.1.68.1.1.nupkg.sha512",
+        "skiasharp.views.1.68.2.1.nupkg.sha512",
         "skiasharp.views.nuspec"
       ]
     },
-    "SkiaSharp.Views.Forms/1.68.1.1": {
-      "sha512": "ahwhImos0hRa4iGQY2M0HZLcvJZNFVe3KFaod2tn1/hPevGOplPReWykfodMLksRzfm1SmxU7hxd121XupPCHw==",
+    "SkiaSharp.Views.Forms/1.68.2.1": {
+      "sha512": "BnYevJcOEJUKBOpPyEA2zmFDcQqhqy8KDiKzkKF209AuX0RhymgojTM/K4nnI6RIWO2U06uOYH6bnWME/LjUzg==",
       "type": "package",
-      "path": "skiasharp.views.forms/1.68.1.1",
+      "path": "skiasharp.views.forms/1.68.2.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.txt",
         "build/net45/SkiaSharp.Views.Forms.targets",
-        "lib/MonoAndroid/SkiaSharp.Views.Forms.dll",
-        "lib/Xamarin.Mac20/SkiaSharp.Views.Forms.dll",
-        "lib/Xamarin.iOS/SkiaSharp.Views.Forms.dll",
+        "lib/monoandroid1.0/SkiaSharp.Views.Forms.dll",
         "lib/tizen40/SkiaSharp.Views.Forms.dll",
         "lib/uap10.0/SkiaSharp.Views.Forms.dll",
-        "ref/MonoAndroid/SkiaSharp.Views.Forms.dll",
-        "ref/MonoAndroid/SkiaSharp.Views.Forms.xml",
-        "ref/Xamarin.Mac20/SkiaSharp.Views.Forms.dll",
-        "ref/Xamarin.Mac20/SkiaSharp.Views.Forms.xml",
-        "ref/Xamarin.iOS/SkiaSharp.Views.Forms.dll",
-        "ref/Xamarin.iOS/SkiaSharp.Views.Forms.xml",
+        "lib/xamarinios1.0/SkiaSharp.Views.Forms.dll",
+        "lib/xamarinmac2.0/SkiaSharp.Views.Forms.dll",
+        "ref/monoandroid1.0/SkiaSharp.Views.Forms.dll",
+        "ref/monoandroid1.0/SkiaSharp.Views.Forms.xml",
         "ref/netstandard1.3/SkiaSharp.Views.Forms.dll",
         "ref/netstandard1.3/SkiaSharp.Views.Forms.xml",
+        "ref/netstandard2.0/SkiaSharp.Views.Forms.dll",
+        "ref/netstandard2.0/SkiaSharp.Views.Forms.xml",
         "ref/tizen40/SkiaSharp.Views.Forms.dll",
         "ref/tizen40/SkiaSharp.Views.Forms.xml",
         "ref/uap10.0/SkiaSharp.Views.Forms.dll",
         "ref/uap10.0/SkiaSharp.Views.Forms.xml",
-        "skiasharp.views.forms.1.68.1.1.nupkg.sha512",
+        "ref/xamarinios1.0/SkiaSharp.Views.Forms.dll",
+        "ref/xamarinios1.0/SkiaSharp.Views.Forms.xml",
+        "ref/xamarinmac2.0/SkiaSharp.Views.Forms.dll",
+        "ref/xamarinmac2.0/SkiaSharp.Views.Forms.xml",
+        "skiasharp.views.forms.1.68.2.1.nupkg.sha512",
         "skiasharp.views.forms.nuspec"
       ]
     },
-    "Syncfusion.Licensing/18.1.0.44": {
-      "sha512": "csR+Q8k5ybDCPJio2QUHNxFYV2bg76oxfySdvw1FSvTsCAqHKFWV5YzPDKw7RE433bmqjyMo7CKp4iw0BdLDww==",
+    "Syncfusion.Licensing/18.1.0.48": {
+      "sha512": "02sNwcWgHq4LoWTASe3P97kz+N7iIdJLXGU+zp/BjfYAXtbuCLT4Qp0cwdmnJmi1Gxy/EiWu7Lu9ueoDdBUY6g==",
       "type": "package",
-      "path": "syncfusion.licensing/18.1.0.44",
+      "path": "syncfusion.licensing/18.1.0.48",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1412,14 +1388,14 @@
         "lib/netstandard2.0/Syncfusion.Licensing.dll",
         "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.Licensing.dll",
         "lib/uap10.0/Syncfusion.Licensing.dll",
-        "syncfusion.licensing.18.1.0.44.nupkg.sha512",
+        "syncfusion.licensing.18.1.0.48.nupkg.sha512",
         "syncfusion.licensing.nuspec"
       ]
     },
-    "Syncfusion.Xamarin.Buttons/18.1.0.44": {
-      "sha512": "MerzmrGkBlSDd79+PjkWKROubAZ6IhptjCCKhX0gF40GTuTa8x1pICu/gyb0XoY6lEjbLK2y8GaiIesB/IW/vw==",
+    "Syncfusion.Xamarin.Buttons/18.1.0.48": {
+      "sha512": "Vdibws2wvqhahze+rEbcrXF6g+B+hxJn5X9K2xPdiygIDo+TQeqAk+ujSnO4YWSBMpayyxjRRRJJCRZA813IZw==",
       "type": "package",
-      "path": "syncfusion.xamarin.buttons/18.1.0.44",
+      "path": "syncfusion.xamarin.buttons/18.1.0.48",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1443,14 +1419,14 @@
         "lib/uap10.0/Syncfusion.Buttons.XForms.UWP/Themes/Generic.xaml",
         "lib/uap10.0/Syncfusion.Buttons.XForms.dll",
         "lib/uap10.0/Syncfusion.Buttons.XForms.xml",
-        "syncfusion.xamarin.buttons.18.1.0.44.nupkg.sha512",
+        "syncfusion.xamarin.buttons.18.1.0.48.nupkg.sha512",
         "syncfusion.xamarin.buttons.nuspec"
       ]
     },
-    "Syncfusion.Xamarin.Cards/18.1.0.44": {
-      "sha512": "HHHiJF7/tIEJCGVf6aLFRLZtUACTrdfm9pIUIl3bstILwkHgSD4PpSeeGFbqE0lCL2xnWs8/bywhEhY34C87NQ==",
+    "Syncfusion.Xamarin.Cards/18.1.0.48": {
+      "sha512": "aJ7HfuoVd+pLnNvl9WkeTyB09/9o5a+ukuoVgzRD2+5hBP/lB3JgcC+TmiUnI50eoijXuYxy6FQU+Qsb6B1KdA==",
       "type": "package",
-      "path": "syncfusion.xamarin.cards/18.1.0.44",
+      "path": "syncfusion.xamarin.cards/18.1.0.48",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1468,14 +1444,14 @@
         "lib/uap10.0/Syncfusion.Cards.XForms.UWP.xml",
         "lib/uap10.0/Syncfusion.Cards.XForms.dll",
         "lib/uap10.0/Syncfusion.Cards.XForms.xml",
-        "syncfusion.xamarin.cards.18.1.0.44.nupkg.sha512",
+        "syncfusion.xamarin.cards.18.1.0.48.nupkg.sha512",
         "syncfusion.xamarin.cards.nuspec"
       ]
     },
-    "Syncfusion.Xamarin.Core/18.1.0.44": {
-      "sha512": "eEIoWhGhYB5hoHlPTHGdI9G4q9urOCyDAkm44cxBYlM49p6BP+LuF9PcUwVL9APWMY07tXX6lv197H+k5C3vJg==",
+    "Syncfusion.Xamarin.Core/18.1.0.48": {
+      "sha512": "acz31dQiN7CIKFLIyyUccCPuW2bASbWP+2/szmikUDFqdh/Faxum08iMSYxk39TONb8dPwykEbtZZHJoUU//1w==",
       "type": "package",
-      "path": "syncfusion.xamarin.core/18.1.0.44",
+      "path": "syncfusion.xamarin.core/18.1.0.48",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1499,14 +1475,14 @@
         "lib/uap10.0/Syncfusion.Core.XForms.UWP/TILRenderer/ToggleIcons/ToggleVisibleIcon.xaml",
         "lib/uap10.0/Syncfusion.Core.XForms.dll",
         "lib/uap10.0/Syncfusion.Core.XForms.xml",
-        "syncfusion.xamarin.core.18.1.0.44.nupkg.sha512",
+        "syncfusion.xamarin.core.18.1.0.48.nupkg.sha512",
         "syncfusion.xamarin.core.nuspec"
       ]
     },
-    "Syncfusion.Xamarin.DataSource/18.1.0.44": {
-      "sha512": "gcc7w/E3V+WeA1psueIYjGHy7ynmEM6ODM3FxHvbt6ya6kr+O7ojaDR9Hqp3XtX0sW/rDz6pLpnBNfuaOUhfXg==",
+    "Syncfusion.Xamarin.DataSource/18.1.0.48": {
+      "sha512": "YiQXnW5J8zh0XuXJx7MdQNN3u5j/gVMceYiPV83tPYeH14rSMz2D3RXoceF/Gxp/U2x1FnoACVnmxAJMJhgYTA==",
       "type": "package",
-      "path": "syncfusion.xamarin.datasource/18.1.0.44",
+      "path": "syncfusion.xamarin.datasource/18.1.0.48",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1520,14 +1496,14 @@
         "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.DataSource.Portable.dll",
         "lib/uap10.0/Syncfusion.DataSource.Portable.XML",
         "lib/uap10.0/Syncfusion.DataSource.Portable.dll",
-        "syncfusion.xamarin.datasource.18.1.0.44.nupkg.sha512",
+        "syncfusion.xamarin.datasource.18.1.0.48.nupkg.sha512",
         "syncfusion.xamarin.datasource.nuspec"
       ]
     },
-    "Syncfusion.Xamarin.GridCommon/18.1.0.44": {
-      "sha512": "ptg+LAmtAdaHcOF0EZ5gXJaoK7hNr+LZRWPfB64osk1ZfD4rFo5C/0u1ZnAciwE8bNTrii8gZtam35vlWqT/hA==",
+    "Syncfusion.Xamarin.GridCommon/18.1.0.48": {
+      "sha512": "G+nnN82beYQOvSCbT1gHLKjKpve6elEjL9PuPmPhpYhgLtzWUFR7hetNzNu7UDzblb/t1YCmRE6ziwvHcgUFwA==",
       "type": "package",
-      "path": "syncfusion.xamarin.gridcommon/18.1.0.44",
+      "path": "syncfusion.xamarin.gridcommon/18.1.0.48",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1543,14 +1519,14 @@
         "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.GridCommon.Portable.dll",
         "lib/uap10.0/Syncfusion.GridCommon.Portable.XML",
         "lib/uap10.0/Syncfusion.GridCommon.Portable.dll",
-        "syncfusion.xamarin.gridcommon.18.1.0.44.nupkg.sha512",
+        "syncfusion.xamarin.gridcommon.18.1.0.48.nupkg.sha512",
         "syncfusion.xamarin.gridcommon.nuspec"
       ]
     },
-    "Syncfusion.Xamarin.SfBadgeView/18.1.0.44": {
-      "sha512": "XsTX49v3W/CJ8hAA+9BR2fMXIc2UTHNlYMaRRH1oaGtnafiZJtolM7bm7kiBw+NvP/y2rNODoQSLw6MDkgttzA==",
+    "Syncfusion.Xamarin.SfBadgeView/18.1.0.48": {
+      "sha512": "x0reR7wo425KjXj0tPbZY+IhUVJo+2+aEVujRTgggcrLK/CJgBnBjZ0H+tTqsFZicyiirTrA34OAyLmOdpUPNQ==",
       "type": "package",
-      "path": "syncfusion.xamarin.sfbadgeview/18.1.0.44",
+      "path": "syncfusion.xamarin.sfbadgeview/18.1.0.48",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1571,14 +1547,14 @@
         "lib/uap10.0/Syncfusion.SfBadgeView.XForms.UWP/Properties/Syncfusion.SfBadgeView.XForms.UWP.rd.xml",
         "lib/uap10.0/Syncfusion.SfBadgeView.XForms.dll",
         "lib/uap10.0/Syncfusion.SfBadgeView.XForms.xml",
-        "syncfusion.xamarin.sfbadgeview.18.1.0.44.nupkg.sha512",
+        "syncfusion.xamarin.sfbadgeview.18.1.0.48.nupkg.sha512",
         "syncfusion.xamarin.sfbadgeview.nuspec"
       ]
     },
-    "Syncfusion.Xamarin.SfCalendar/18.1.0.44": {
-      "sha512": "35FhB1OHEcFIt7cgUoTt0k8ubOOxfOJxbCjKLNropzysojhAVea+7FTPArAXuIBP3DJtKvX8efM4OreLpVdiDg==",
+    "Syncfusion.Xamarin.SfCalendar/18.1.0.48": {
+      "sha512": "Mj/lReWDookLDs4rSiyyaE99xo7+66EoEMzwVkBwT6F6ty/b3ufkSPqRFxgTQwHGuYld6imfJgs8WQgWJBz2wA==",
       "type": "package",
-      "path": "syncfusion.xamarin.sfcalendar/18.1.0.44",
+      "path": "syncfusion.xamarin.sfcalendar/18.1.0.48",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1600,14 +1576,14 @@
         "lib/uap10.0/Syncfusion.SfCalendar.XForms.UWP/Themes/Generic.xbf",
         "lib/uap10.0/Syncfusion.SfCalendar.XForms.dll",
         "lib/uap10.0/Syncfusion.SfCalendar.XForms.xml",
-        "syncfusion.xamarin.sfcalendar.18.1.0.44.nupkg.sha512",
+        "syncfusion.xamarin.sfcalendar.18.1.0.48.nupkg.sha512",
         "syncfusion.xamarin.sfcalendar.nuspec"
       ]
     },
-    "Syncfusion.Xamarin.SfChart/18.1.0.44": {
-      "sha512": "2aMQfRuwuz7sBHgJSGMzeiLAhNjZ7SOAXpiCvhOCTa5j85n++mX9SURh+x53vwNDtzvwWc1RoQtDXuRY/JfQLw==",
+    "Syncfusion.Xamarin.SfChart/18.1.0.48": {
+      "sha512": "qiNx3CFDuMgPUMmzmEU6JCouazz4tcnJKKuEIj38FsD5yUj1Px7/tp6LN02ELUvCLZ+yZzs2PRZBFzgJfwq6HQ==",
       "type": "package",
-      "path": "syncfusion.xamarin.sfchart/18.1.0.44",
+      "path": "syncfusion.xamarin.sfchart/18.1.0.48",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1627,14 +1603,14 @@
         "lib/uap10.0/Syncfusion.SfChart.XForms.UWP.dll",
         "lib/uap10.0/Syncfusion.SfChart.XForms.dll",
         "lib/uap10.0/Syncfusion.SfChart.XForms.xml",
-        "syncfusion.xamarin.sfchart.18.1.0.44.nupkg.sha512",
+        "syncfusion.xamarin.sfchart.18.1.0.48.nupkg.sha512",
         "syncfusion.xamarin.sfchart.nuspec"
       ]
     },
-    "Syncfusion.Xamarin.SfComboBox/18.1.0.44": {
-      "sha512": "RbLNp183CEVeOkErt3EndW2K/69I0hJXS2CBcCLrZhD8DtvhWLsw8qKaGZMYvOQMaXoKi2kQrJGn8YQ3so/E/g==",
+    "Syncfusion.Xamarin.SfComboBox/18.1.0.48": {
+      "sha512": "S/CMUX7o0togZqGOtmL4HxDsqUG1sdn8KSLzIj/Eb7iHiTQVvxGU3KwXsvvPBSnI7G/xydPLFLkedcGcFAZYuA==",
       "type": "package",
-      "path": "syncfusion.xamarin.sfcombobox/18.1.0.44",
+      "path": "syncfusion.xamarin.sfcombobox/18.1.0.48",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1658,14 +1634,14 @@
         "lib/uap10.0/Syncfusion.SfComboBox.XForms.UWP/dropdownbuttonimage.png",
         "lib/uap10.0/Syncfusion.SfComboBox.XForms.XML",
         "lib/uap10.0/Syncfusion.SfComboBox.XForms.dll",
-        "syncfusion.xamarin.sfcombobox.18.1.0.44.nupkg.sha512",
+        "syncfusion.xamarin.sfcombobox.18.1.0.48.nupkg.sha512",
         "syncfusion.xamarin.sfcombobox.nuspec"
       ]
     },
-    "Syncfusion.Xamarin.SfListView/18.1.0.44": {
-      "sha512": "1WfAh7MfIUlfwmlNlJDw+qLoATBSE944SvAa31p8aHP9Cc03M24Zx+95xZ3VcyRc47pqlQ6efkDnCGRtaZNcrw==",
+    "Syncfusion.Xamarin.SfListView/18.1.0.48": {
+      "sha512": "bKTRgsSnL0TBVnYyYPN+2V74PbWdypgTjakzh+hTcf4OHknbB8sbSJA1cfi0AthdXsWQdwtrU2wZ2J5PzcV36g==",
       "type": "package",
-      "path": "syncfusion.xamarin.sflistview/18.1.0.44",
+      "path": "syncfusion.xamarin.sflistview/18.1.0.48",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1685,14 +1661,14 @@
         "lib/uap10.0/Syncfusion.SfListView.XForms.UWP.dll",
         "lib/uap10.0/Syncfusion.SfListView.XForms.dll",
         "lib/uap10.0/Syncfusion.SfListView.XForms.xml",
-        "syncfusion.xamarin.sflistview.18.1.0.44.nupkg.sha512",
+        "syncfusion.xamarin.sflistview.18.1.0.48.nupkg.sha512",
         "syncfusion.xamarin.sflistview.nuspec"
       ]
     },
-    "Syncfusion.Xamarin.SfProgressBar/18.1.0.44": {
-      "sha512": "kfNBI+ZRgrmyAkFvlJPV5iBPJmPIRRR47Dxvt/OjrSyakMVqQGH/J+dn866lRLbysFq8dxvKkytLAjRPS/GAJQ==",
+    "Syncfusion.Xamarin.SfProgressBar/18.1.0.48": {
+      "sha512": "oewibGIgGTKKkWt7DYzJn8RA+qy84WwK33iMCz4OxU0TtveOSaOj0/YWojr4TsBPMVjGGG/EY2BCKIv2SYEadw==",
       "type": "package",
-      "path": "syncfusion.xamarin.sfprogressbar/18.1.0.44",
+      "path": "syncfusion.xamarin.sfprogressbar/18.1.0.48",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1712,14 +1688,14 @@
         "lib/uap10.0/Syncfusion.SfProgressBar.XForms.UWP/Font Stepprogress icon.ttf",
         "lib/uap10.0/Syncfusion.SfProgressBar.XForms.dll",
         "lib/uap10.0/Syncfusion.SfProgressBar.XForms.xml",
-        "syncfusion.xamarin.sfprogressbar.18.1.0.44.nupkg.sha512",
+        "syncfusion.xamarin.sfprogressbar.18.1.0.48.nupkg.sha512",
         "syncfusion.xamarin.sfprogressbar.nuspec"
       ]
     },
-    "Syncfusion.Xamarin.SfRating/18.1.0.44": {
-      "sha512": "kLv75BdfvkbmsKST3sE0TGrlq5Y99c7qBmWpHLTv2h6prPwQBGt7i8UYz3eUIxo+QB2X5E+OQQEzhwLvABAc/Q==",
+    "Syncfusion.Xamarin.SfRating/18.1.0.48": {
+      "sha512": "O1vios/JMIUJ+lYxJ3rFcNnCv+QffFSsKK10aKg9dRebKyk4T3PfF09uKIpXuOI0p9MHt+OF+5AYxR+BXcGscA==",
       "type": "package",
-      "path": "syncfusion.xamarin.sfrating/18.1.0.44",
+      "path": "syncfusion.xamarin.sfrating/18.1.0.48",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1740,79 +1716,8 @@
         "lib/uap10.0/Syncfusion.SfRating.XForms.UWP.dll",
         "lib/uap10.0/Syncfusion.SfRating.XForms.XML",
         "lib/uap10.0/Syncfusion.SfRating.XForms.dll",
-        "syncfusion.xamarin.sfrating.18.1.0.44.nupkg.sha512",
+        "syncfusion.xamarin.sfrating.18.1.0.48.nupkg.sha512",
         "syncfusion.xamarin.sfrating.nuspec"
-      ]
-    },
-    "System.Buffers/4.4.0": {
-      "sha512": "AwarXzzoDwX6BgrhjoJsk6tUezZEozOT5Y9QKF94Gl4JK91I4PIIBkBco9068Y9/Dra8Dkbie99kXB8+1BaYKw==",
-      "type": "package",
-      "path": "system.buffers/4.4.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "LICENSE.TXT",
-        "THIRD-PARTY-NOTICES.TXT",
-        "lib/netcoreapp2.0/_._",
-        "lib/netstandard1.1/System.Buffers.dll",
-        "lib/netstandard1.1/System.Buffers.xml",
-        "lib/netstandard2.0/System.Buffers.dll",
-        "lib/netstandard2.0/System.Buffers.xml",
-        "ref/netcoreapp2.0/_._",
-        "ref/netstandard1.1/System.Buffers.dll",
-        "ref/netstandard1.1/System.Buffers.xml",
-        "ref/netstandard2.0/System.Buffers.dll",
-        "ref/netstandard2.0/System.Buffers.xml",
-        "system.buffers.4.4.0.nupkg.sha512",
-        "system.buffers.nuspec",
-        "useSharedDesignerContext.txt",
-        "version.txt"
-      ]
-    },
-    "System.Memory/4.5.3": {
-      "sha512": "3oDzvc/zzetpTKWMShs1AADwZjQ/36HnsufHRPcOjyRAAMLDlu2iD33MBI2opxnezcVUtXyqDXXjoFMOU9c7SA==",
-      "type": "package",
-      "path": "system.memory/4.5.3",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "LICENSE.TXT",
-        "THIRD-PARTY-NOTICES.TXT",
-        "lib/netcoreapp2.1/_._",
-        "lib/netstandard1.1/System.Memory.dll",
-        "lib/netstandard1.1/System.Memory.xml",
-        "lib/netstandard2.0/System.Memory.dll",
-        "lib/netstandard2.0/System.Memory.xml",
-        "ref/netcoreapp2.1/_._",
-        "system.memory.4.5.3.nupkg.sha512",
-        "system.memory.nuspec",
-        "useSharedDesignerContext.txt",
-        "version.txt"
-      ]
-    },
-    "System.Runtime.CompilerServices.Unsafe/4.5.2": {
-      "sha512": "wprSFgext8cwqymChhrBLu62LMg/1u92bU+VOwyfBimSPVFXtsNqEWC92Pf9ofzJFlk4IHmJA75EDJn1b2goAQ==",
-      "type": "package",
-      "path": "system.runtime.compilerservices.unsafe/4.5.2",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "LICENSE.TXT",
-        "THIRD-PARTY-NOTICES.TXT",
-        "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.dll",
-        "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.xml",
-        "lib/netstandard1.0/System.Runtime.CompilerServices.Unsafe.dll",
-        "lib/netstandard1.0/System.Runtime.CompilerServices.Unsafe.xml",
-        "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
-        "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
-        "ref/netstandard1.0/System.Runtime.CompilerServices.Unsafe.dll",
-        "ref/netstandard1.0/System.Runtime.CompilerServices.Unsafe.xml",
-        "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
-        "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
-        "system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
-        "system.runtime.compilerservices.unsafe.nuspec",
-        "useSharedDesignerContext.txt",
-        "version.txt"
       ]
     },
     "Xamarin.Android.Arch.Core.Common/1.1.1.3": {
@@ -2569,10 +2474,10 @@
         "xamarin.android.support.viewpager.nuspec"
       ]
     },
-    "Xamarin.Essentials/1.5.2": {
-      "sha512": "qHxkrkx5jIC0X/qWhxCPZ3MuuOJm8bfCzAoUtlpOBSE4oV0JhrkTezK0A+IV+k/MeJ3zKc8FexaIXah9rlCTIw==",
+    "Xamarin.Essentials/1.5.3.1": {
+      "sha512": "6sE3kGMhES7dsR8ll+ar+roEIFobjPfDskKNMsU4FF6cV27ZsdArGZHxe1QqPPJcMT6PzJsGvA3l5PNMZgw5ng==",
       "type": "package",
-      "path": "xamarin.essentials/1.5.2",
+      "path": "xamarin.essentials/1.5.3.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2613,14 +2518,14 @@
         "lib/xamarinwatchos10/Xamarin.Essentials.pdb",
         "lib/xamarinwatchos10/Xamarin.Essentials.xml",
         "readme.txt",
-        "xamarin.essentials.1.5.2.nupkg.sha512",
+        "xamarin.essentials.1.5.3.1.nupkg.sha512",
         "xamarin.essentials.nuspec"
       ]
     },
-    "Xamarin.Forms/4.5.0.617": {
-      "sha512": "tB/h7bHEylOgNT+521SRnbmO+LCe5R3lPboD/icCMpa+FdjmxhZQ7+fIIPFDbhY2dqYetGRnAeJWXVx4NLbmAw==",
+    "Xamarin.Forms/4.6.0.726": {
+      "sha512": "NI7iL5NnrQN/gCyoHLlexcDndNin67hFV7ObG8QQU2zbEi15B1SRaAsuiNeXVYAHfXg3/amqryqzGd+3R6lyZQ==",
       "type": "package",
-      "path": "xamarin.forms/4.5.0.617",
+      "path": "xamarin.forms/4.6.0.726",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2883,8 +2788,8 @@
         "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/Microsoft.UI.Xaml/Themes/generic.xaml",
         "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/PageControlStyle.xaml",
         "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/PickerStyle.xaml",
+        "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/PromptDialog.xaml",
         "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/Resources.xaml",
-        "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/Shell/ShellStyles.xaml",
         "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/SliderStyle.xaml",
         "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/StepperControl.xaml",
         "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/TabbedPageStyle.xaml",
@@ -2915,6 +2820,7 @@
         "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/Microsoft.UI.Xaml/Themes/generic.xaml",
         "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/PageControlStyle.xaml",
         "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/PickerStyle.xaml",
+        "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/PromptDialog.xaml",
         "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/Resources.xaml",
         "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/Shell/ShellStyles.xaml",
         "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/SliderStyle.xaml",
@@ -2925,7 +2831,7 @@
         "lib/uap10.0.16299/Xamarin.Forms.Xaml.dll",
         "lib/uap10.0.16299/Xamarin.Forms.Xaml.pdb",
         "lib/uap10.0.16299/Xamarin.Forms.Xaml.xml",
-        "xamarin.forms.4.5.0.617.nupkg.sha512",
+        "xamarin.forms.4.6.0.726.nupkg.sha512",
         "xamarin.forms.nuspec"
       ]
     },
@@ -2940,19 +2846,19 @@
       "ArmourAppUi >= 1.0.0",
       "NETStandard.Library >= 2.0.3",
       "SkiaSharp.Svg >= 1.60.0",
-      "SkiaSharp.Views.Forms >= 1.68.1.1",
-      "Syncfusion.Xamarin.Buttons >= 18.1.0.44",
-      "Syncfusion.Xamarin.Cards >= 18.1.0.44",
-      "Syncfusion.Xamarin.Core >= 18.1.0.44",
-      "Syncfusion.Xamarin.SfBadgeView >= 18.1.0.44",
-      "Syncfusion.Xamarin.SfCalendar >= 18.1.0.44",
-      "Syncfusion.Xamarin.SfChart >= 18.1.0.44",
-      "Syncfusion.Xamarin.SfComboBox >= 18.1.0.44",
-      "Syncfusion.Xamarin.SfListView >= 18.1.0.44",
-      "Syncfusion.Xamarin.SfProgressBar >= 18.1.0.44",
-      "Syncfusion.Xamarin.SfRating >= 18.1.0.44",
-      "Xamarin.Essentials >= 1.5.2",
-      "Xamarin.Forms >= 4.5.0.617"
+      "SkiaSharp.Views.Forms >= 1.68.2.1",
+      "Syncfusion.Xamarin.Buttons >= 18.1.0.48",
+      "Syncfusion.Xamarin.Cards >= 18.1.0.48",
+      "Syncfusion.Xamarin.Core >= 18.1.0.48",
+      "Syncfusion.Xamarin.SfBadgeView >= 18.1.0.48",
+      "Syncfusion.Xamarin.SfCalendar >= 18.1.0.48",
+      "Syncfusion.Xamarin.SfChart >= 18.1.0.48",
+      "Syncfusion.Xamarin.SfComboBox >= 18.1.0.48",
+      "Syncfusion.Xamarin.SfListView >= 18.1.0.48",
+      "Syncfusion.Xamarin.SfProgressBar >= 18.1.0.48",
+      "Syncfusion.Xamarin.SfRating >= 18.1.0.48",
+      "Xamarin.Essentials >= 1.5.3.1",
+      "Xamarin.Forms >= 4.6.0.726"
     ]
   },
   "packageFolders": {
@@ -3007,55 +2913,55 @@
           },
           "SkiaSharp.Views.Forms": {
             "target": "Package",
-            "version": "[1.68.1.1, )"
+            "version": "[1.68.2.1, )"
           },
           "Syncfusion.Xamarin.Buttons": {
             "target": "Package",
-            "version": "[18.1.0.44, )"
+            "version": "[18.1.0.48, )"
           },
           "Syncfusion.Xamarin.Cards": {
             "target": "Package",
-            "version": "[18.1.0.44, )"
+            "version": "[18.1.0.48, )"
           },
           "Syncfusion.Xamarin.Core": {
             "target": "Package",
-            "version": "[18.1.0.44, )"
+            "version": "[18.1.0.48, )"
           },
           "Syncfusion.Xamarin.SfBadgeView": {
             "target": "Package",
-            "version": "[18.1.0.44, )"
+            "version": "[18.1.0.48, )"
           },
           "Syncfusion.Xamarin.SfCalendar": {
             "target": "Package",
-            "version": "[18.1.0.44, )"
+            "version": "[18.1.0.48, )"
           },
           "Syncfusion.Xamarin.SfChart": {
             "target": "Package",
-            "version": "[18.1.0.44, )"
+            "version": "[18.1.0.48, )"
           },
           "Syncfusion.Xamarin.SfComboBox": {
             "target": "Package",
-            "version": "[18.1.0.44, )"
+            "version": "[18.1.0.48, )"
           },
           "Syncfusion.Xamarin.SfListView": {
             "target": "Package",
-            "version": "[18.1.0.44, )"
+            "version": "[18.1.0.48, )"
           },
           "Syncfusion.Xamarin.SfProgressBar": {
             "target": "Package",
-            "version": "[18.1.0.44, )"
+            "version": "[18.1.0.48, )"
           },
           "Syncfusion.Xamarin.SfRating": {
             "target": "Package",
-            "version": "[18.1.0.44, )"
+            "version": "[18.1.0.48, )"
           },
           "Xamarin.Essentials": {
             "target": "Package",
-            "version": "[1.5.2, )"
+            "version": "[1.5.3.1, )"
           },
           "Xamarin.Forms": {
             "target": "Package",
-            "version": "[4.5.0.617, )"
+            "version": "[4.6.0.726, )"
           }
         }
       }
