@@ -1,23 +1,22 @@
-﻿using System.Reflection;
-using System.Runtime.Serialization.Json;
-using Xamarin.Forms.Internals;
+﻿using ArmourAppUi.Data;
+using ArmourAppUi.Models.Navigation;
 using ArmourAppUi.ViewModels.Navigation;
+using System.Collections.ObjectModel;
 
 namespace ArmourAppUi.DataService
 {
     /// <summary>
-    /// Data service for app usage page to load the data from json file.
+    /// Data service for app usage page to load the data.
     /// </summary>
-    [Preserve(AllMembers = true)]
     public class AppUsageDataService
     {
-        #region fields 
+        #region fields
 
         private static AppUsageDataService instance;
 
         private AppUsageViewModel appUsageViewModel;
 
-        #endregion
+        #endregion fields
 
         #region Properties
 
@@ -31,35 +30,38 @@ namespace ArmourAppUi.DataService
         /// </summary>
         public AppUsageViewModel AppUsageViewModel =>
             this.appUsageViewModel ??
-            (this.appUsageViewModel = PopulateData<AppUsageViewModel>("navigation.json"));
+            (this.appUsageViewModel = PopulateData());
 
-        #endregion
+        #endregion Properties
 
         #region Methods
 
-        /// <summary>
-        /// Populates the data for view model from json file.
-        /// </summary>
-        /// <typeparam name="T">Type of view model.</typeparam>
-        /// <param name="fileName">Json file to fetch data.</param>
-        /// <returns>Returns the view model object.</returns>
-        private static T PopulateData<T>(string fileName)
+        private static AppUsageViewModel PopulateData()
         {
-            var file = "ArmourAppUi.Data." + fileName;
-
-            var assembly = typeof(App).GetTypeInfo().Assembly;
-
-            T obj;
-
-            using (var stream = assembly.GetManifestResourceStream(file))
+            ObservableCollection<AppUsage> appUsageList = new ObservableCollection<AppUsage>();
+            foreach (var item in AppData.MainTableArray)
             {
-                var serializer = new DataContractJsonSerializer(typeof(T));
-                obj = (T)serializer.ReadObject(stream);
-            }
+                switch (item.Type)
+                {
+                    case 1:
+                        appUsageList.Add(new AppUsage() { NameExercise = item.Name, BackgroundColor = "#2f80ed", ProgressBarValue = "45", ProgressValue = "45%" });
+                        break;
 
-            return obj;
+                    case 2:
+                        appUsageList.Add(new AppUsage() { NameExercise = item.Name, BackgroundColor = "#eb5757", ProgressBarValue = "50", ProgressValue = "50%" });
+                        break;
+
+                    case 3:
+                        appUsageList.Add(new AppUsage() { NameExercise = item.Name, BackgroundColor = "#f2c94c", ProgressBarValue = "55", ProgressValue = "55%" });
+                        break;
+
+                    default:
+                        break;
+                }
+            }
+            return new AppUsageViewModel() { AppUsageList = appUsageList };
         }
 
-        #endregion
+        #endregion Methods
     }
 }

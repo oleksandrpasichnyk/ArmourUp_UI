@@ -1,3 +1,4 @@
+using ArmourAppUi.Data;
 using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -11,9 +12,8 @@ namespace ArmourAppUi
         {
             Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("MjQzMzg4QDMxMzgyZTMxMmUzME04UFpEaGZSZlBPcXpBaVBFS0ZBbFFPNVJXbkFVcEtvNnNBWlBlOXhNaEE9");
             InitializeComponent();
-
-            MainPage = new NavigationPage(new ArmourAppUi.Views.Statistic.MyWalletPage());
-            
+            AppData.MockData();
+            MainPage = new NavigationPage(new ArmourAppUi.Views.Statistic.MyWalletPage());            
         }
 
         protected override void OnStart()

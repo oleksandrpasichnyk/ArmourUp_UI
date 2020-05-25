@@ -9,8 +9,6 @@ namespace ArmourAppUi.ViewModels.Navigation
     /// <summary>
     /// ViewModel for app usage page.
     /// </summary>
-    [Preserve(AllMembers = true)]
-    [DataContract]
     public class AppUsageViewModel : BaseViewModel
     {
         #region Fields
@@ -46,7 +44,6 @@ namespace ArmourAppUi.ViewModels.Navigation
         /// <summary>
         /// Gets or sets a collction of value to be displayed in app usage list page.
         /// </summary>
-        [DataMember(Name = "appUsagePageList")]
         public ObservableCollection<AppUsage> AppUsageList { get; set; }
 
         #endregion

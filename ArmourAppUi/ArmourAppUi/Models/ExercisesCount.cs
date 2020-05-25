@@ -1,0 +1,21 @@
+﻿using System.Runtime.Serialization;
+
+namespace ArmourAppUi.Models
+{
+    [DataContract]
+    public class ExercisesCount : Exercises
+    {
+        [DataMember]
+        public int Purpose { get; set; }
+
+        public override string PrintExercises()
+        {
+            return base.PrintExercises() + "Ціль - " + this.Purpose;
+        }
+
+        public override string PurposeToString()
+        {
+            return this.Purpose.ToString();
+        }
+    }
+}

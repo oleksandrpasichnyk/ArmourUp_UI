@@ -29,3 +29,34 @@ D:\My docs\Web-developing\Projects\Armour App Design\ArmourAppUi\ArmourAppUi\obj
 D:\My docs\Web-developing\Projects\Armour App Design\ArmourAppUi\ArmourAppUi\obj\Debug\netstandard2.0\Views\Forms\AddProfilePage.xaml.g.cs
 D:\My docs\Web-developing\Projects\Armour App Design\ArmourAppUi\ArmourAppUi\obj\Debug\netstandard2.0\ArmourAppUi.csproj.CoreCompileInputs.cache
 D:\My docs\Web-developing\Projects\Armour App Design\ArmourAppUi\ArmourAppUi\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Danyil Korotych\Desktop\ArmourUp_UI-master\ArmourUp_UI\ArmourAppUi\ArmourAppUi\bin\Debug\netstandard2.0\ArmourAppUi.deps.json
+C:\Users\Danyil Korotych\Desktop\ArmourUp_UI-master\ArmourUp_UI\ArmourAppUi\ArmourAppUi\bin\Debug\netstandard2.0\ArmourAppUi.dll
+C:\Users\Danyil Korotych\Desktop\ArmourUp_UI-master\ArmourUp_UI\ArmourAppUi\ArmourAppUi\bin\Debug\netstandard2.0\ref\ArmourAppUi.dll
+C:\Users\Danyil Korotych\Desktop\ArmourUp_UI-master\ArmourUp_UI\ArmourAppUi\ArmourAppUi\bin\Debug\netstandard2.0\ArmourAppUi.pdb
+C:\Users\Danyil Korotych\Desktop\ArmourUp_UI-master\ArmourUp_UI\ArmourAppUi\ArmourAppUi\obj\Debug\netstandard2.0\ArmourAppUi.csprojAssemblyReference.cache
+C:\Users\Danyil Korotych\Desktop\ArmourUp_UI-master\ArmourUp_UI\ArmourAppUi\ArmourAppUi\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Danyil Korotych\Desktop\ArmourUp_UI-master\ArmourUp_UI\ArmourAppUi\ArmourAppUi\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\Danyil Korotych\Desktop\ArmourUp_UI-master\ArmourUp_UI\ArmourAppUi\ArmourAppUi\obj\Debug\netstandard2.0\Themes\LightTheme.xaml.g.cs
+C:\Users\Danyil Korotych\Desktop\ArmourUp_UI-master\ArmourUp_UI\ArmourAppUi\ArmourAppUi\obj\Debug\netstandard2.0\Views\Forms\AddContactPage.xaml.g.cs
+C:\Users\Danyil Korotych\Desktop\ArmourUp_UI-master\ArmourUp_UI\ArmourAppUi\ArmourAppUi\obj\Debug\netstandard2.0\Views\Forms\AddProfilePage.xaml.g.cs
+C:\Users\Danyil Korotych\Desktop\ArmourUp_UI-master\ArmourUp_UI\ArmourAppUi\ArmourAppUi\obj\Debug\netstandard2.0\Views\Forms\ContactEmailEntry.xaml.g.cs
+C:\Users\Danyil Korotych\Desktop\ArmourUp_UI-master\ArmourUp_UI\ArmourAppUi\ArmourAppUi\obj\Debug\netstandard2.0\Views\Forms\Styles.xaml.g.cs
+C:\Users\Danyil Korotych\Desktop\ArmourUp_UI-master\ArmourUp_UI\ArmourAppUi\ArmourAppUi\obj\Debug\netstandard2.0\Views\Navigation\AppUsagePage.xaml.g.cs
+C:\Users\Danyil Korotych\Desktop\ArmourUp_UI-master\ArmourUp_UI\ArmourAppUi\ArmourAppUi\obj\Debug\netstandard2.0\Views\Navigation\NavigationListCardPage.xaml.g.cs
+C:\Users\Danyil Korotych\Desktop\ArmourUp_UI-master\ArmourUp_UI\ArmourAppUi\ArmourAppUi\obj\Debug\netstandard2.0\Views\Navigation\Styles.xaml.g.cs
+C:\Users\Danyil Korotych\Desktop\ArmourUp_UI-master\ArmourUp_UI\ArmourAppUi\ArmourAppUi\obj\Debug\netstandard2.0\Views\Settings\SettingPage.xaml.g.cs
+C:\Users\Danyil Korotych\Desktop\ArmourUp_UI-master\ArmourUp_UI\ArmourAppUi\ArmourAppUi\obj\Debug\netstandard2.0\Views\Settings\Styles.xaml.g.cs
+C:\Users\Danyil Korotych\Desktop\ArmourUp_UI-master\ArmourUp_UI\ArmourAppUi\ArmourAppUi\obj\Debug\netstandard2.0\Views\Statistic\HealthProfilePage.xaml.g.cs
+C:\Users\Danyil Korotych\Desktop\ArmourUp_UI-master\ArmourUp_UI\ArmourAppUi\ArmourAppUi\obj\Debug\netstandard2.0\Views\Statistic\MyWalletPage.xaml.g.cs
+C:\Users\Danyil Korotych\Desktop\ArmourUp_UI-master\ArmourUp_UI\ArmourAppUi\ArmourAppUi\obj\Debug\netstandard2.0\Views\Statistic\Styles.xaml.g.cs
+C:\Users\Danyil Korotych\Desktop\ArmourUp_UI-master\ArmourUp_UI\ArmourAppUi\ArmourAppUi\obj\Debug\netstandard2.0\Views\Templates\ExpenseChartTemplate.xaml.g.cs
+C:\Users\Danyil Korotych\Desktop\ArmourUp_UI-master\ArmourUp_UI\ArmourAppUi\ArmourAppUi\obj\Debug\netstandard2.0\Views\Templates\NavigationListTemplate.xaml.g.cs
+C:\Users\Danyil Korotych\Desktop\ArmourUp_UI-master\ArmourUp_UI\ArmourAppUi\ArmourAppUi\obj\Debug\netstandard2.0\Views\Templates\Styles.xaml.g.cs
+C:\Users\Danyil Korotych\Desktop\ArmourUp_UI-master\ArmourUp_UI\ArmourAppUi\ArmourAppUi\obj\Debug\netstandard2.0\Styles\main.css.g.cs
+C:\Users\Danyil Korotych\Desktop\ArmourUp_UI-master\ArmourUp_UI\ArmourAppUi\ArmourAppUi\obj\Debug\netstandard2.0\ArmourAppUi.AssemblyInfoInputs.cache
+C:\Users\Danyil Korotych\Desktop\ArmourUp_UI-master\ArmourUp_UI\ArmourAppUi\ArmourAppUi\obj\Debug\netstandard2.0\ArmourAppUi.AssemblyInfo.cs
+C:\Users\Danyil Korotych\Desktop\ArmourUp_UI-master\ArmourUp_UI\ArmourAppUi\ArmourAppUi\obj\Debug\netstandard2.0\ArmourAppUi.dll
+C:\Users\Danyil Korotych\Desktop\ArmourUp_UI-master\ArmourUp_UI\ArmourAppUi\ArmourAppUi\obj\Debug\netstandard2.0\ref\ArmourAppUi.dll
+C:\Users\Danyil Korotych\Desktop\ArmourUp_UI-master\ArmourUp_UI\ArmourAppUi\ArmourAppUi\obj\Debug\netstandard2.0\ArmourAppUi.pdb
+C:\Users\Danyil Korotych\Desktop\ArmourUp_UI-master\ArmourUp_UI\ArmourAppUi\ArmourAppUi\obj\Debug\netstandard2.0\ArmourAppUi.csproj.CoreCompileInputs.cache
+C:\Users\Danyil Korotych\Desktop\ArmourUp_UI-master\ArmourUp_UI\ArmourAppUi\ArmourAppUi\obj\Debug\netstandard2.0\XamlC.stamp
