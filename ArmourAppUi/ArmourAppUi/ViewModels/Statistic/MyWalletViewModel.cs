@@ -188,8 +188,8 @@ namespace ArmourAppUi.ViewModels.Statistic
             {
                 new Model()
                 {
-                    ProfileImage = "ProfileImage1.png",
-                    Name = "Phillip Estrada",
+                    ProfileImage = "time_icon_color.png",
+                    Name = "Running",
                     Title = "Cash Back",
                     Amount = 50,
                     Date = new DateTime(2019, 1, 7),

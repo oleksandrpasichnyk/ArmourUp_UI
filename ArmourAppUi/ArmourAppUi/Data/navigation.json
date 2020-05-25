@@ -535,56 +535,73 @@
       "progressBarValue": "45",
       "progressValue": "45%",
       "backgroundColor": "#2f80ed",
-      "iconSource": "goal_icon.png"
+      "iconSource": "goal_icon.png",
+      "count": "+12",
+      "isProgress": true
+
     },
     {
       "appName": "Shoulders and arms",
       "progressBarValue": "60",
       "progressValue": "60%",
       "backgroundColor": "#eb5757",
-      "iconSource": "time_icon.png"
+      "iconSource": "time_icon.png",
+      "count": "-10",
+      "isProgress":  false
     },
     {
       "appName": "Legs",
       "progressBarValue": "31",
       "progressValue": "31%",
       "backgroundColor": "#f2c94c",
-      "iconSource": "repeat_icon.png"
+      "iconSource": "repeat_icon.png",
+      "count": "+32",
+      "isProgress": true
     },
     {
       "appName": "Chest and abs",
       "progressBarValue": "96",
       "progressValue": "95%",
       "backgroundColor": "#27ae60",
-      "iconSource": "repeat_icon.png"
+      "iconSource": "repeat_icon.png",
+      "count": "-12",
+      "isProgress": false
     },
     {
       "appName": "Settings",
       "progressBarValue": "70",
       "progressValue": "70%",
       "backgroundColor": "#a8d35f",
-      "iconSource": "goal_icon.png"
+      "iconSource": "goal_icon.png",
+      "count": "+102",
+      "isProgress": true
     },
     {
       "appName": "Messages",
       "progressBarValue": "20",
       "progressValue": "20%",
       "backgroundColor": "#6c88ff",
-      "iconSource": "goal_icon.png"
+      "iconSource": "goal_icon.png",
+      "count": "+12",
+      "isProgress": true
     },
     {
       "appName": "Phone",
       "progressBarValue": "25",
       "progressValue": "25%",
       "backgroundColor": "#cf62e2",
-      "iconSource": "goal_icon.png"
+      "iconSource": "goal_icon.png",
+      "count": "+2",
+      "isProgress": true
     },
     {
       "appName": "Calendar",
       "progressBarValue": "10",
       "progressValue": "10%",
       "backgroundColor": "#ec5b76",
-      "iconSource": "goal_icon.png"
+      "iconSource": "goal_icon.png",
+      "count": "+12",
+      "isProgress": true
     }
   ],
   "documentsPageList": [
