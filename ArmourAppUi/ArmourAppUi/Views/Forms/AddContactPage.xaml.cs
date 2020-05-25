@@ -3,6 +3,7 @@ using Xamarin.Forms.Internals;
 using Syncfusion.XForms.Pickers;
 using Syncfusion.XForms.Expander;
 using Syncfusion.SfNumericTextBox.XForms;
+using Syncfusion.SfNumericUpDown.XForms;
 
 
 using System;
@@ -72,17 +73,12 @@ namespace ArmourAppUi.Views.Forms
 
             StackLayout ExerciseGoal = new StackLayout()
             {
+                HeightRequest = 70,
                 Orientation = StackOrientation.Horizontal,
                 HorizontalOptions = LayoutOptions.Center,
                 Padding = new Thickness(20, 20, 20, 20)
             };
 
-            Image ExerciseIcon = new Image
-            {
-                Source = "time_icon_color.png",
-                HeightRequest = 100,
-                WidthRequest = 100
-            };
 
             pickerValueLabel = new Label
             {
@@ -96,15 +92,19 @@ namespace ArmourAppUi.Views.Forms
 
             timePicker = new SfTimePicker()
             {
-                PickerMode = PickerMode.Dialog,
+             
+                HeaderText = "Select a time",
+                ShowFooter = true,
                 PickerHeight = 300,
                 PickerWidth = 300,
                 Time = new TimeSpan(0, 00, 00),
-                OKButtonBackgroundColor = Color.Pink,
-                CancelButtonBackgroundColor = Color.Pink
+                //OKButtonBackgroundColor = Color.Pink,
+                //CancelButtonBackgroundColor = Color.Pink
             };
             timePicker.EnableLooping = true;
+            timePicker.PickerMode = PickerMode.Dialog;
             timePicker.TimeSelected += TimePicker_TimeSelected;
+            
 
             SfButton pickerButton = new SfButton()
             {
@@ -129,7 +129,6 @@ namespace ArmourAppUi.Views.Forms
                 Children = { pickerValueLabel, timePicker, pickerButton }
             };
 
-            ExerciseGoal.Children.Add(ExerciseIcon);
             ExerciseGoal.Children.Add(ExerciseGoalPicker);
 
             exerciseGoal.Children.Add(ExerciseGoal);
@@ -139,10 +138,9 @@ namespace ArmourAppUi.Views.Forms
         {
             exerciseGoal.Children.Clear();
 
-
-
             StackLayout ExerciseGoal = new StackLayout()
             {
+                HeightRequest = 70,
                 Orientation = StackOrientation.Horizontal,
                 HorizontalOptions = LayoutOptions.Center,
                 Padding = new Thickness(20, 20, 20, 20)
@@ -154,7 +152,7 @@ namespace ArmourAppUi.Views.Forms
                 FormatString = " times",
                 
                 //HeightRequest = 100,
-                PercentDisplayMode = PercentDisplayMode.Value,
+                //PercentDisplayMode = PercentDisplayMode.Value,        //unlock here
                 ParserMode = Parsers.Decimal,
                 WidthRequest = 150,
                 FontSize = Device.GetNamedSize(NamedSize.Large, typeof(Label)),
@@ -170,87 +168,31 @@ namespace ArmourAppUi.Views.Forms
         {
             exerciseGoal.Children.Clear();
 
-
-
             StackLayout ExerciseGoal = new StackLayout()
             {
+                HeightRequest = 70,
                 Orientation = StackOrientation.Horizontal,
                 HorizontalOptions = LayoutOptions.Center,
-                Padding = new Thickness(20, 50, 20, 0)
+                Padding = new Thickness(20, 20, 20, 20)
             };
 
-            Image ExerciseIcon = new Image
+            /*SfNumericUpDown NumericUpDown = new SfNumericUpDown
             {
-                Source = "time_icon_color.png",
-                HeightRequest = 100,
-                WidthRequest = 100
-            };
-
-            pickerValueLabel = new Label
-            {
-                VerticalTextAlignment = TextAlignment.Center,
-                HorizontalTextAlignment = TextAlignment.Center,
-                Text = "0h 0m 0s",
-
-
-
-
-
-
-
-
-
-
-
+                Value = 2,
                 FontSize = Device.GetNamedSize(NamedSize.Large, typeof(Label)),
-                //FontAttributes = FontAttribute.Bold
-            };
+                IsEditable = true,
+                SpinButtonAlignment = SpinButtonAlignment.Left
+            };*/
 
+            SfNumericUpDown NumericUpDown = new SfNumericUpDown();
+            NumericUpDown.Value = 2;
+            NumericUpDown.FontSize = Device.GetNamedSize(NamedSize.Large, typeof(Label));
+            NumericUpDown.IsEditable = true;
+            NumericUpDown.FontAttribute = FontAttributes.Bold;
+            //NumericUpDown.ParsingMode = Parsers.Decimal;
+            NumericUpDown.SpinButtonAlignment = SpinButtonAlignment.Left;
 
-            timePicker = new SfTimePicker()
-            {
-                PickerMode = PickerMode.Dialog,
-                PickerHeight = 300,
-                PickerWidth = 300,
-                Time = new TimeSpan(0, 00, 00),
-                OKButtonBackgroundColor = Color.Pink,
-                CancelButtonBackgroundColor = Color.Pink
-            };
-            timePicker.EnableLooping = true;
-            timePicker.TimeSelected += TimePicker_TimeSelected;
-
-            SfButton pickerButton = new SfButton()
-            {
-                Text = "SET VALUE",
-                HeightRequest = 35,
-                WidthRequest = 120,
-                //Style = (Style)Resources["SfButtonStyle"],
-                HorizontalOptions = LayoutOptions.Center,
-                VerticalOptions = LayoutOptions.Center,
-                CornerRadius = 20,
-                TextColor = Color.White
-            };
-            pickerButton.Clicked += Button_Clicked;
-            //pickerButton.Style = (Style)Resources["SfButtonStyle"];
-
-            StackLayout ExerciseGoalPicker = new StackLayout()
-            {
-                WidthRequest = 150,
-                Orientation = StackOrientation.Vertical,
-                HorizontalOptions = LayoutOptions.Start,
-                VerticalOptions = LayoutOptions.Center,
-                //Margin = new Thickness(0, 0, 0, 0),
-                Children = { pickerValueLabel, timePicker, pickerButton }
-            };
-            ExerciseGoal.Children.Add(ExerciseIcon);
-            ExerciseGoal.Children.Add(ExerciseGoalPicker);
-            /*ExerciseGoal.Children.Add(pickerValueLabel);
-            ExerciseGoal.Children.Add(timePicker);
-            ExerciseGoal.Children.Add(pickerButton);*/
-            //this.Content = grid;
-
-            //StackLayout goal = new StackLayout().LoadFromXaml(xaml);
-            //exerciseGoal.Content = xaml;
+            ExerciseGoal.Children.Add(NumericUpDown);
             exerciseGoal.Children.Add(ExerciseGoal);
         }
 
@@ -267,29 +209,3 @@ namespace ArmourAppUi.Views.Forms
         }
     }
 }
-
-/*<StackLayout Padding="0,50,0,0" Orientation="Horizontal" HorizontalOptions="Center">
-                    <StackLayout HorizontalOptions="Start">
-                        <Image Source="time_icon_color.png" HeightRequest="100" WidthRequest="100"/>
-                    </StackLayout>
-
-                    <StackLayout HorizontalOptions="End" VerticalOptions="Center" Padding="20,0,0,0">
-                        <Label Text="0h 0m 0s" x:Name="pickerValueLabel" HorizontalOptions="Start" 
-                               FontSize="25"
-                               TextColor="#222"
-                               FontAttributes="Bold"
-                               />
-                        <syncfusion:SfTimePicker x:Name="timePickers"
-                                 PickerMode="Dialog"
-                                 Time="0:0:0"
-                                 EnableLooping="True"
-                                 TimeSelected="TimePicker_TimeSelected"/>
-
-                        <buttons:SfButton
-                            x:Name="pickerButton"
-                            HorizontalOptions="Start" Clicked="Button_Clicked"
-                            Style="{StaticResource SfButtonStyle}"
-                            Text="Set value"
-                            WidthRequest="120" />
-                    </StackLayout>
-                </StackLayout>*/

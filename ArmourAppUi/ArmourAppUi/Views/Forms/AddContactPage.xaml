@@ -123,6 +123,7 @@
 
 
                 <buttons:SfButton
+                    Margin="0,20,0,0"
                     HorizontalOptions="Center" 
                     Style="{StaticResource SfButtonStyle}"
                     Text="SUBMIT"

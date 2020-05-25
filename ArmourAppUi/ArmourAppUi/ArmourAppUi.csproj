@@ -28,22 +28,23 @@
 
   <ItemGroup>
     <PackageReference Include="SkiaSharp.Svg" Version="1.60.0" />
-    <PackageReference Include="SkiaSharp.Views.Forms" Version="1.68.2.1" />
-    <PackageReference Include="Syncfusion.Xamarin.Buttons" Version="18.1.0.48" />
-    <PackageReference Include="Syncfusion.Xamarin.Cards" Version="18.1.0.48" />
-    <PackageReference Include="Syncfusion.Xamarin.Core" Version="18.1.0.48" />
-    <PackageReference Include="Syncfusion.Xamarin.Expander" Version="18.1.0.48" />
-    <PackageReference Include="Syncfusion.Xamarin.SfBadgeView" Version="18.1.0.48" />
-    <PackageReference Include="Syncfusion.Xamarin.SfCalendar" Version="18.1.0.48" />
-    <PackageReference Include="Syncfusion.Xamarin.SfChart" Version="18.1.0.48" />
-    <PackageReference Include="Syncfusion.Xamarin.SfComboBox" Version="18.1.0.48" />
-    <PackageReference Include="Syncfusion.Xamarin.SfDataForm" Version="18.1.0.48" />
-    <PackageReference Include="Syncfusion.Xamarin.SfListView" Version="18.1.0.48" />
-    <PackageReference Include="Syncfusion.Xamarin.SfPicker" Version="18.1.0.48" />
-    <PackageReference Include="Syncfusion.Xamarin.SfProgressBar" Version="18.1.0.48" />
-    <PackageReference Include="Syncfusion.Xamarin.SfRating" Version="18.1.0.48" />
-    <PackageReference Include="Xamarin.Forms" Version="4.6.0.726" />
-    <PackageReference Include="Xamarin.Essentials" Version="1.5.3.1" />
+    <PackageReference Include="SkiaSharp.Views.Forms" Version="1.68.3" />
+    <PackageReference Include="Syncfusion.Xamarin.Buttons" Version="18.1.0.53" />
+    <PackageReference Include="Syncfusion.Xamarin.Cards" Version="18.1.0.53" />
+    <PackageReference Include="Syncfusion.Xamarin.Core" Version="18.1.0.53" />
+    <PackageReference Include="Syncfusion.Xamarin.Expander" Version="18.1.0.53" />
+    <PackageReference Include="Syncfusion.Xamarin.SfBadgeView" Version="18.1.0.53" />
+    <PackageReference Include="Syncfusion.Xamarin.SfCalendar" Version="18.1.0.53" />
+    <PackageReference Include="Syncfusion.Xamarin.SfChart" Version="18.1.0.53" />
+    <PackageReference Include="Syncfusion.Xamarin.SfComboBox" Version="18.1.0.53" />
+    <PackageReference Include="Syncfusion.Xamarin.SfDataForm" Version="18.1.0.53" />
+    <PackageReference Include="Syncfusion.Xamarin.SfListView" Version="18.1.0.53" />
+    <PackageReference Include="Syncfusion.Xamarin.SfNumericUpDown" Version="18.1.0.53" />
+    <PackageReference Include="Syncfusion.Xamarin.SfPicker" Version="18.1.0.53" />
+    <PackageReference Include="Syncfusion.Xamarin.SfProgressBar" Version="18.1.0.53" />
+    <PackageReference Include="Syncfusion.Xamarin.SfRating" Version="18.1.0.53" />
+    <PackageReference Include="Xamarin.Forms" Version="4.6.0.800" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.5.3.2" />
   </ItemGroup>
 
   <ItemGroup>

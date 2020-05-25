@@ -49,7 +49,11 @@
                     </Grid.RowDefinitions>
                     <StackLayout>
                         <RelativeLayout>
-                            <Image Source="bg_home.png" Aspect="AspectFill" HeightRequest="200"/>
+                            <Grid HorizontalOptions="FillAndExpand"
+                                        VerticalOptions="FillAndExpand">
+                                <Image Source="bg_home.png" Aspect="Fill" HeightRequest="200" WidthRequest="500"/>
+                            </Grid>
+                            
                             <FlexLayout StyleClass="quote_space">
                                 <StackLayout>
                                     <Label StyleClass="quote" FontFamily="{DynamicResource Montserrat-SemiBold}" Text="Моя тренировка начинаеться когда я открываю пивко. "/>
@@ -157,9 +161,9 @@
                     </StackLayout>
         </Grid>
         </ScrollView>
-        
-                <StackLayout Orientation="Vertical" VerticalOptions="End" HorizontalOptions="FillAndExpand" StyleClass="nav1">
-                    <FlexLayout StyleClass="nav">
+
+            <StackLayout Orientation="Vertical" VerticalOptions="End" HorizontalOptions="FillAndExpand" StyleClass="nav1" Padding="0, 10, 0, 0">
+                <FlexLayout StyleClass="nav">
 
                         <button:SfButton Clicked="StatisticsButton_Clicked"
                                          ImageSource="baseline_bar_chart_black_36dp.png" 
@@ -169,17 +173,17 @@
                                          BackgroundColor = "#fff" 
                                          WidthRequest="100" 
                                          HeightRequest="40" 
-                                         ImageWidth="40">
+                                         ImageWidth="30">
                         </button:SfButton>
 
-                        <button:SfButton ImageSource="baseline_home_black_36dp.png" 
+                        <button:SfButton ImageSource="baseline_home_black_36dp_color.png" 
                                          ShowIcon="True" 
                                          ImageAlignment="Top" 
                                          CornerRadius="20" 
                                          BackgroundColor = "#fff" 
                                          WidthRequest="100" 
                                          HeightRequest="40" 
-                                         ImageWidth="40">
+                                         ImageWidth="30">
                         </button:SfButton>
 
                         <button:SfButton Clicked="NewExercisePage_Clicked"
@@ -190,7 +194,7 @@
                                          BackgroundColor = "#fff" 
                                          WidthRequest="100" 
                                          HeightRequest="40" 
-                                         ImageWidth="40">
+                                         ImageWidth="30">
                         </button:SfButton>
                     </FlexLayout>
                 </StackLayout>

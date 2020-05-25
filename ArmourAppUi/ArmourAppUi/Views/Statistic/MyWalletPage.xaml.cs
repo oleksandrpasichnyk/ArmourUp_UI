@@ -3,6 +3,7 @@ using Xamarin.Forms.Internals;
 
 using System;
 using System.Collections.Generic;
+using Syncfusion.SfCalendar.XForms;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -25,6 +26,15 @@ namespace ArmourAppUi.Views.Statistic
         public MyWalletPage()
         {
             InitializeComponent();
+            
+            List<DateTime> selectedDates = new List<DateTime>();
+            selectedDates = new List<DateTime>();
+            selectedDates.Add(new DateTime(2020, 5, 20));
+            selectedDates.Add(new DateTime(2019, 5, 8));
+            selectedDates.Add(new DateTime(2019, 5, 10));
+            selectedDates.Add(new DateTime(2019, 5, 14));
+            selectedDates.Add(new DateTime(2019, 5, 20));
+            calendar.SelectedDates = selectedDates;
         }
 
         private void StatisticsButton_Clicked(object sender, EventArgs e)
