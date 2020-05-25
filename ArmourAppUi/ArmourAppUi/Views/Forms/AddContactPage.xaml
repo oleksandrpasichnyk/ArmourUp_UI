@@ -7,9 +7,14 @@
     xmlns:border="clr-namespace:Syncfusion.XForms.Border;assembly=Syncfusion.Core.XForms"
     xmlns:buttons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
     xmlns:combobox="clr-namespace:Syncfusion.XForms.ComboBox;assembly=Syncfusion.SfComboBox.XForms"
+    xmlns:syncfusion="clr-namespace:Syncfusion.XForms.Expander;assembly=Syncfusion.Expander.XForms"
+    xmlns:segmentCollection="clr-namespace:System.Collections.Generic;assembly=netstandard"
     xmlns:control="clr-namespace:ArmourAppUi.Controls"
     xmlns:converter="clr-namespace:ArmourAppUi.Converters"
+    xmlns:inputLayout="clr-namespace:Syncfusion.XForms.TextInputLayout;assembly=Syncfusion.Core.XForms"
+
     xmlns:behaviors="clr-namespace:ArmourAppUi.Behaviors"
+    xmlns:dataForm="clr-namespace:Syncfusion.XForms.DataForm;assembly=Syncfusion.SfDataForm.XForms"
     xmlns:local="clr-namespace:ArmourAppUi.Views.Forms"
     xmlns:viewModel="clr-namespace:ArmourAppUi.ViewModels.Forms"
     Title="Details Form"
@@ -32,171 +37,94 @@
         <ScrollView>
             <StackLayout Padding="16">
                 <Label Style="{StaticResource HeaderLabelStyle}" Text="General Information" />
-                <Grid>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition />
-                        <ColumnDefinition Width="4" />
-                        <ColumnDefinition />
-                    </Grid.ColumnDefinitions>
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="56" />
-                        <RowDefinition Height="56" />
-                    </Grid.RowDefinitions>
-                    <border:SfBorder BorderColor="{Binding Source={x:Reference FirstNameEntry}, Path=IsFocused, Converter={StaticResource ColorConverter}, ConverterParameter=3}" Style="{StaticResource FormBorderStyle}">
-                        <control:BorderlessEntry
-                            x:Name="FirstNameEntry"
-                            Placeholder="First Name" Text="{Binding FirstName}"
-                            Style="{StaticResource EntryTextStyle}" />
-                    </border:SfBorder>
-                    <border:SfBorder
-                        Grid.Column="2"
-                        BorderColor="{Binding Source={x:Reference LastNameEntry}, Path=IsFocused, Converter={StaticResource ColorConverter}, ConverterParameter=3}"
-                        Style="{StaticResource FormBorderStyle}">
-                        <control:BorderlessEntry
-                            x:Name="LastNameEntry"
-                            Placeholder="Last Name" Text="{Binding LastName}"
-                            Style="{StaticResource EntryTextStyle}" />
-                    </border:SfBorder>
-                    <border:SfBorder
-                        Grid.Row="1"
-                        Padding="12,0,0,0"
-                        Style="{StaticResource FormBorderStyle}">
+                <StackLayout>
+                    <inputLayout:SfTextInputLayout
 
-                        <control:CalenderDatePicker Date="{Binding Date}" 
-                            x:Name="CustomDatePicker"
-                            FontFamily="{StaticResource Montserrat-Regular}"
-                            FontSize="16"
-                            Format="dd/MM/yy"
-                            PlaceHolderText="DD/MM/YY"
-                            TextColor="{DynamicResource Gray-900}" />
+                                    ContainerType="Outlined"
+                                    OutlineCornerRadius="8"
+                                    Hint="Excercise name" 
+                                    HelperText="Running, arms, legs"
+                                    >
+                        <Entry />
+                    </inputLayout:SfTextInputLayout>
 
-                    </border:SfBorder>
-                    <border:SfBorder
-                        Grid.Row="1"
-                        Grid.Column="2"
-                        Padding="6,0,0,0"
-                        BorderColor="{Binding Source={x:Reference GenderPicker}, Path=IsFocused, Converter={StaticResource ColorConverter}, ConverterParameter=3}"
-                        Style="{StaticResource FormBorderStyle}">
-                        <combobox:SfComboBox
-                            x:Name="GenderPicker" SelectedValue="{Binding Gender, Mode=TwoWay}"
-                            Style="{StaticResource ComboBoxStyle}"
-                            Watermark="Gender">
-                            <combobox:SfComboBox.ComboBoxSource>
-                                <ListCollection:List x:TypeArguments="x:String">
-                                    <x:String>Male</x:String>
-                                    <x:String>Female</x:String>
-                                </ListCollection:List>
-                            </combobox:SfComboBox.ComboBoxSource>
-                            <combobox:SfComboBox.DropDownButtonSettings>
-                                <combobox:DropDownButtonSettings Width="30" Height="30">
-                                    <combobox:DropDownButtonSettings.View>
-                                        <Label
-                                            Margin="0"
-                                            FontFamily="{StaticResource FontIcons}"
-                                            FontSize="25"
-                                            HorizontalTextAlignment="Center"
-                                            Text="{StaticResource DropDownButtonIcon}"
-                                            TextColor="{DynamicResource Gray-600}"
-                                            VerticalTextAlignment="Center" />
-                                    </combobox:DropDownButtonSettings.View>
-                                </combobox:DropDownButtonSettings>
-                            </combobox:SfComboBox.DropDownButtonSettings>
-                        </combobox:SfComboBox>
-                    </border:SfBorder>
-                </Grid>
-                <Label
-                    Margin="0,16,0,0"
-                    Style="{StaticResource HeaderLabelStyle}"
-                    Text="Contact Information" />
-                <local:ContactEmailEntry /> 
-               
-                <border:SfBorder BorderColor="{Binding Source={x:Reference AddressEntry}, Path=IsFocused, Converter={StaticResource ColorConverter}, ConverterParameter=3}" Style="{StaticResource FormBorderStyle}">
-                    <control:BorderlessEntry
-                        x:Name="AddressEntry"
-                        Placeholder="Address" Text="{Binding Address}"
-                        Style="{StaticResource EntryTextStyle}" />
-                </border:SfBorder>
-                <border:SfBorder
-                    Padding="6,0,0,0"
-                    BorderColor="{Binding Source={x:Reference CountryPicker}, Path=IsFocused, Converter={StaticResource ColorConverter}, ConverterParameter=3}"
-                    HeightRequest="40"
-                    Style="{StaticResource FormBorderStyle}">
-                    <control:CountryComboBox
-                        x:Name="CountryPicker" 
-                        Style="{StaticResource ComboBoxStyle}">
-                        <combobox:SfComboBox.DropDownButtonSettings>
-                            <combobox:DropDownButtonSettings Width="30" Height="30">
-                                <combobox:DropDownButtonSettings.View>
-                                    <Label
-                                        Margin="0"
-                                        FontFamily="{StaticResource FontIcons}"
-                                        FontSize="25"
-                                        HorizontalTextAlignment="Center"
-                                        Text="{StaticResource DropDownButtonIcon}"
-                                        TextColor="{DynamicResource Gray-600}"
-                                        VerticalTextAlignment="Center" />
-                                </combobox:DropDownButtonSettings.View>
-                            </combobox:DropDownButtonSettings>
-                        </combobox:SfComboBox.DropDownButtonSettings>
-                    </control:CountryComboBox>
-                </border:SfBorder>
-                <Grid>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition />
-                        <ColumnDefinition Width="4" />
-                        <ColumnDefinition />
-                    </Grid.ColumnDefinitions>
-                    <border:SfBorder BorderColor="{Binding Source={x:Reference CityEntry}, Path=IsFocused,
-                        Converter={StaticResource ColorConverter}, ConverterParameter=3}" 
-                                     Style="{StaticResource FormBorderStyle}" Grid.Column="2">
-                        <control:BorderlessEntry
-                            x:Name="CityEntry"
-                            Placeholder="City"  Text="{Binding City, Source={Reference CountryPicker}}"
-                            Style="{StaticResource EntryTextStyle}" />
-                    </border:SfBorder>
-                    <border:SfBorder
-                        
-                        Padding="6,0,0,0"
-                        BorderColor="{Binding Source={x:Reference StatePicker}, Path=IsFocused, Converter={StaticResource ColorConverter}, ConverterParameter=3}"
-                        Style="{StaticResource FormBorderStyle}">
-                        <combobox:SfComboBox
-                            x:Name="StatePicker"
-                            SelectedItem="{Binding State, Source={Reference CountryPicker}}"
-                            DataSource="{Binding States, Source={Reference CountryPicker}}"
-                            Style="{StaticResource ComboBoxStyle}"
-                            Watermark="State">
-                            <combobox:SfComboBox.DropDownButtonSettings>
-                                <combobox:DropDownButtonSettings>
-                                    <combobox:DropDownButtonSettings.View>
-                                        <Label
-                                            Margin="0"
-                                            FontFamily="{StaticResource FontIcons}"
-                                            FontSize="25"
-                                            HorizontalTextAlignment="Center"
-                                            Text="{StaticResource DropDownButtonIcon}"
-                                            TextColor="{DynamicResource Gray-600}"
-                                            VerticalTextAlignment="Center" />
-                                    </combobox:DropDownButtonSettings.View>
-                                </combobox:DropDownButtonSettings>
-                            </combobox:SfComboBox.DropDownButtonSettings>
-                        </combobox:SfComboBox>
-                    </border:SfBorder>
-                </Grid>
-                <border:SfBorder BorderColor="{Binding Source={x:Reference PhoneNoEntry}, Path=IsFocused, Converter={StaticResource ColorConverter}, ConverterParameter=3}" Style="{StaticResource FormBorderStyle}">
-                    <control:BorderlessEntry
-                        x:Name="PhoneNoEntry"
-                        Placeholder="{Binding PhoneNumberPlaceHolder, Source={Reference CountryPicker}}"
-                            Text="{Binding PhoneNumber, Source={Reference CountryPicker}}"
-                        Keyboard="Telephone" 
-                        Style="{StaticResource EntryTextStyle}" >
-                        <control:BorderlessEntry.Behaviors>
-                            <behaviors:EntryMaskedBehavior Mask="{Binding Source={x:Reference CountryPicker}, Path=Mask}" 
-                                                           Prefix="{Binding Source={Reference CountryPicker}, Path=CountryCode}"/>
-                        </control:BorderlessEntry.Behaviors>
-                    </control:BorderlessEntry>
-                </border:SfBorder>
+                    <inputLayout:SfTextInputLayout
+                                    CharMaxLength="150"
+                                    ShowCharCount="True"
+                                    Hint="Excercise description"
+                                    ContainerType="Outlined"
+                                    IsHintAlwaysFloated="False" 
+                                    OutlineCornerRadius="8">
+
+                        <Editor  AutoSize="TextChanges" MaxLength="150" Keyboard="Chat"/>
+                    </inputLayout:SfTextInputLayout>
+
+                    <buttons:SfSegmentedControl
+                    SelectionChanged="SegmentedControl_SelectionChanged"
+                    SelectionTextColor = "White"
+                    HeightRequest="80"
+                    VisibleSegmentsCount="6"
+                    Color="Transparent" 
+                    BorderColor="#929292"
+                    CornerRadius="8"
+                    
+                    FontColor="#929292"
+                    BackgroundColor="Transparent" >
+                        <segmentCollection:List x:TypeArguments="x:String">
+                            <x:String>Time</x:String>
+                            <x:String>Goal</x:String>
+                            <x:String>Repeat</x:String>
+                        </segmentCollection:List>
+                    </buttons:SfSegmentedControl>
+                </StackLayout>
+
+                <StackLayout x:Name="exerciseGoal" Padding="0">
+
+                </StackLayout>
+                
+                <StackLayout>
+                    <syncfusion:SfExpander Margin="0,16,0,0">
+                        <syncfusion:SfExpander.Header BackgroundColor="{DynamicResource Gray-200}">
+                            <Grid >
+                                <Label
+                                    Padding="10"
+                                    VerticalOptions="Center"
+                                    Style="{StaticResource HeaderLabelStyle}"
+                                    Text="Useful link" />
+                            </Grid>
+                        </syncfusion:SfExpander.Header>
+                        <syncfusion:SfExpander.Content>
+                            <Grid Padding="10,10,10,10" BackgroundColor="#FFFFFF">
+                                <StackLayout>
+
+                                    <inputLayout:SfTextInputLayout
+                                        
+                                        ContainerType="Outlined"
+                                        OutlineCornerRadius="8"
+                                        Hint="URL" 
+                                        HelperText="Enter your email address"
+                                        >
+                                        <Entry />
+                                    </inputLayout:SfTextInputLayout>
+
+                                    <inputLayout:SfTextInputLayout
+                                        
+                                        Hint="Source name"
+                                        ContainerType="Outlined"
+                                        OutlineCornerRadius="8">
+
+                                        <Editor AutoSize="TextChanges" MaxLength="150" Keyboard="Chat"/>
+                                    </inputLayout:SfTextInputLayout>
+                                </StackLayout>
+                            </Grid>
+                        </syncfusion:SfExpander.Content>
+                    </syncfusion:SfExpander>
+                </StackLayout>
+
+
                 <buttons:SfButton
-                    HorizontalOptions="Center" Command="{Binding SubmitCommand}"
+                    Margin="0,20,0,0"
+                    HorizontalOptions="Center" 
                     Style="{StaticResource SfButtonStyle}"
                     Text="SUBMIT"
                     WidthRequest="200" />

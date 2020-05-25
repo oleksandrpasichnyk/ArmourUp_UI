@@ -9,6 +9,7 @@
              xmlns:button="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
              xmlns:converter="clr-namespace:ArmourAppUi.Converters"
              xmlns:listView="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
+             xmlns:syncfusion="clr-namespace:Syncfusion.SfCalendar.XForms;assembly=Syncfusion.SfCalendar.XForms"
              xmlns:template="clr-namespace:ArmourAppUi.Views.Templates"
              xmlns:cards="clr-namespace:Syncfusion.XForms.Cards;assembly=Syncfusion.Cards.XForms"
              xmlns:gradient="clr-namespace:Syncfusion.XForms.Graphics;assembly=Syncfusion.Core.XForms"
@@ -52,22 +53,14 @@
                             <RowDefinition Height="Auto" />
                             <RowDefinition Height="*" />
                         </Grid.RowDefinitions>
-
-
-
                         <Grid>
                             <Grid.RowDefinitions>
                                 <RowDefinition Height="Auto"/>
                                 <RowDefinition Height="*"/>
                             </Grid.RowDefinitions>
 
-                            <Grid RowSpacing="0" HeightRequest="350">
+                            <Grid RowSpacing="0">
 
-                                <Grid.RowDefinitions>
-                                    <RowDefinition Height="Auto" />
-                                    <RowDefinition Height="Auto" />
-                                    <RowDefinition Height="*" />
-                                </Grid.RowDefinitions>
 
                                 <gradient:SfGradientView Grid.RowSpan="3">
                                     <gradient:SfGradientView.BackgroundBrush>
@@ -80,7 +73,7 @@
                                     </gradient:SfGradientView.BackgroundBrush>
                                 </gradient:SfGradientView>
 
-                                <!-- Profile Image -->
+                                <!-- Profile Image --><!--
                                 <border:SfBorder Margin="0,30,0,8"
                                      HeightRequest="120"
                                      WidthRequest="120"
@@ -98,7 +91,7 @@
 
                                 </border:SfBorder>
 
-                                <!-- Profile Name -->
+                                --><!-- Profile Name --><!--
                                 <Label Grid.Row="1"
                            Margin="0,0,0,2"
                            Text="Roman Cholkan"
@@ -109,7 +102,7 @@
                            VerticalOptions="StartAndExpand"
                            LineHeight="{OnPlatform Android=1.5, Default=-1}" />
 
-                                <!-- State and Country -->
+                                --><!-- State and Country --><!--
                                 <Label Grid.Row="2"
                            TextColor="{DynamicResource Gray-White}"
                            FontSize="12"
@@ -124,7 +117,7 @@
                                             <Span Text="Ukraine"/>
                                         </FormattedString>
                                     </Label.FormattedText>
-                                </Label>
+                                </Label>-->
                             </Grid>
 
                             <border:SfBorder Grid.Row="1" Margin="0,-69,0,0" Padding="0,0,0,0" BackgroundColor="{DynamicResource Gray-White}" CornerRadius="14,14,0,0"
@@ -133,55 +126,20 @@
                                 <Label Text="My list" Padding="20,50,0,20"/>
                             </border:SfBorder>
 
-                            <cards:SfCardView Grid.Row="0" CornerRadius="4" VerticalOptions="End" Margin="16,0,16,24"  BorderWidth="0" HasShadow="True"  
-                                 BackgroundColor="{DynamicResource Gray-White}" HorizontalOptions="CenterAndExpand" WidthRequest="{OnIdiom Phone=343, Default=736}" >
+                            <cards:SfCardView Grid.Row="0" CornerRadius="4" VerticalOptions="End" Margin="16,16,16,24"  BorderWidth="0" HasShadow="True"  
+                                 BackgroundColor="{DynamicResource Gray-White}" HorizontalOptions="CenterAndExpand" >
 
-                                <Grid RowSpacing="0" ColumnSpacing="0" WidthRequest="{OnIdiom Phone=343, Default=480}" 
-                          HeightRequest="90">
+                                <Grid RowSpacing="0" ColumnSpacing="0" Margin="10"
+                          HeightRequest="200" >
 
-                                    <Grid.RowDefinitions>
-                                        <RowDefinition />
-                                        <RowDefinition />
-                                    </Grid.RowDefinitions>
-
-                                    <Grid.ColumnDefinitions>
-                                        <ColumnDefinition />
-                                        <ColumnDefinition Width="Auto" />
-                                        <ColumnDefinition />
-                                        <ColumnDefinition Width="Auto" />
-                                        <ColumnDefinition />
-                                    </Grid.ColumnDefinitions>
-
+                                    
                                     <!-- Age -->
-                                    <Label Text="19" Style="{StaticResource LabelStyle}" HorizontalOptions="Center"
-                               VerticalOptions="End" />
+                                    <syncfusion:SfCalendar x:Name="calendar"                                                           
+                                                           NumberOfWeeksInView="1" 
+                                                           SelectionMode="MultiSelection" 
+                                                           ShowInlineEvents="True"
 
-                                    <Label Grid.Row="1" FontSize="12" Text="Age" Style="{StaticResource LabelStyle}" 
-                               HorizontalOptions="Center" VerticalOptions="Start"
-                               FontFamily="{DynamicResource Montserrat-Medium}" TextColor="{DynamicResource Gray-700}" />
-
-                                    <!-- Seperator -->
-                                    <BoxView Grid.Column="1" Style="{StaticResource BoxViewStyle}" Grid.RowSpan="2" />
-
-                                    <!-- Weight -->
-                                    <Label Grid.Row="0" Grid.Column="2" Text="60" Style="{StaticResource LabelStyle}"
-                                HorizontalOptions="Center" VerticalOptions="End" />
-
-                                    <Label Grid.Row="1" Grid.Column="2" Text="Weight" FontSize="12" Style="{StaticResource LabelStyle}" 
-                               FontFamily="{DynamicResource Montserrat-Medium}" TextColor="{DynamicResource Gray-700}" 
-                               HorizontalOptions="Center" VerticalOptions="Start" />
-
-                                    <!-- Seperator -->
-                                    <BoxView Grid.Column="3" Style="{StaticResource BoxViewStyle}" Grid.RowSpan="2" />
-
-                                    <!-- Height -->
-                                    <Label Grid.Row="0" Grid.Column="4" Text="175" HorizontalOptions="Center" 
-                               VerticalOptions="End" Style="{StaticResource LabelStyle}" />
-
-                                    <Label Grid.Row="1" Grid.Column="4" Text="Height" FontSize="12" HorizontalOptions="Center"
-                               VerticalOptions="Start" Style="{StaticResource LabelStyle}" FontFamily="{DynamicResource Montserrat-Medium}" 
-                               TextColor="{DynamicResource Gray-700}" />
-
+                                                           FirstDayofWeek="1"/>
                                 </Grid>
                             </cards:SfCardView>
                         </Grid>
@@ -284,18 +242,18 @@
                     </Grid>
                 </ScrollView>
             </StackLayout>
-            <StackLayout Orientation="Vertical" VerticalOptions="End" HorizontalOptions="FillAndExpand" StyleClass="nav1">
+            <StackLayout Orientation="Vertical" VerticalOptions="End" HorizontalOptions="FillAndExpand" StyleClass="nav1"  Padding="0, 10, 0, 0">
                 <FlexLayout StyleClass="nav">
 
                     <button:SfButton 
-                                         ImageSource="baseline_bar_chart_black_36dp.png" 
+                                         ImageSource="baseline_bar_chart_black_36dp_color.png" 
                                          ShowIcon="True" 
                                          ImageAlignment="Top" 
                                          CornerRadius="20" 
                                          BackgroundColor = "#fff" 
                                          WidthRequest="100" 
                                          HeightRequest="40" 
-                                         ImageWidth="40">
+                                         ImageWidth="30">
                     </button:SfButton>
 
                     <button:SfButton Clicked="HomeButton_Clicked"
@@ -306,7 +264,7 @@
                                          BackgroundColor = "#fff" 
                                          WidthRequest="100" 
                                          HeightRequest="40" 
-                                         ImageWidth="40">
+                                         ImageWidth="30">
                     </button:SfButton>
 
                     <button:SfButton Clicked="NewExercisePage_Clicked"
@@ -317,7 +275,7 @@
                                          BackgroundColor = "#fff" 
                                          WidthRequest="100" 
                                          HeightRequest="40" 
-                                         ImageWidth="40">
+                                         ImageWidth="30">
                     </button:SfButton>
                 </FlexLayout>
             </StackLayout>

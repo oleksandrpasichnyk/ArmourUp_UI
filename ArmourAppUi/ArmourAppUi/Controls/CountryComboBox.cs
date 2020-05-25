@@ -9,7 +9,7 @@ using Xamarin.Forms.Internals;
 
 namespace ArmourAppUi.Controls
 {
-    [Preserve(AllMembers = true)]
+    /*[Preserve(AllMembers = true)]
     public class CountryComboBox : SfComboBox, INotifyPropertyChanged
     {
         #region Fields
@@ -31,43 +31,43 @@ namespace ArmourAppUi.Controls
         #endregion
 
         #region Constructor
-        public CountryComboBox()
-        {
-            BindingContext = this;
+        //public CountryComboBox()
+        //{
+        //    BindingContext = this;
 
-            Countries = new List<CountryModel>();
-            Countries.Add(new CountryModel()
-            {
-                Country = "Australia",
-                States = new string[] { "Tasmania", "Victoria", "Queensland", "Northen Territory" }
-            });
-            Countries.Add(new CountryModel()
-            {
-                Country = "Brazil",
-                States = new string[] { "Bahia", "Ceara", "Goias", "Maranhao" }
-            });
-            Countries.Add(new CountryModel()
-            {
-                Country = "Canada",
-                States = new string[] { "Manitoba", "Ontario", "Quebec", "Yukon" }
-            });
-            Countries.Add(new CountryModel()
-            {
-                Country = "India",
-                States = new string[] { "Assam", "Gujarat", "Haryana", "Tamil Nadu" }
-            });
-            Countries.Add(new CountryModel()
-            {
-                Country = "USA",
-                States = new string[] { "California", "Florida", "New York", "Washington" }
-            });
+        //    Countries = new List<CountryModel>();
+        //    Countries.Add(new CountryModel()
+        //    {
+        //        Country = "Australia",
+        //        States = new string[] { "Tasmania", "Victoria", "Queensland", "Northen Territory" }
+        //    });
+        //    Countries.Add(new CountryModel()
+        //    {
+        //        Country = "Brazil",
+        //        States = new string[] { "Bahia", "Ceara", "Goias", "Maranhao" }
+        //    });
+        //    Countries.Add(new CountryModel()
+        //    {
+        //        Country = "Canada",
+        //        States = new string[] { "Manitoba", "Ontario", "Quebec", "Yukon" }
+        //    });
+        //    Countries.Add(new CountryModel()
+        //    {
+        //        Country = "India",
+        //        States = new string[] { "Assam", "Gujarat", "Haryana", "Tamil Nadu" }
+        //    });
+        //    Countries.Add(new CountryModel()
+        //    {
+        //        Country = "USA",
+        //        States = new string[] { "California", "Florida", "New York", "Washington" }
+        //    });
 
-            DataSource = Countries;
-            this.SetBinding(SfComboBox.SelectedItemProperty, "Country", BindingMode.TwoWay);
-            DisplayMemberPath = "Country";
-            Watermark = "Select Country";
-            this.VerticalOptions = LayoutOptions.CenterAndExpand;
-        }
+        //    DataSource = Countries;
+        //    this.SetBinding(SfComboBox.SelectedItemProperty, "Country", BindingMode.TwoWay);
+        //    DisplayMemberPath = "Country";
+        //    Watermark = "Select Country";
+        //    this.VerticalOptions = LayoutOptions.CenterAndExpand;
+        //}
         #endregion
 
         #region Properties
@@ -190,6 +190,7 @@ namespace ArmourAppUi.Controls
         /// <summary>
         /// Occurs when the property is changed.
         /// </summary>
+ 
         public event PropertyChangedEventHandler PropertyChanged;
 
         #endregion
@@ -249,5 +250,5 @@ namespace ArmourAppUi.Controls
         }
 
         #endregion
-    }
+    }*/
 }
