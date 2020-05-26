@@ -1,25 +1,11 @@
-﻿using ArmourAppUi.DataService;
-using Xamarin.Forms.Internals;
-using Syncfusion.XForms.Pickers;
-using Syncfusion.XForms.Expander;
-using Syncfusion.SfNumericTextBox.XForms;
-using Syncfusion.SfNumericUpDown.XForms;
-
-
-using System;
-using System.ComponentModel;
-using System.Collections.Generic;
-using System.IO;
-using System.Runtime.CompilerServices;
-using System.Windows.Input;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
-using Syncfusion.ListView.XForms;
+﻿using Syncfusion.SfNumericTextBox.XForms;
 using Syncfusion.XForms.Buttons;
-
+using Syncfusion.XForms.Pickers;
+using Syncfusion.XForms.TextInputLayout;
+using System;
+using Xamarin.Forms;
+using Xamarin.Forms.Internals;
+using Xamarin.Forms.Xaml;
 
 namespace ArmourAppUi.Views.Forms
 {
@@ -27,8 +13,9 @@ namespace ArmourAppUi.Views.Forms
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class AddContactPage : ContentPage
     {
-        SfTimePicker timePicker;
-        Label pickerValueLabel;
+        private SfTimePicker timePicker;
+        private Label pickerValueLabel;
+
         public AddContactPage()
         {
             InitializeComponent();
@@ -38,34 +25,50 @@ namespace ArmourAppUi.Views.Forms
         {
             Navigation.PushAsync(new ArmourAppUi.Views.Statistic.StatisticPage());
         }
+
         private void NewExercisePage_Clicked(object sender, EventArgs e)
         {
             Navigation.PushAsync(new ArmourAppUi.Views.Forms.AddContactPage());
         }
+
         private void HomeButton_Clicked(object sender, EventArgs e)
         {
             Navigation.PushAsync(new ArmourAppUi.Views.Profile.ProfilePage());
         }
+
         private void ProfileButton_Clicked(object sender, EventArgs e)
         {
             Navigation.PushAsync(new ArmourAppUi.Views.Settings.SettingPage());
         }
+
         private void BackButton_Click(object sender, EventArgs e)
         {
             Navigation.PopAsync();
         }
 
-        private void Button_Clicked(object sender, System.EventArgs e)
+        private void Timepeacker_Button_Clicked(object sender, System.EventArgs e)
         {
             timePicker.IsOpen = true;
         }
+
+        /*private Repeat_Button_Clicked(int n, int k)
+        {
+            SfTextInputLayout repeat_input = new SfTextInputLayout()
+            {
+                Hint = "Repeat #1",
+                HelperText = "",
+                ContainerType = ContainerType.Outlined,
+            };
+            repeat_input.InputView = new SfNumericTextBox();
+
+            ExerciseGoal.Children.Add(repeat_input);
+        }*/
 
         private void TimePicker_TimeSelected(object sender, TimeChangedEventArgs e)
         {
             pickerValueLabel.Text = $"{e.NewValue}";
             //DisplayAlert("TimeSelected", "NewValue: " + e.NewValue + "\n" + "OldValue: " + e.OldValue, "Ok");
         }
-
 
         private void ShowTimeExercise()
         {
@@ -79,7 +82,6 @@ namespace ArmourAppUi.Views.Forms
                 Padding = new Thickness(20, 20, 20, 20)
             };
 
-
             pickerValueLabel = new Label
             {
                 VerticalTextAlignment = TextAlignment.Center,
@@ -89,10 +91,8 @@ namespace ArmourAppUi.Views.Forms
                 //FontAttributes = FontAttribute.Bold
             };
 
-
             timePicker = new SfTimePicker()
             {
-             
                 HeaderText = "Select a time",
                 ShowFooter = true,
                 PickerHeight = 300,
@@ -104,7 +104,6 @@ namespace ArmourAppUi.Views.Forms
             timePicker.EnableLooping = true;
             timePicker.PickerMode = PickerMode.Dialog;
             timePicker.TimeSelected += TimePicker_TimeSelected;
-            
 
             SfButton pickerButton = new SfButton()
             {
@@ -117,7 +116,7 @@ namespace ArmourAppUi.Views.Forms
                 CornerRadius = 20,
                 TextColor = Color.White
             };
-            pickerButton.Clicked += Button_Clicked;
+            pickerButton.Clicked += Timepeacker_Button_Clicked;
             //pickerButton.Style = (Style)Resources["SfButtonStyle"];
             StackLayout ExerciseGoalPicker = new StackLayout()
             {
@@ -141,23 +140,37 @@ namespace ArmourAppUi.Views.Forms
             StackLayout ExerciseGoal = new StackLayout()
             {
                 HeightRequest = 70,
-                Orientation = StackOrientation.Horizontal,
+                Orientation = StackOrientation.Vertical,
                 HorizontalOptions = LayoutOptions.Center,
                 Padding = new Thickness(20, 20, 20, 20)
             };
 
-            SfNumericTextBox GoalNumericTextBox = new SfNumericTextBox
+            SfTextInputLayout GoalNumericTextBox = new SfTextInputLayout()
             {
-                Watermark = "Enter your goal",
-                FormatString = " times",
-                
-                //HeightRequest = 100,
-                //PercentDisplayMode = PercentDisplayMode.Value,        //unlock here
-                ParserMode = Parsers.Decimal,
-                WidthRequest = 150,
-                FontSize = Device.GetNamedSize(NamedSize.Large, typeof(Label)),
-                FontAttributes = FontAttributes.Bold
+                Hint = "Excercise goal",
+                //HelperText = "Enter your goal",
+
+                ContainerType = ContainerType.Outlined,
             };
+            GoalNumericTextBox.InputView = new SfNumericTextBox()
+            {
+                MaximumNumberDecimalDigits = 0,
+                ParserMode = Parsers.Decimal
+            };
+            //GoalNumericTextBox.ParserMode = Parsers.Decimal;
+
+            //SfNumericTextBox GoalNumericTextBox = new SfNumericTextBox
+            //{
+            //    Watermark = "Enter your goal",
+            //    FormatString = " times",
+
+            //    //HeightRequest = 100,
+            //    //PercentDisplayMode = PercentDisplayMode.Value,        //unlock here
+            //    ParserMode = Parsers.Decimal,
+            //    WidthRequest = 150,
+            //    FontSize = Device.GetNamedSize(NamedSize.Large, typeof(Label)),
+            //    FontAttributes = FontAttributes.Bold
+            //};
 
             ExerciseGoal.Children.Add(GoalNumericTextBox);
 
@@ -170,29 +183,53 @@ namespace ArmourAppUi.Views.Forms
 
             StackLayout ExerciseGoal = new StackLayout()
             {
-                HeightRequest = 70,
-                Orientation = StackOrientation.Horizontal,
+                //HeightRequest = 70,
+                Orientation = StackOrientation.Vertical,
                 HorizontalOptions = LayoutOptions.Center,
                 Padding = new Thickness(20, 20, 20, 20)
             };
 
-            /*SfNumericUpDown NumericUpDown = new SfNumericUpDown
+            SfTextInputLayout number_of_repeatitions_input = new SfTextInputLayout()
             {
-                Value = 2,
-                FontSize = Device.GetNamedSize(NamedSize.Large, typeof(Label)),
-                IsEditable = true,
-                SpinButtonAlignment = SpinButtonAlignment.Left
-            };*/
+                Hint = "Number of repeatitions",
+                HelperText = "",
+                ContainerType = ContainerType.Outlined
+            };
+            number_of_repeatitions_input.InputView = new SfNumericTextBox()
+            {
+                MaximumNumberDecimalDigits = 0,
+                ParserMode = Parsers.Decimal
+            };
 
-            SfNumericUpDown NumericUpDown = new SfNumericUpDown();
-            NumericUpDown.Value = 2;
-            NumericUpDown.FontSize = Device.GetNamedSize(NamedSize.Large, typeof(Label));
-            NumericUpDown.IsEditable = true;
-            NumericUpDown.FontAttribute = FontAttributes.Bold;
-            //NumericUpDown.ParsingMode = Parsers.Decimal;
-            NumericUpDown.SpinButtonAlignment = SpinButtonAlignment.Left;
+            SfTextInputLayout times_per_repeatition_input = new SfTextInputLayout()
+            {
+                Hint = "Times/repetition",
+                HelperText = "",
+                ContainerType = ContainerType.Outlined,
+            };
+            times_per_repeatition_input.InputView = new SfNumericTextBox()
+            {
+                MaximumNumberDecimalDigits = 0,
+                ParserMode = Parsers.Decimal
+            };
 
-            ExerciseGoal.Children.Add(NumericUpDown);
+            SfButton repeatButton = new SfButton()
+            {
+                Text = "Create repeats",
+                HeightRequest = 35,
+                WidthRequest = 120,
+                //Style = (Style)Resources["SfButtonStyle"],
+                HorizontalOptions = LayoutOptions.Center,
+                VerticalOptions = LayoutOptions.Center,
+                CornerRadius = 20,
+                TextColor = Color.White
+            };
+            //repeatButton.Clicked += Repeat_Button_Clicked(number_of_repeatitions_input.Text, times_per_repeatition_input.Text);
+
+            ExerciseGoal.Children.Add(number_of_repeatitions_input);
+            ExerciseGoal.Children.Add(times_per_repeatition_input);
+            ExerciseGoal.Children.Add(repeatButton);
+
             exerciseGoal.Children.Add(ExerciseGoal);
         }
 

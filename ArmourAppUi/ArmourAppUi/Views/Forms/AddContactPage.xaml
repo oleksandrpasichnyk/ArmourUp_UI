@@ -81,7 +81,7 @@
 
                 <StackLayout>
                     <syncfusion:SfExpander Margin="0,16,0,0">
-                        <syncfusion:SfExpander.Header BackgroundColor="{DynamicResource Gray-200}">
+                        <syncfusion:SfExpander.Header BackgroundColor="{DynamicResource Gray-100}">
                             <Grid>
                                 <Label
                                     Padding="10"
@@ -91,12 +91,11 @@
                             </Grid>
                         </syncfusion:SfExpander.Header>
                         <syncfusion:SfExpander.Content>
-                            <Grid Padding="10,10,10,10" BackgroundColor="#FFFFFF">
+                            <Grid Padding="10,10,10,10" BackgroundColor="{DynamicResource Gray-100}">
                                 <StackLayout>
 
                                     <inputLayout:SfTextInputLayout
-                                        ContainerType="Outlined"
-                                        HelperText="Enter your email address"
+                                        ContainerType="Outlined"                                        
                                         Hint="URL"
                                         OutlineCornerRadius="8">
                                         <Entry />

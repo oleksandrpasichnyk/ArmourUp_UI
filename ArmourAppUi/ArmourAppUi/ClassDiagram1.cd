@@ -1,0 +1,404 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ArmourAppUi.App" Collapsed="true">
+    <Position X="13.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAAgAEAAAAAAAAAAAAAAAAAAAAAAABAA=</HashCode>
+      <FileName>App.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ArmourAppUi.MainPage" Collapsed="true">
+    <Position X="16.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MainPage.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ArmourAppUi.Behaviors.EntryMaskedBehavior" Collapsed="true">
+    <Position X="20.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAsgIAADAgAAAgAAAECAAAAAAAA=</HashCode>
+      <FileName>Behaviors\EntryMaskedBehavior.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ArmourAppUi.Controls.BorderlessEntry" Collapsed="true">
+    <Position X="20.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Controls\BorderlessEntry.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ArmourAppUi.Controls.CalenderDatePicker" Collapsed="true">
+    <Position X="9.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Controls\CalenderDatePicker.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ArmourAppUi.Controls.CustomShadowFrame" Collapsed="true">
+    <Position X="15" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIoAAABAABIAgIABAAgAAAAABAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>Controls\CustomShadowFrame.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ArmourAppUi.Controls.SVGImage" Collapsed="true">
+    <Position X="11.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAAAAAAAAAAAAAAIAIAAAAAAgAAAgAAA=</HashCode>
+      <FileName>Controls\SVGImage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ArmourAppUi.Controls.TapAnimationGrid" Collapsed="true">
+    <Position X="13.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAAABQAAAAQABIEAAQQAAAAAAAIAAAAAAAA=</HashCode>
+      <FileName>Controls\TapAnimationGrid.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ArmourAppUi.Controls.TitleView" Collapsed="true">
+    <Position X="15" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAQBAAAkAQFEAAAgCABgEgAACAAACEAACAAAAAgAg=</HashCode>
+      <FileName>Controls\TitleView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ArmourAppUi.Converters.BooleanToColorConverter" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="16.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Converters\BooleanToColorConverter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ArmourAppUi.Converters.BooleanToStringConverter" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="18.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Converters\BooleanToStringConverter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ArmourAppUi.Converters.DynamicResourceToColorConverter" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="18.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Converters\DynamicResourceToColorConverter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ArmourAppUi.Converters.ErrorValidationColorConverter" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="9.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAAAAAIAAAAAAAAgAAAAAAgAAAAAAAAA=</HashCode>
+      <FileName>Converters\ErrorValidationColorConverter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ArmourAppUi.Converters.StringToBooleanConverter" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="11.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAAAgAAAAAAgAAAAAAAAA=</HashCode>
+      <FileName>Converters\StringToBooleanConverter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ArmourAppUi.Converters.StringToGlyphConverter" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="13.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Converters\StringToGlyphConverter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ArmourAppUi.Data.AppData" Collapsed="true">
+    <Position X="15" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAIAABABAAAAAAAgAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Data\AppData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ArmourAppUi.Data.ExercisesTest" Collapsed="true">
+    <Position X="18.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Data\ExercisesTest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ArmourAppUi.DataService.Profile.ProfileDataService" Collapsed="true">
+    <Position X="11.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAACgABAAAABQAAAAAAAAAA=</HashCode>
+      <FileName>DataService\Profile\ProfileDataService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ArmourAppUi.DataService.Statistic.StatisticDataService" Collapsed="true">
+    <Position X="18.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAIAAAAAAAAAAAAAAAAAAAAABAAAABQAAAAAAAAAA=</HashCode>
+      <FileName>DataService\Statistic\StatisticDataService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ArmourAppUi.DataService.DBSaverLoader" Collapsed="true">
+    <Position X="16.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAAAAAAABAAAAAAAAAAAQAQAACAAAAAA=</HashCode>
+      <FileName>DataService\DBSaverLoader.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ArmourAppUi.DataService.ExercisesApproachTable" Collapsed="true">
+    <Position X="11.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAAQAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>DataService\ExercisesApproachTable.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ArmourAppUi.DataService.ExercisesApproachTableRepository" Collapsed="true">
+    <Position X="13.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAEAAAAEBABQAAAAQAAEAAAgAAAAAAAAAAAAA=</HashCode>
+      <FileName>DataService\ExercisesApproachTableRepository.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ArmourAppUi.DataService.ExercisesCountTable" Collapsed="true">
+    <Position X="15" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAAQAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>DataService\ExercisesCountTable.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ArmourAppUi.DataService.ExercisesCountTableRepository" Collapsed="true">
+    <Position X="16.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAEAAAAEBABQAAAAQAAEAAAgAAAAAAAAAAAAA=</HashCode>
+      <FileName>DataService\ExercisesCountTableRepository.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ArmourAppUi.DataService.ExercisesTimeTable" Collapsed="true">
+    <Position X="20.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAAQAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>DataService\ExercisesTimeTable.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ArmourAppUi.DataService.ExercisesTimeTableRepository" Collapsed="true">
+    <Position X="9.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAEAAAAEBABQAAAAQAAEAAAgAAAAAAAAAAAAA=</HashCode>
+      <FileName>DataService\ExercisesTimeTableRepository.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ArmourAppUi.DataService.MainTable" Collapsed="true">
+    <Position X="18.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAAQAAAAAAAAAKQAAAAAAAAA=</HashCode>
+      <FileName>DataService\MainTable.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ArmourAppUi.DataService.MainTableRepository" Collapsed="true">
+    <Position X="20.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAAAEBAAQAAAAQAAAAAAgAAAAAAAAAAAAA=</HashCode>
+      <FileName>DataService\MainTableRepository.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ArmourAppUi.Models.CountryModel" Collapsed="true">
+    <Position X="13.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Models\Forms\CountryModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ArmourAppUi.Models.Exercises" Collapsed="true">
+    <Position X="2.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAABgAAAAAAAAAAAAQAAgAAAAAAAAgAAAACAAA=</HashCode>
+      <FileName>Models\Exercises.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ArmourAppUi.Models.ExercisesApproach" Collapsed="true">
+    <Position X="2.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAACAAAAAAAAAAgAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\ExercisesApproach.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ArmourAppUi.Models.ExercisesCount" Collapsed="true">
+    <Position X="5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAAAAAAAAAAAAAgAAAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>Models\ExercisesCount.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ArmourAppUi.Models.ExercisesTime" Collapsed="true">
+    <Position X="0.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAQA=</HashCode>
+      <FileName>Models\ExercisesTime.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ArmourAppUi.Models.HealthProfile" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="13.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAKAAAAIAAgAAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>Models\HealthProfile.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ArmourAppUi.Models.Profile.ProfileModel" Collapsed="true">
+    <Position X="13.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAEAAAAQAAAAAAACAAAABAAAAAAAAAgAAA=</HashCode>
+      <FileName>Models\Profile\ProfileModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ArmourAppUi.Models.Statistic.StatisticModel" Collapsed="true">
+    <Position X="20.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAECAAAQAAAAAAAAAAAAAAAIAAAAACgAAA=</HashCode>
+      <FileName>Models\Statistic\StatisticModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ArmourAppUi.Themes.LightTheme" Collapsed="true">
+    <Position X="15" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Themes\LightTheme.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ArmourAppUi.ViewModels.Forms.AddContactViewModel" Collapsed="true">
+    <Position X="5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEEAAAAAAAACIAAAAQAAAAAAAAAADCAAAAAAAAAg=</HashCode>
+      <FileName>ViewModels\Forms\AddContactViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ArmourAppUi.ViewModels.Forms.LoginViewModel" Collapsed="true">
+    <Position X="5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAgAAAAAAAAAAAAAEAAAABAAAAAAAA=</HashCode>
+      <FileName>ViewModels\Forms\LoginViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ArmourAppUi.ViewModels.Profile.ProfileViewModel" Collapsed="true">
+    <Position X="7.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAACAAAAAgAAAAAAAAgAAAAA=</HashCode>
+      <FileName>ViewModels\Profile\ProfileViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ArmourAppUi.ViewModels.Settings.SettingViewModel" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAQAAQQAAQAAAAREAAAAAACgAEgEACAAAAQAAEA=</HashCode>
+      <FileName>ViewModels\Settings\SettingViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ArmourAppUi.ViewModels.Statistic.StatisticViewModel" Collapsed="true">
+    <Position X="2.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAAAAAAAAACAAAAAgAAAAAAAAgAAAAA=</HashCode>
+      <FileName>ViewModels\Statistic\StatisticViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ArmourAppUi.ViewModels.BaseViewModel" Collapsed="true">
+    <Position X="3.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAIAAAAAAAAAAgAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\BaseViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ArmourAppUi.Views.Forms.AddContactPage" Collapsed="true">
+    <Position X="9.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQARAAAEBCAAAAACAAAAAAAAAgCUAAFA=</HashCode>
+      <FileName>Views\Forms\AddContactPage.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ArmourAppUi.Views.Forms.AddProfilePage" Collapsed="true">
+    <Position X="11.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\Forms\AddProfilePage.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ArmourAppUi.Views.Forms.ContactEmailEntry" Collapsed="true">
+    <Position X="11.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\Forms\ContactEmailEntry.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ArmourAppUi.Views.Forms.Styles" Collapsed="true">
+    <Position X="15" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\Forms\Styles.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ArmourAppUi.Views.Profile.ProfilePage" Collapsed="true">
+    <Position X="15" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQARAAAAAAAAAAAAAAAAAAAAAACEAABA=</HashCode>
+      <FileName>Views\Profile\ProfilePage.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ArmourAppUi.Views.Profile.Styles" Collapsed="true">
+    <Position X="16.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\Profile\Styles.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ArmourAppUi.Views.Settings.SettingPage" Collapsed="true">
+    <Position X="16.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAQAAAAAAAAAAAAAAAAAAAAAACEAABA=</HashCode>
+      <FileName>Views\Settings\SettingPage.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ArmourAppUi.Views.Settings.Styles" Collapsed="true">
+    <Position X="18.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\Settings\Styles.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ArmourAppUi.Views.Statistic.StatisticPage" Collapsed="true">
+    <Position X="9.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAQAAAAAAAAAAAAAAAAAAAAAACEAABA=</HashCode>
+      <FileName>Views\Statistic\StatisticPage.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ArmourAppUi.Views.Statistic.Styles" Collapsed="true">
+    <Position X="20.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\Statistic\Styles.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ArmourAppUi.Views.Templates.ExpenseChartTemplate" Collapsed="true">
+    <Position X="11.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\Templates\ExpenseChartTemplate.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ArmourAppUi.Views.Templates.NavigationListTemplate" Collapsed="true">
+    <Position X="9.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\Templates\NavigationListTemplate.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ArmourAppUi.Views.Templates.Styles" Collapsed="true">
+    <Position X="9.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\Templates\Styles.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

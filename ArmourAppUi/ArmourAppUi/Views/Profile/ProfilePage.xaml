@@ -59,7 +59,8 @@
                                     <Label
                                         FontFamily="{DynamicResource Montserrat-SemiBold}"
                                         StyleClass="quote"
-                                        Text="Моя тренировка начинаеться когда я открываю пивко. " />
+                                        Text="Дойдя до конца, люди смеются над страхами, мучившими их вначале." />
+                                    <!--  Text="Моя тренировка начинаеться когда я открываю пивко. "  -->
                                     <Label
                                         FontFamily="{DynamicResource Montserrat-Medium}"
                                         StyleClass="author"

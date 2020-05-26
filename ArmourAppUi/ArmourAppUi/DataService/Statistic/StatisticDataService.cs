@@ -35,7 +35,7 @@ namespace ArmourAppUi.DataService.Statistic
                         break;
 
                     case 3:
-                        statisticList.Add(new StatisticModel() { NameExercise = item.Name, Progress = "+60s", IsProgress = true, Purpose = item.Purpose + "s", ExerciseIcon = "time_icon.png", ProgressPercent = "55%" });
+                        statisticList.Add(new StatisticModel() { NameExercise = item.Name, Progress = item.Progress + "s", IsProgress = true, Purpose = item.Purpose + "s", ExerciseIcon = "time_icon.png", ProgressPercent = item.Percent + "%" });
                         break;
 
                     default:
