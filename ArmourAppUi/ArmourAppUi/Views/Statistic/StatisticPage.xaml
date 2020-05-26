@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="ArmourAppUi.Views.Statistic.StatisticPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:border="clr-namespace:Syncfusion.XForms.Border;assembly=Syncfusion.Core.XForms"
+    xmlns:button="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
+    xmlns:buttons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
+    xmlns:cards="clr-namespace:Syncfusion.XForms.Cards;assembly=Syncfusion.Cards.XForms"
+    xmlns:converter="clr-namespace:ArmourAppUi.Converters"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:gradient="clr-namespace:Syncfusion.XForms.Graphics;assembly=Syncfusion.Core.XForms"
+    xmlns:listView="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:svg="clr-namespace:ArmourAppUi.Controls"
+    xmlns:syncfusion="clr-namespace:Syncfusion.SfCalendar.XForms;assembly=Syncfusion.SfCalendar.XForms"
+    xmlns:template="clr-namespace:ArmourAppUi.Views.Templates"
+    xmlns:viewModel="clr-namespace:ArmourAppUi.ViewModels.Statistic"
+    BackgroundColor="{DynamicResource Gray-White}"
+    NavigationPage.HasNavigationBar="False"
+    mc:Ignorable="d">
+
+    <ContentPage.Resources>
+        <StyleSheet Source="../../Styles/main.css" />
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Styles.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+            <converter:BooleanToColorConverter x:Key="BooleanToColorConverter" />
+            <converter:BooleanToStringConverter x:Key="BoolToStringConverter" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <!--  Binding context for statistic page  -->
+    <ContentPage.BindingContext>
+        <viewModel:StatisticViewModel />
+    </ContentPage.BindingContext>
+
+    <ContentPage.Content>
+        <StackLayout Spacing="0">
+            <StackLayout Orientation="Vertical" Spacing="0">
+                <FlexLayout StyleClass="header">
+                    <Label FontFamily="{DynamicResource Montserrat-Medium}" Text="My workouts" />
+                    <buttons:SfButton
+                        x:Name="SfButton"
+                        BackgroundImage="photo.jpg"
+                        Clicked="ProfileButton_Clicked"
+                        CornerRadius="15"
+                        HeightRequest="30"
+                        WidthRequest="30" />
+                </FlexLayout>
+            </StackLayout>
+            <StackLayout Spacing="0">
+                <ScrollView>
+                    <Grid ColumnSpacing="0" RowSpacing="0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+                            <Grid RowSpacing="0">
+                                <gradient:SfGradientView Grid.RowSpan="3">
+                                    <gradient:SfGradientView.BackgroundBrush>
+                                        <gradient:SfLinearGradientBrush>
+                                            <gradient:SfLinearGradientBrush.GradientStops>
+                                                <gradient:SfGradientStop Offset="0.0" Color="{StaticResource Dull-Red}" />
+                                                <gradient:SfGradientStop Offset="1.0" Color="{StaticResource Deep-Purple}" />
+                                            </gradient:SfLinearGradientBrush.GradientStops>
+                                        </gradient:SfLinearGradientBrush>
+                                    </gradient:SfGradientView.BackgroundBrush>
+                                </gradient:SfGradientView>
+                            </Grid>
+                            <border:SfBorder
+                                Grid.Row="1"
+                                Margin="0,-69,0,0"
+                                Padding="0,0,0,0"
+                                BackgroundColor="{DynamicResource Gray-White}"
+                                BorderWidth="0"
+                                CornerRadius="14,14,0,0"
+                                VerticalOptions="Start">
+                                <Label Padding="20,50,0,20" Text="My list" />
+                            </border:SfBorder>
+                            <cards:SfCardView
+                                Grid.Row="0"
+                                Margin="16,16,16,24"
+                                BackgroundColor="{DynamicResource Gray-White}"
+                                BorderWidth="0"
+                                CornerRadius="4"
+                                HasShadow="True"
+                                HorizontalOptions="CenterAndExpand"
+                                VerticalOptions="End">
+                                <Grid
+                                    Margin="10"
+                                    ColumnSpacing="0"
+                                    HeightRequest="200"
+                                    RowSpacing="0">
+                                    <syncfusion:SfCalendar
+                                        x:Name="calendar"
+                                        FirstDayofWeek="1"
+                                        NumberOfWeeksInView="1"
+                                        SelectionMode="MultiSelection"
+                                        ShowInlineEvents="True" />
+                                </Grid>
+                            </cards:SfCardView>
+                        </Grid>
+                        <listView:SfListView
+                            Grid.Row="2"
+                            AutoFitMode="Height"
+                            IsScrollBarVisible="False"
+                            ItemSpacing="0"
+                            ItemsSource="{Binding StatisticList}"
+                            SelectionBackgroundColor="{DynamicResource TappedBackgroundColor}"
+                            TapCommand="{Binding ItemTappedCommand}">
+                            <listView:SfListView.ItemTemplate>
+                                <DataTemplate>
+                                    <Grid ColumnSpacing="0" RowSpacing="0">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="Auto" />
+                                            <RowDefinition Height="Auto" />
+                                            <RowDefinition Height="Auto" />
+                                        </Grid.RowDefinitions>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="Auto" />
+                                            <ColumnDefinition Width="*" />
+                                        </Grid.ColumnDefinitions>
+                                        <!--  Exercise Icon  -->
+                                        <border:SfBorder
+                                            Grid.RowSpan="3"
+                                            Margin="16"
+                                            BorderWidth="0"
+                                            CornerRadius="20"
+                                            HeightRequest="40"
+                                            VerticalOptions="Center"
+                                            WidthRequest="40">
+                                            <Image
+                                                x:Name="ExerciseIcon"
+                                                HeightRequest="40"
+                                                Source="{Binding ExerciseIcon}"
+                                                WidthRequest="40" />
+                                        </border:SfBorder>
+                                        <!--  Name Exercise  -->
+                                        <Label
+                                            Grid.Column="1"
+                                            Margin="0,15,0,4"
+                                            HorizontalOptions="Start"
+                                            LineHeight="{OnPlatform Android=1.5,
+                                                                    Default=-1}"
+                                            Style="{StaticResource LabelStyle}"
+                                            Text="{Binding NameExercise}" />
+                                        <!--  Purpose  -->
+                                        <Label
+                                            Grid.Row="1"
+                                            Grid.Column="1"
+                                            Margin="0,0,0,16"
+                                            FontFamily="{DynamicResource Montserrat-Medium}"
+                                            FontSize="12"
+                                            HorizontalOptions="Start"
+                                            LineHeight="{OnPlatform Android=1.5,
+                                                                    Default=-1}"
+                                            Text="{Binding Purpose}"
+                                            TextColor="{DynamicResource Gray-700}" />
+                                        <!--  Progress  -->
+                                        <Label
+                                            Grid.Column="1"
+                                            Margin="0,16,16,4"
+                                            HorizontalOptions="End"
+                                            LineHeight="{OnPlatform Android=1.5,
+                                                                    Default=-1}"
+                                            Style="{StaticResource LabelStyle}"
+                                            TextColor="{Binding IsProgress, Converter={x:StaticResource BooleanToColorConverter}, ConverterParameter=5}">
+                                            <Label.FormattedText>
+                                                <FormattedString>
+                                                    <Span Text="{Binding Progress}" />
+                                                </FormattedString>
+                                            </Label.FormattedText>
+                                        </Label>
+                                        <!--  Progress percent  -->
+                                        <Label
+                                            Grid.Row="1"
+                                            Grid.Column="1"
+                                            Margin="0,0,16,16"
+                                            FontFamily="{DynamicResource Montserrat-Medium}"
+                                            FontSize="12"
+                                            HorizontalOptions="End"
+                                            LineHeight="{OnPlatform Android=1.5,
+                                                                    Default=-1}"
+                                            Text="{Binding ProgressPercent}"
+                                            TextColor="{DynamicResource Gray-700}" />
+                                        <!--  Seperator  -->
+                                        <BoxView
+                                            Grid.Row="2"
+                                            Grid.ColumnSpan="2"
+                                            Style="{StaticResource SeparatorStyle}" />
+                                    </Grid>
+                                </DataTemplate>
+                            </listView:SfListView.ItemTemplate>
+                        </listView:SfListView>
+                    </Grid>
+                </ScrollView>
+            </StackLayout>
+            <StackLayout
+                Padding="0,10,0,0"
+                HorizontalOptions="FillAndExpand"
+                Orientation="Vertical"
+                StyleClass="nav1"
+                VerticalOptions="End">
+                <FlexLayout StyleClass="nav">
+                    <button:SfButton
+                        BackgroundColor="#fff"
+                        CornerRadius="20"
+                        HeightRequest="40"
+                        ImageAlignment="Top"
+                        ImageSource="baseline_bar_chart_black_36dp_color.png"
+                        ImageWidth="30"
+                        ShowIcon="True"
+                        WidthRequest="100" />
+                    <button:SfButton
+                        BackgroundColor="#fff"
+                        Clicked="HomeButton_Clicked"
+                        CornerRadius="20"
+                        HeightRequest="40"
+                        ImageAlignment="Top"
+                        ImageSource="baseline_home_black_36dp.png"
+                        ImageWidth="30"
+                        ShowIcon="True"
+                        WidthRequest="100" />
+                    <button:SfButton
+                        BackgroundColor="#fff"
+                        Clicked="NewExercisePage_Clicked"
+                        CornerRadius="20"
+                        HeightRequest="40"
+                        ImageAlignment="Top"
+                        ImageSource="baseline_playlist_add_black_36dp.png"
+                        ImageWidth="30"
+                        ShowIcon="True"
+                        WidthRequest="100" />
+                </FlexLayout>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

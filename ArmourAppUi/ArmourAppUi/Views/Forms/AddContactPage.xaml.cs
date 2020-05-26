@@ -36,7 +36,7 @@ namespace ArmourAppUi.Views.Forms
 
         private void StatisticsButton_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new ArmourAppUi.Views.Statistic.MyWalletPage());
+            Navigation.PushAsync(new ArmourAppUi.Views.Statistic.StatisticPage());
         }
         private void NewExercisePage_Clicked(object sender, EventArgs e)
         {
@@ -44,7 +44,7 @@ namespace ArmourAppUi.Views.Forms
         }
         private void HomeButton_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new ArmourAppUi.Views.Navigation.AppUsagePage());
+            Navigation.PushAsync(new ArmourAppUi.Views.Profile.ProfilePage());
         }
         private void ProfileButton_Clicked(object sender, EventArgs e)
         {

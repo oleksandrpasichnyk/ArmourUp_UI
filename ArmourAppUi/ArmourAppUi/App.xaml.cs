@@ -13,7 +13,7 @@ namespace ArmourAppUi
             Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("MjQzMzg4QDMxMzgyZTMxMmUzME04UFpEaGZSZlBPcXpBaVBFS0ZBbFFPNVJXbkFVcEtvNnNBWlBlOXhNaEE9");
             InitializeComponent();
             AppData.MockData();
-            MainPage = new NavigationPage(new ArmourAppUi.Views.Statistic.MyWalletPage());            
+            MainPage = new NavigationPage(new ArmourAppUi.Views.Profile.ProfilePage());            
         }
 
         protected override void OnStart()

@@ -31,9 +31,10 @@
 
                     <control:BorderlessEntry
                         x:Name="EmailEntry"
-                        Placeholder="Email" Keyboard="Email"
+                        Keyboard="Email"
+                        Placeholder="Email"
                         PlaceholderColor="{DynamicResource Gray-700}"
-                        Style="{StaticResource EntryTextStyle}" 
+                        Style="{StaticResource EntryTextStyle}"
                         Text="{Binding Email}"
                         TextColor="{DynamicResource Gray-900}" />
 

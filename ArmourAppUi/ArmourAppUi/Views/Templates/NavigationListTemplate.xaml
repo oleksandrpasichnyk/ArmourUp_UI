@@ -84,9 +84,7 @@
                 </Label>
 
                 <!--  Navigation icon  -->
-                <Label
-                    HorizontalOptions="EndAndExpand"
-                    Style="{StaticResource RightArrowLabelStyle}" />
+                <Label HorizontalOptions="EndAndExpand" Style="{StaticResource RightArrowLabelStyle}" />
             </StackLayout>
         </StackLayout>
     </Grid>

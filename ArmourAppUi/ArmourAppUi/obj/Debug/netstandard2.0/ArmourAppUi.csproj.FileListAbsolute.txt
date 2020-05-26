@@ -41,17 +41,9 @@ C:\Users\Danyil Korotych\Desktop\ArmourUp_UI-master\ArmourUp_UI\ArmourAppUi\Armo
 C:\Users\Danyil Korotych\Desktop\ArmourUp_UI-master\ArmourUp_UI\ArmourAppUi\ArmourAppUi\obj\Debug\netstandard2.0\Views\Forms\AddProfilePage.xaml.g.cs
 C:\Users\Danyil Korotych\Desktop\ArmourUp_UI-master\ArmourUp_UI\ArmourAppUi\ArmourAppUi\obj\Debug\netstandard2.0\Views\Forms\ContactEmailEntry.xaml.g.cs
 C:\Users\Danyil Korotych\Desktop\ArmourUp_UI-master\ArmourUp_UI\ArmourAppUi\ArmourAppUi\obj\Debug\netstandard2.0\Views\Forms\Styles.xaml.g.cs
-C:\Users\Danyil Korotych\Desktop\ArmourUp_UI-master\ArmourUp_UI\ArmourAppUi\ArmourAppUi\obj\Debug\netstandard2.0\Views\Navigation\AppUsagePage.xaml.g.cs
-C:\Users\Danyil Korotych\Desktop\ArmourUp_UI-master\ArmourUp_UI\ArmourAppUi\ArmourAppUi\obj\Debug\netstandard2.0\Views\Navigation\NavigationListCardPage.xaml.g.cs
-C:\Users\Danyil Korotych\Desktop\ArmourUp_UI-master\ArmourUp_UI\ArmourAppUi\ArmourAppUi\obj\Debug\netstandard2.0\Views\Navigation\Styles.xaml.g.cs
 C:\Users\Danyil Korotych\Desktop\ArmourUp_UI-master\ArmourUp_UI\ArmourAppUi\ArmourAppUi\obj\Debug\netstandard2.0\Views\Settings\SettingPage.xaml.g.cs
 C:\Users\Danyil Korotych\Desktop\ArmourUp_UI-master\ArmourUp_UI\ArmourAppUi\ArmourAppUi\obj\Debug\netstandard2.0\Views\Settings\Styles.xaml.g.cs
-C:\Users\Danyil Korotych\Desktop\ArmourUp_UI-master\ArmourUp_UI\ArmourAppUi\ArmourAppUi\obj\Debug\netstandard2.0\Views\Statistic\HealthProfilePage.xaml.g.cs
-C:\Users\Danyil Korotych\Desktop\ArmourUp_UI-master\ArmourUp_UI\ArmourAppUi\ArmourAppUi\obj\Debug\netstandard2.0\Views\Statistic\MyWalletPage.xaml.g.cs
 C:\Users\Danyil Korotych\Desktop\ArmourUp_UI-master\ArmourUp_UI\ArmourAppUi\ArmourAppUi\obj\Debug\netstandard2.0\Views\Statistic\Styles.xaml.g.cs
-C:\Users\Danyil Korotych\Desktop\ArmourUp_UI-master\ArmourUp_UI\ArmourAppUi\ArmourAppUi\obj\Debug\netstandard2.0\Views\Templates\ExpenseChartTemplate.xaml.g.cs
-C:\Users\Danyil Korotych\Desktop\ArmourUp_UI-master\ArmourUp_UI\ArmourAppUi\ArmourAppUi\obj\Debug\netstandard2.0\Views\Templates\NavigationListTemplate.xaml.g.cs
-C:\Users\Danyil Korotych\Desktop\ArmourUp_UI-master\ArmourUp_UI\ArmourAppUi\ArmourAppUi\obj\Debug\netstandard2.0\Views\Templates\Styles.xaml.g.cs
 C:\Users\Danyil Korotych\Desktop\ArmourUp_UI-master\ArmourUp_UI\ArmourAppUi\ArmourAppUi\obj\Debug\netstandard2.0\Styles\main.css.g.cs
 C:\Users\Danyil Korotych\Desktop\ArmourUp_UI-master\ArmourUp_UI\ArmourAppUi\ArmourAppUi\obj\Debug\netstandard2.0\ArmourAppUi.AssemblyInfoInputs.cache
 C:\Users\Danyil Korotych\Desktop\ArmourUp_UI-master\ArmourUp_UI\ArmourAppUi\ArmourAppUi\obj\Debug\netstandard2.0\ArmourAppUi.AssemblyInfo.cs
@@ -60,3 +52,9 @@ C:\Users\Danyil Korotych\Desktop\ArmourUp_UI-master\ArmourUp_UI\ArmourAppUi\Armo
 C:\Users\Danyil Korotych\Desktop\ArmourUp_UI-master\ArmourUp_UI\ArmourAppUi\ArmourAppUi\obj\Debug\netstandard2.0\ArmourAppUi.pdb
 C:\Users\Danyil Korotych\Desktop\ArmourUp_UI-master\ArmourUp_UI\ArmourAppUi\ArmourAppUi\obj\Debug\netstandard2.0\ArmourAppUi.csproj.CoreCompileInputs.cache
 C:\Users\Danyil Korotych\Desktop\ArmourUp_UI-master\ArmourUp_UI\ArmourAppUi\ArmourAppUi\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Danyil Korotych\Desktop\ArmourUp_UI-master\ArmourUp_UI\ArmourAppUi\ArmourAppUi\obj\Debug\netstandard2.0\Views\Profile\ProfilePage.xaml.g.cs
+C:\Users\Danyil Korotych\Desktop\ArmourUp_UI-master\ArmourUp_UI\ArmourAppUi\ArmourAppUi\obj\Debug\netstandard2.0\Views\Profile\Styles.xaml.g.cs
+C:\Users\Danyil Korotych\Desktop\ArmourUp_UI-master\ArmourUp_UI\ArmourAppUi\ArmourAppUi\obj\Debug\netstandard2.0\Views\Statistic\StatisticPage.xaml.g.cs
+C:\Users\Danyil Korotych\Desktop\ArmourUp_UI-master\ArmourUp_UI\ArmourAppUi\ArmourAppUi\obj\Debug\netstandard2.0\Views\Templates\ExpenseChartTemplate.xaml.g.cs
+C:\Users\Danyil Korotych\Desktop\ArmourUp_UI-master\ArmourUp_UI\ArmourAppUi\ArmourAppUi\obj\Debug\netstandard2.0\Views\Templates\NavigationListTemplate.xaml.g.cs
+C:\Users\Danyil Korotych\Desktop\ArmourUp_UI-master\ArmourUp_UI\ArmourAppUi\ArmourAppUi\obj\Debug\netstandard2.0\Views\Templates\Styles.xaml.g.cs

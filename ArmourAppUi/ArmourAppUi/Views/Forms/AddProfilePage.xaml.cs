@@ -26,7 +26,7 @@ namespace ArmourAppUi.Views.Forms
 
         private void SubmitUser_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new ArmourAppUi.Views.Navigation.AppUsagePage());  //PushModalAsync???
+            Navigation.PushAsync(new ArmourAppUi.Views.Profile.ProfilePage());  //PushModalAsync???
         }
     }
 }

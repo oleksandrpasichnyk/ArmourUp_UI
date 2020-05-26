@@ -4,18 +4,17 @@
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:ListCollection="clr-namespace:System.Collections.Generic;assembly=netstandard"
+    xmlns:behaviors="clr-namespace:ArmourAppUi.Behaviors"
     xmlns:border="clr-namespace:Syncfusion.XForms.Border;assembly=Syncfusion.Core.XForms"
     xmlns:buttons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
     xmlns:combobox="clr-namespace:Syncfusion.XForms.ComboBox;assembly=Syncfusion.SfComboBox.XForms"
-    xmlns:syncfusion="clr-namespace:Syncfusion.XForms.Expander;assembly=Syncfusion.Expander.XForms"
-    xmlns:segmentCollection="clr-namespace:System.Collections.Generic;assembly=netstandard"
     xmlns:control="clr-namespace:ArmourAppUi.Controls"
     xmlns:converter="clr-namespace:ArmourAppUi.Converters"
-    xmlns:inputLayout="clr-namespace:Syncfusion.XForms.TextInputLayout;assembly=Syncfusion.Core.XForms"
-
-    xmlns:behaviors="clr-namespace:ArmourAppUi.Behaviors"
     xmlns:dataForm="clr-namespace:Syncfusion.XForms.DataForm;assembly=Syncfusion.SfDataForm.XForms"
+    xmlns:inputLayout="clr-namespace:Syncfusion.XForms.TextInputLayout;assembly=Syncfusion.Core.XForms"
     xmlns:local="clr-namespace:ArmourAppUi.Views.Forms"
+    xmlns:segmentCollection="clr-namespace:System.Collections.Generic;assembly=netstandard"
+    xmlns:syncfusion="clr-namespace:Syncfusion.XForms.Expander;assembly=Syncfusion.Expander.XForms"
     xmlns:viewModel="clr-namespace:ArmourAppUi.ViewModels.Forms"
     Title="Details Form"
     BackgroundColor="{DynamicResource Gray-100}"
@@ -39,37 +38,37 @@
                 <Label Style="{StaticResource HeaderLabelStyle}" Text="General Information" />
                 <StackLayout>
                     <inputLayout:SfTextInputLayout
-
-                                    ContainerType="Outlined"
-                                    OutlineCornerRadius="8"
-                                    Hint="Excercise name" 
-                                    HelperText="Running, arms, legs"
-                                    >
+                        ContainerType="Outlined"
+                        HelperText="Running, arms, legs"
+                        Hint="Excercise name"
+                        OutlineCornerRadius="8">
                         <Entry />
                     </inputLayout:SfTextInputLayout>
 
                     <inputLayout:SfTextInputLayout
-                                    CharMaxLength="150"
-                                    ShowCharCount="True"
-                                    Hint="Excercise description"
-                                    ContainerType="Outlined"
-                                    IsHintAlwaysFloated="False" 
-                                    OutlineCornerRadius="8">
+                        CharMaxLength="150"
+                        ContainerType="Outlined"
+                        Hint="Excercise description"
+                        IsHintAlwaysFloated="False"
+                        OutlineCornerRadius="8"
+                        ShowCharCount="True">
 
-                        <Editor  AutoSize="TextChanges" MaxLength="150" Keyboard="Chat"/>
+                        <Editor
+                            AutoSize="TextChanges"
+                            Keyboard="Chat"
+                            MaxLength="150" />
                     </inputLayout:SfTextInputLayout>
 
                     <buttons:SfSegmentedControl
-                    SelectionChanged="SegmentedControl_SelectionChanged"
-                    SelectionTextColor = "White"
-                    HeightRequest="80"
-                    VisibleSegmentsCount="6"
-                    Color="Transparent" 
-                    BorderColor="#929292"
-                    CornerRadius="8"
-                    
-                    FontColor="#929292"
-                    BackgroundColor="Transparent" >
+                        BackgroundColor="Transparent"
+                        BorderColor="#929292"
+                        CornerRadius="8"
+                        FontColor="#929292"
+                        HeightRequest="80"
+                        SelectionChanged="SegmentedControl_SelectionChanged"
+                        SelectionTextColor="White"
+                        VisibleSegmentsCount="6"
+                        Color="Transparent">
                         <segmentCollection:List x:TypeArguments="x:String">
                             <x:String>Time</x:String>
                             <x:String>Goal</x:String>
@@ -78,19 +77,17 @@
                     </buttons:SfSegmentedControl>
                 </StackLayout>
 
-                <StackLayout x:Name="exerciseGoal" Padding="0">
+                <StackLayout x:Name="exerciseGoal" Padding="0" />
 
-                </StackLayout>
-                
                 <StackLayout>
                     <syncfusion:SfExpander Margin="0,16,0,0">
                         <syncfusion:SfExpander.Header BackgroundColor="{DynamicResource Gray-200}">
-                            <Grid >
+                            <Grid>
                                 <Label
                                     Padding="10"
-                                    VerticalOptions="Center"
                                     Style="{StaticResource HeaderLabelStyle}"
-                                    Text="Useful link" />
+                                    Text="Useful link"
+                                    VerticalOptions="Center" />
                             </Grid>
                         </syncfusion:SfExpander.Header>
                         <syncfusion:SfExpander.Content>
@@ -98,22 +95,22 @@
                                 <StackLayout>
 
                                     <inputLayout:SfTextInputLayout
-                                        
                                         ContainerType="Outlined"
-                                        OutlineCornerRadius="8"
-                                        Hint="URL" 
                                         HelperText="Enter your email address"
-                                        >
+                                        Hint="URL"
+                                        OutlineCornerRadius="8">
                                         <Entry />
                                     </inputLayout:SfTextInputLayout>
 
                                     <inputLayout:SfTextInputLayout
-                                        
-                                        Hint="Source name"
                                         ContainerType="Outlined"
+                                        Hint="Source name"
                                         OutlineCornerRadius="8">
 
-                                        <Editor AutoSize="TextChanges" MaxLength="150" Keyboard="Chat"/>
+                                        <Editor
+                                            AutoSize="TextChanges"
+                                            Keyboard="Chat"
+                                            MaxLength="150" />
                                     </inputLayout:SfTextInputLayout>
                                 </StackLayout>
                             </Grid>
@@ -124,7 +121,7 @@
 
                 <buttons:SfButton
                     Margin="0,20,0,0"
-                    HorizontalOptions="Center" 
+                    HorizontalOptions="Center"
                     Style="{StaticResource SfButtonStyle}"
                     Text="SUBMIT"
                     WidthRequest="200" />

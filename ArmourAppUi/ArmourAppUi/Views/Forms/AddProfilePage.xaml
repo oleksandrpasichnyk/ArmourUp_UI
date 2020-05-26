@@ -4,10 +4,10 @@
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:badge="clr-namespace:Syncfusion.XForms.BadgeView;assembly=Syncfusion.SfBadgeView.XForms"
+    xmlns:behaviours="clr-namespace:ArmourAppUi.Behaviors"
     xmlns:border="clr-namespace:Syncfusion.XForms.Border;assembly=Syncfusion.Core.XForms"
     xmlns:buttons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
     xmlns:control="clr-namespace:ArmourAppUi.Controls"
-    xmlns:behaviours="clr-namespace:ArmourAppUi.Behaviors"
     xmlns:converter="clr-namespace:ArmourAppUi.Converters"
     xmlns:sfavatar="clr-namespace:Syncfusion.XForms.AvatarView;assembly=Syncfusion.Core.XForms"
     Title="New Contact"
@@ -22,39 +22,39 @@
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </ContentPage.Resources>
-    
-    
+
+
     <ContentPage.Content>
         <ScrollView>
             <FlexLayout StyleClass="registration_menu">
-                <StackLayout Padding="16" Spacing="16" >
+                <StackLayout Padding="16" Spacing="16">
 
                     <!--  To display the Avatar with add icon  -->
                     <badge:SfBadgeView
-                    Padding="0"
-                    HeightRequest="90"
-                    HorizontalOptions="Center"
-                    VerticalOptions="Center"
-                    WidthRequest="90">
+                        Padding="0"
+                        HeightRequest="90"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"
+                        WidthRequest="90">
                         <badge:SfBadgeView.Content>
 
                             <!--  Avatar view to display the profile picture  -->
                             <sfavatar:SfAvatarView
-                            Padding="13"
-                            BackgroundColor="{DynamicResource Gray-200}"
-                            BorderWidth="0"
-                            ContentType="Custom"
-                            CornerRadius="45"
-                            HeightRequest="90"
-                            HorizontalOptions="Center"
-                            VerticalOptions="Center"
-                            WidthRequest="90">
+                                Padding="13"
+                                BackgroundColor="{DynamicResource Gray-200}"
+                                BorderWidth="0"
+                                ContentType="Custom"
+                                CornerRadius="45"
+                                HeightRequest="90"
+                                HorizontalOptions="Center"
+                                VerticalOptions="Center"
+                                WidthRequest="90">
                                 <sfavatar:SfAvatarView.ImageSource>
                                     <FontImageSource
-                                    FontFamily="{StaticResource FontIcons}"
-                                    Glyph="{StaticResource AvatarIcon}"
-                                    Size="29"
-                                    Color="{DynamicResource Gray-600}" />
+                                        FontFamily="{StaticResource FontIcons}"
+                                        Glyph="{StaticResource AvatarIcon}"
+                                        Size="29"
+                                        Color="{DynamicResource Gray-600}" />
                                 </sfavatar:SfAvatarView.ImageSource>
                             </sfavatar:SfAvatarView>
                         </badge:SfBadgeView.Content>
@@ -62,47 +62,49 @@
                         <!--  Badge setting to display the add icon above the profile picture  -->
                         <badge:SfBadgeView.BadgeSettings>
                             <badge:BadgeSetting
-                            BackgroundColor="{DynamicResource Gray-100}"
-                            BadgeAnimation="None"
-                            BadgeIcon="Add"
-                            BadgePosition="BottomRight"
-                            BadgeType="None"
-                            FontSize="15"
-                            Stroke="{DynamicResource Gray-White}"
-                            StrokeWidth="4"
-                            TextColor="{DynamicResource Gray-600}"
-                            TextPadding="7"
-                            Offset="-5,-10" />
+                                BackgroundColor="{DynamicResource Gray-100}"
+                                BadgeAnimation="None"
+                                BadgeIcon="Add"
+                                BadgePosition="BottomRight"
+                                BadgeType="None"
+                                FontSize="15"
+                                Stroke="{DynamicResource Gray-White}"
+                                StrokeWidth="4"
+                                TextColor="{DynamicResource Gray-600}"
+                                TextPadding="7"
+                                Offset="-5,-10" />
                         </badge:SfBadgeView.BadgeSettings>
                     </badge:SfBadgeView>
 
                     <!--  Displaying the label of Add profile picture below to the badgeview  -->
                     <Label
-                    FontFamily="{DynamicResource Montserrat-Medium}"
-                    FontSize="14"
-                    HorizontalOptions="Center"
-                    Text="Add Profile Picture"
-                    TextColor="{DynamicResource Gray-700}" />
+                        FontFamily="{DynamicResource Montserrat-Medium}"
+                        FontSize="14"
+                        HorizontalOptions="Center"
+                        Text="Add Profile Picture"
+                        TextColor="{DynamicResource Gray-700}" />
 
                     <!--  First name entry with border  -->
-                    <border:SfBorder Padding="10" BorderColor="{Binding Source={x:Reference FirstNameEntry}, Path=IsFocused, Converter={StaticResource ColorConverter}, ConverterParameter=3}" Style="{StaticResource FormBorderStyle}">
+                    <border:SfBorder
+                        Padding="10"
+                        BorderColor="{Binding Source={x:Reference FirstNameEntry}, Path=IsFocused, Converter={StaticResource ColorConverter}, ConverterParameter=3}"
+                        Style="{StaticResource FormBorderStyle}">
                         <control:BorderlessEntry
-                        x:Name="FirstNameEntry"
-                        
-                        Placeholder="First Name"
-                        Style="{StaticResource EntryTextStyle}" />
+                            x:Name="FirstNameEntry"
+                            Placeholder="First Name"
+                            Style="{StaticResource EntryTextStyle}" />
                     </border:SfBorder>
 
                     <buttons:SfButton
-                    Margin="0,16,0,0"
-                    HorizontalOptions="Center"
-                    Style="{StaticResource SfButtonStyle}"
-                    Text="Let's go!"
-                    WidthRequest="200"
-                    Clicked="SubmitUser_Clicked"/>
+                        Margin="0,16,0,0"
+                        Clicked="SubmitUser_Clicked"
+                        HorizontalOptions="Center"
+                        Style="{StaticResource SfButtonStyle}"
+                        Text="Let's go!"
+                        WidthRequest="200" />
                 </StackLayout>
             </FlexLayout>
-            
+
         </ScrollView>
     </ContentPage.Content>
 </ContentPage>
